@@ -1,0 +1,118 @@
+# Site settings
+title: Genomic Medicine Laboratory
+email: team@genomicmedlab.org
+twitter: genomicmedlab
+github: genomicmedlab
+description: > # "The Wagner Lab at Nationwide Children's Hospital"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+category-list: [software, blog]
+
+#Team names, titles and social links
+people:
+- name: Alex Wagner
+  pic: alex
+  position: Principal Investigator
+  social:
+    - title: github
+      url: https://github.com/ahwagner
+    - title: twitter
+      url: https://twitter.com/handlerwagner
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?hl=en&user=cwG4QRAAAAAJ
+- name: Bimal Chaudhari
+  pic: bimal
+  position: Principal Investigator
+  social:
+    - title: github
+      url: https://github.com/bimalchaudhari
+    - title: twitter
+      url: https://twitter.com/
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=p4HM3WQAAAAJ&hl=en&oi=ao
+- name: Wes Goar
+  pic: Wes_edit
+  position: Senior Bioinformatics Scientist
+  social:
+    - title: github
+      url: https://github.com/wesleygoar
+    - title: twitter
+      url: https://twitter.com/Wes_Goar
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=jvaM-h8AAAAJ&hl=en
+- name: Kori Kuzma
+  pic: kori
+  position: Bioinformatics Software Developer
+  social:
+    - title: github
+      url: https://github.com/korikuzma
+    - title: graduation-cap
+      url:
+- name: James Stevenson
+  pic: james
+  position: Bioinformatics Software Developer
+  social:
+    - title: github
+      url: https://github.com/jsstevenson
+    - title: twitter
+      url: https://twitter.com/JamesSharpsteen
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?hl=en&user=jRNVHpoAAAAJ
+- name: Austin Antoniou
+  pic: austin
+  position: Postdoctoral Scientist
+  social:
+    - title: github
+      url: https://github.com/austinant
+    - title: twitter
+      url: https://twitter.com/AustinAAnt
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=XPlSh9wAAAAJ&hl=en
+- name: Matthew Cannon
+  pic: matthew
+  position: Postdoctoral Scientist
+  social:
+    - title: github
+      url: https://github.com/mcannon068nw
+    - title: twitter
+      url: https://twitter.com/mcannon068w
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=XPlSh9wAAAAJ&hl=en
+- name: Jeremy Arbesfeld
+  pic: jeremy
+  position: Graduate Student
+  social:
+    - title: github
+      url: https://github.com/jarbesfeld
+    - title: graduation-cap
+      url:
+- name: Rob Schuetz
+  pic: rob
+  position: PhD Candidate
+  social:
+    - title: github
+      url: https://github.com/Rob-Schuetz
+    - title: graduation-cap
+      url: https://scholar.google.com/citations?user=-FKggSQAAAAJ&hl=en#
+- name: Kathryn Stahl
+  pic: garlic_toast
+  position: Bioinformatics Software Developer
+  social:
+    - title: github
+      url: https://github.com/katiestahl
+    - title: graduation-cap
+      url:
+
+
+#Social Networks usernames
+social:
+  - twitter: twitter
+    url: https://twitter.com/genomicmedlab
+  - github: github
+    url: https://github.com/genomicmedlab
+  - title: google
+    url: https://scholar.google.com/citations?user=cwG4QRAAAAAJ&hl=en&oi=ao
+
+# Build settings
+markdown: kramdown
