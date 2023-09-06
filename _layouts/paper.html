@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<img src="/assets/images/papers/{{ page.thumbnail }}" alt="figure preview from paper"/>
+
+<h3>Abstract</h3>
+<p>{{ page.content }}</p>
+
+<h3>Citation</h3>
+<p>{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
+
+<h3>Links</h3>
+<ul>
+    {% if page.preprint %}
+    <li><a href="{{ page.preprint }}">Preprint</a></li>
+    {% endif %}
+    {% if page.url %}
+    <li><a href="{{ page.url }}">Publisher website</a></li>
+    {% endif %}
+    {% if page.pmid %}
+    <li><a href="ttps://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
+    {% endif %}
+</ul>

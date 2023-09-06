@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<h1></h1>
+<h1>{{ page.name }}</h1>
+
+<p>{{ page.role }}</p>
+
+{% if page.headshot %}
+  <img src="/assets/images/people/{{ page.headshot }}" />
+{% else %}
+  placeholder img here
+{% endif %}
+
+<p />
+
+{% if page.orcid %}
+<p><a href="https://www.orcid.org/{{ page.orcid }}">ORCID</a></p>
+{% endif %}
+{% if page.github %}
+<p><a href="https://www.github.com/{{ page.github  }}">GitHub</a></p>
+{% endif %}
+{% if page.google_scholar %}
+<p><a href="https://scholar.google.com/citations?user={{ page.google_scholar }}">Google scholar</a></p>
+{% endif %}
+{% if page.personal_site %}
+<p><a href="{{ page.personal_site }}">Personal site</a></p>
+{% endif %}
+
+{{ content }}
+
+<h3>Selected Papers</h3>
+
+{% for paper in site.papers reversed %}
+{% if paper.authors contains page.name %}
+<ul>
+  <li>
+      <a href="{{ paper.url }}">{{ paper.title }}</a>
+  </li>
+</ul>
+{% else %}
+{% for name in page.pub_names %}
+{% if paper.authors contains name %}
+<ul>
+    <li>
+        <a href="{{ paper.url }}">{{ paper.title }}</a>
+    </li>
+</ul>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
