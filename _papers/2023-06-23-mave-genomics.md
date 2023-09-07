@@ -8,6 +8,7 @@ journal_cite: "bioRxiv 2023.06.20.545702"
 doi: https://doi.org/10.1101/2023.06.20.545702
 publisher_url:
 preprint: https://www.biorxiv.org/content/10.1101/2023.06.20.545702
+github: https://github.com/ave-dcd/dcd_mapping
 
 thumbnail: mave_genomics_paper_preview.png
 

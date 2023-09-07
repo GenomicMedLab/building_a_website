@@ -3,23 +3,30 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 
-<img src="/assets/images/papers/{{ page.thumbnail }}" alt="figure preview from paper"/>
+{% if page.thumbnail %}
+  <img src="/assets/images/papers/{{ page.thumbnail }}" alt="figure preview from paper"/>
+{% else %}
+  <i class="fa-regular fa-newspaper fa-10x"></i>
+{% endif %}
 
-<h3>Abstract</h3>
+<h2>Abstract</h2>
 <p>{{ page.content }}</p>
 
-<h3>Citation</h3>
+<h2>Citation</h2>
 <p>{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
 
-<h3>Links</h3>
+<h2>Links</h2>
 <ul>
     {% if page.preprint %}
     <li><a href="{{ page.preprint }}">Preprint</a></li>
     {% endif %}
-    {% if page.url %}
-    <li><a href="{{ page.url }}">Publisher website</a></li>
+    {% if page.publisher_url %}
+    <li><a href="{{ page.publisher_url }}">Publisher website</a></li>
     {% endif %}
     {% if page.pmid %}
-    <li><a href="ttps://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
+    {% endif %}
+    {% if page.github %}
+    <li><a href="{{ page.github }}">Paper code</a></li>
     {% endif %}
 </ul>
