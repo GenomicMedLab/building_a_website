@@ -2,9 +2,10 @@
 layout: software
 
 name: MetaKB
-source:
+source: https://github.com/cancervariants/metakb
 docs:
 distribution: https://pypi.org/project/metakb/
+live:
 ---
 
 

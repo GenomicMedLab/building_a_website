@@ -1,7 +1,7 @@
 ---
 layout: software
 
-name:
+name: VarCat
 # GitHub link
 source:
 docs:
@@ -10,4 +10,5 @@ distribution:
 # URL public facing service
 live:
 ---
+
 

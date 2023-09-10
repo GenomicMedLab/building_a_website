@@ -4,12 +4,10 @@ title: Alex H Wagner
 
 name: Alex Wagner
 pub_names: [Alex H. Wagner, Alex H Wagner, Wagner AH]
-degree: PhD
 role: Principal Investigator
 role_type: Faculty
 headshot: alex_wagner.jpg
 
-email: alex.wagner.@nationwidechildrens.org
 nch_profile: https://www.nationwidechildrens.org/find-a-doctor/profiles/alex-h-wagner
 github: ahwagner
 google_scholar: cwG4QRAAAAAJ

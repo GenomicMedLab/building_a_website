@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<h1>{{ page.name }}</h1>
+
+<ul>
+    {% if page.source %}
+    <li><a href="{{ page.source }}">Source</a></li>
+    {% endif %}
+    {% if page.docs %}
+    <li><a href="{{ page.docs }}">Documentation</a></li>
+    {% endif %}
+    {% if page.distribution %}
+    <li><a href="{{ page.distribution }}">Distribution</a></li>
+    {% endif %}
+    {% if page.live %}
+    <li><a href="{{ page.live }}">Live service</a></li>
+    {% endif %}
+</ul>
+
+<p>{{ page.content }}</p>

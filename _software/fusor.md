@@ -2,7 +2,7 @@
 layout: software
 
 name: FUSOR
-source:
+source: github.com/cancervariants/fusor
 docs:
 distribution: https://pypi.org/project/fusor/
 ---
