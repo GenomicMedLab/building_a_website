@@ -9,5 +9,8 @@ docs:
 distribution:
 # URL public facing service
 live:
+
+# list of names of associated lab projects
+projects:
 ---
 

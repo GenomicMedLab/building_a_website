@@ -2,16 +2,27 @@
 layout: person
 
 name:
-pub_names: []  # alternate name constructions that you publish under (full/formal names, previous names, etc.)
-role: # "Principal Investigator", "Postdoctoral Associate", "PhD Student", "Bioinformatics Software Developer", "Senior Bioinformatics Scientist"
-headshot: # headshot filename in assets/images/, eg "alex_wagner.jpg"
+# alternate name constructions that you publish under (full/formal names, previous names, etc.)
+pub_names: []
+# "Principal Investigator", "Postdoctoral Associate", "PhD Student", "Bioinformatics Software Developer", "Senior Bioinformatics Scientist"
+role:
+# headshot filename in assets/images/, eg "alex_wagner.jpg"
+headshot:
 
-nch_profile: # for faculty
-github: # username
-google_scholar: # ID, e.g. "cwG4QRAAAAAJ"
-orcid: # ID, e.g. "0000-0002-2502-8961"
-linkedin: # URL
+# for faculty
+nch_profile:
+# username
+github:
+# URL
+google_scholar:
+# URL
+orcid:
+# URL
+linkedin:
+# URL
+personal_site:
 
-alumnae: # boolean
+# either true or leave blank
+alumnae:
 ---
 Free text paragraph(s) description.

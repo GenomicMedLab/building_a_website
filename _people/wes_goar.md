@@ -7,11 +7,10 @@ degree: PhD
 role: Senior Bioinformatics Scientist
 headshot:
 
-email:
 github: wesleygoar
 linkedin:
-google_scholar: jvaM-h8AAAAJ
-orcid:
+google_scholar: https://scholar.google.com/citations?hl=en&user=jvaM-h8AAAAJ
+orcid: https://orcid.org/0000-0002-9954-3982
 ---
 Wes Goar dsecription
 

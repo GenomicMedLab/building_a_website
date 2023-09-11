@@ -30,7 +30,7 @@ permalink: /people/
 
 <h2>Alumni</h2>
 
-{% assign alums = site.people | where:'alumnae', "true" %}
+{% assign alums = site.people | where:'alumnae', 'true' %}
 {% for person in alums %}
   {% include people_index_item.html %}
 {% endfor %}

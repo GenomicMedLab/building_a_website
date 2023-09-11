@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<h1></h1>
 <h1>{{ page.name }}</h1>
 
 <p>{{ page.role }}</p>
@@ -15,21 +14,24 @@ layout: default
 <p />
 
 {% if page.orcid %}
-<p><a href="https://www.orcid.org/{{ page.orcid }}">ORCID</a></p>
+<a href="{{ page.orcid }}"><i class="fa-brands fa-orcid"></i></a>
 {% endif %}
 {% if page.github %}
-<p><a href="https://www.github.com/{{ page.github  }}">GitHub</a></p>
+<a href="https://www.github.com/{{ page.github  }}"><i class="fa-brands fa-github"></i></a>
 {% endif %}
 {% if page.google_scholar %}
-<p><a href="https://scholar.google.com/citations?user={{ page.google_scholar }}">Google scholar</a></p>
+<a href="{{ page.google_scholar }}"><i class="fa-solid fa-graduation-cap"></i></a>
 {% endif %}
 {% if page.personal_site %}
-<p><a href="{{ page.personal_site }}">Personal site</a></p>
+<a href="{{ page.personal_site }}"><i class="fa-solid fa-house"></i></a>
+{% endif %}
+{% if page.linkedin %}
+<a href="{{ page.linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
 {% endif %}
 
 {{ content }}
 
-<h3>Selected Papers</h3>
+<h3>Papers</h3>
 
 {% for paper in site.papers reversed %}
 {% if paper.authors contains page.name %}
