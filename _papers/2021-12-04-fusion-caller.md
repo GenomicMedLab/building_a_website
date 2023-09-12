@@ -11,7 +11,7 @@ publisher_url: https://link.springer.com/article/10.1186/s12864-021-08094-z
 
 thumbnail: fusion_caller_paper_preview.png
 
-projects:  # names of lab project(s) to reference
+projects: ["Gene Fusion Informatics"]
 ---
 ### Background
 

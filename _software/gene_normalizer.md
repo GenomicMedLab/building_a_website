@@ -6,6 +6,8 @@ source: https://github.com/cancervariants/gene-normalization/
 docs: https://gene-normalizer.readthedocs.io/
 distribution: https://pypi.org/project/gene-normalizer/
 live: https://normalize.cancervariants.org/gene
+
+projects: ["Knowledgebase Integration"]
 ---
 ## Description
 

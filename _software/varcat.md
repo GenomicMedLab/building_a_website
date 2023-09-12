@@ -9,6 +9,7 @@ docs:
 distribution:
 # URL public facing service
 live:
+projects: ["Knowledgebase Integration"]
 ---
 
 

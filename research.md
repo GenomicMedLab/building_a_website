@@ -1,7 +1,12 @@
 ---
 layout: default
-
-title: Research Areas
+title: Research
 permalink: /research/
 ---
+<h1>Research Projects</h1>
 
+<ul>
+{% for project in site.projects %}
+<li><a href="{{ project.url }}">{{ project.name }}</a></li>
+{% endfor %}
+</ul>

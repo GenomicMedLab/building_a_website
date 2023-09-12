@@ -9,7 +9,7 @@ doi: https://doi.org/10.1038/s41375-021-01458-0
 pmid:  34764425
 publisher_url: https://www.nature.com/articles/s41375-021-01458-0
 
-projects:
+projects: ["Gene Fusion Informatics"]
 ---
 
 We are writing on behalf of a cross-consortia effort for the characterization of gene fusions, as driven by mutual interest from the following working groups:
