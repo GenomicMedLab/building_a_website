@@ -3,18 +3,29 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 
+<div class="paper-content-container">
+<div class="paper-content">
+<div class="paper-figure-container">
 {% if page.thumbnail %}
-  <img src="/assets/images/papers/{{ page.thumbnail }}" alt="figure preview from paper"/>
+  <img
+    src="/assets/images/papers/{{ page.thumbnail }}"
+    alt="figure preview from paper"
+    class="paper-figure"
+  />
 {% else %}
-  <i class="fa-regular fa-newspaper fa-10x"></i>
+  <i class="fa-regular fa-newspaper fa-5x paper-figure-placeholder"></i>
 {% endif %}
+</div>
 
+<div class="paper-text-container">
 <h2>Abstract</h2>
 <p>{{ page.content }}</p>
 
 <h2>Citation</h2>
 <p>{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
-
+</div>
+</div>
+<div class="paper-sidebar">
 <h2>Links</h2>
 <ul>
     {% if page.preprint %}
@@ -30,3 +41,15 @@ layout: default
     <li><a href="{{ page.github }}">Paper code</a></li>
     {% endif %}
 </ul>
+
+{% if page.projects %}
+<h2>Projects</h2>
+<ul>
+{% for p in page.projects %}
+{% assign project = site.projects | where:"name", p  | first %}
+<li><a href="{{ project.url }}">{{ project.name }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+</div>
+</div>
