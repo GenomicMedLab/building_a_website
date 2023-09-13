@@ -4,7 +4,7 @@ layout: person
 name: James Stevenson
 pub_names: []
 role: Software Developer
-headshot:
+headshot: "james_stevenson.jpg"
 
 github: jsstevenson
 linkedin: https://www.linkedin.com/in/james-stevenson-00999482/

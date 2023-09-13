@@ -5,13 +5,12 @@ name: Matthew Cannon
 pub_names: []
 degree: PhD
 role: Postdoctoral Associate
-headshot:
+headshot: "matthew_cannon.jpg"
 
-email:
 github: mcannon068nw
 linkedin:
-google_scholar: XPlSh9wAAAAJ
-orcid: 0000-0003-1908-7292
+google_scholar: https://scholar.google.com/citations?hl=en&user=XPlSh9wAAAAJ
+orcid: https://orcid.org/0000-0003-1908-7292
 ---
 Matt description
 

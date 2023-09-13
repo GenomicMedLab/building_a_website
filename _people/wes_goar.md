@@ -5,7 +5,7 @@ name: Wes Goar
 pub_names: [Wesley Goar, Goar W]
 degree: PhD
 role: Senior Bioinformatics Scientist
-headshot:
+headshot: "wes_goar.jpg"
 
 github: wesleygoar
 linkedin:

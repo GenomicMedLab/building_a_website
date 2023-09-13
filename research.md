@@ -3,7 +3,7 @@ layout: default
 title: Research
 permalink: /research/
 ---
-<h1>Research Projects</h1>
+<h1 class="current">Research Projects</h1>
 
 <ul>
 {% for project in site.projects %}
