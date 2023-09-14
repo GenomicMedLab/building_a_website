@@ -1,11 +1,11 @@
-$content-width:     1000px !default;
-$base-font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+$content-width: 1000px !default;
+$base-font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
 
-
+// paper
 .paper-figure-container {
-    width: 100%;
-    border: 1px solid grey;
-    margin: 10px;
+  width: 100%;
+  border: 1px solid grey;
+  margin: 10px;
 }
 
 .paper-figure-placeholder {
@@ -13,15 +13,34 @@ $base-font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .paper-text-container {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
+// papers
+.paper-list {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.paper-list-item-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.paper-list-item > p {
+  margin-bottom: 0px;
+}
+
+.paper-list-item-article-link {
+  font-weight: bold;
+}
 
 @media (min-width: 800px) {
   // news
   .news-content-container {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .news-content {
@@ -30,14 +49,14 @@ $base-font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
   }
 
   .news-sidebar {
-      width: 30%;
-      padding-left: 50px;
-      padding-right: 50px;
+    width: 30%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .paper-content-container {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .paper-content {
@@ -45,23 +64,41 @@ $base-font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
     margin-right: 50px;
   }
 
-    .paper-figure-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .paper-figure {
-        height: 320px;
-        margin: 20px 0px 20px 0px;
-
-    }
-
-  .paper-sidebar {
-      width: 30%;
-      padding-left: 50px;
-      padding-right: 50px;
+  .paper-figure-container {
+    display: flex;
+    justify-content: center;
   }
 
+  .paper-figure {
+    height: 320px;
+    margin: 20px 0px 20px 0px;
+  }
 
+  .paper-sidebar {
+    width: 30%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
+  .paper-list-thumbnail-container {
+    width: 22%;
+    margin-right: 20px;
+  }
+
+  .paper-list-thumbnail {
+    width: 170px;
+    border: 1px solid grey;
+    padding: 7px;
+  }
+
+  .paper-list-item {
+    width: 78%;
+    // flex-grow: 1;
+  }
+}
+
+@media (max-width: 799px) {
+  .paper-list-thumbnail-container {
+    display: none;
+  }
 }

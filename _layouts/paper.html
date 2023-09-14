@@ -5,17 +5,15 @@ layout: default
 
 <div class="paper-content-container">
 <div class="paper-content">
-<div class="paper-figure-container">
 {% if page.thumbnail %}
+<div class="paper-figure-container">
   <img
     src="/assets/images/papers/{{ page.thumbnail }}"
     alt="figure preview from paper"
     class="paper-figure"
   />
-{% else %}
-  <i class="fa-regular fa-newspaper fa-5x paper-figure-placeholder"></i>
-{% endif %}
 </div>
+{% endif %}
 
 <div class="paper-text-container">
 <h2>Abstract</h2>
@@ -28,18 +26,18 @@ layout: default
 <div class="paper-sidebar">
 <h2>Links</h2>
 <ul>
-    {% if page.preprint %}
-    <li><a href="{{ page.preprint }}">Preprint</a></li>
-    {% endif %}
-    {% if page.publisher_url %}
-    <li><a href="{{ page.publisher_url }}">Publisher website</a></li>
-    {% endif %}
-    {% if page.pmid %}
-    <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
-    {% endif %}
-    {% if page.github %}
-    <li><a href="{{ page.github }}">Paper code</a></li>
-    {% endif %}
+  {% if page.preprint %}
+  <li><a href="{{ page.preprint }}">Preprint</a></li>
+  {% endif %}
+  {% if page.publisher_url %}
+  <li><a href="{{ page.publisher_url }}">Publisher website</a></li>
+  {% endif %}
+  {% if page.pmid %}
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
+  {% endif %}
+  {% if page.github %}
+  <li><a href="{{ page.github }}">Paper code</a></li>
+  {% endif %}
 </ul>
 
 {% if page.projects %}

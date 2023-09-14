@@ -3,7 +3,7 @@ layout: paper
 
 title: Mapping MAVE data for use in human genomics applications
 date: 2023-06-23
-authors: "Jeremy A. Arbesfeld, Estelle Y. Da, Kori Kuzma, Anika Paul, Tierra Farris, Kevin Riehle, Nuno Daniel Saraiva Agostinho, Jordan F. Safer, Aleksandar Milosavljevic, Julia Foreman, Helen V. Firth, Sarah E. Hunt, Sumaiya Iqbal, Melissa Cline, Alan F. Rubin, Alex H. Wagner."
+authors: "Jeremy A. Arbesfeld, Estelle Y. Da, Kori Kuzma, Anika Paul, Tierra Farris, Kevin Riehle, Nuno Daniel Saraiva Agostinho, Jordan F. Safer, Aleksandar Milosavljevic, Julia Foreman, Helen V. Firth, Sarah E. Hunt, Sumaiya Iqbal, Melissa Cline, Alan F. Rubin, Alex H. Wagner"
 journal_cite: "bioRxiv 2023.06.20.545702"
 doi: https://doi.org/10.1101/2023.06.20.545702
 publisher_url:
