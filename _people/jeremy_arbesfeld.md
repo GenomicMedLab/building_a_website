@@ -8,7 +8,7 @@ role: PhD Student
 headshot: "jeremy_arbesfeld.jpg"
 
 github: jarbesfeld
-linkedin:
+linkedin: https://www.linkedin.com/in/jeremy-arbesfeld-6aba06187/
 orcid:
 ---
 Jeremy description
