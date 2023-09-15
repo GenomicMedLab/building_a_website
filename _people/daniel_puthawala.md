@@ -4,7 +4,7 @@ layout: person
 name: Daniel Puthawala
 pub_names: []
 degree: PhD
-role: Postdoctoral Associate
+role: Postdoctoral Researcher
 headshot:
 
 email:

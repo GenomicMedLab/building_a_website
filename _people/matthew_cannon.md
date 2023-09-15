@@ -4,7 +4,7 @@ layout: person
 name: Matthew Cannon
 pub_names: []
 degree: PhD
-role: Postdoctoral Associate
+role: Postdoctoral Researcher
 headshot: "matthew_cannon.jpg"
 
 github: mcannon068nw
