@@ -15,4 +15,4 @@ orcid: https://orcid.org/0000-0002-2502-8961
 linkedin: https://www.linkedin.com/in/alexphd
 personal_site: https://alexwagner.info
 ---
-I am an Assistant Professor in the Institute for Genomic Medicine at Nationwide Children's Hospital and the Department of Pediatrics at The Ohio State University College of Medicine. I am also an NHGRI K99/R00 Scholar, researching methods and tools for normalizing and interpreting the clinical actionability of genomic variants. I support and promote collaborative and open science.
+Alex Wagner is a principal investigator in the Steve and Cindy Rasmussen Institute for Genomic Medicine at Nationwide Children’s Hospital where he leads the development of tools and standards for advancing precision medicine and our knowledge of genomic alterations in cancers. Dr. Wagner applies his research to drive rapid analysis of patient genomes, translating genetic alterations in children with cancers and other rare genetic disorders into clinical action. He is also a strong advocate for open science resources and initiatives.
