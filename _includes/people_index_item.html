@@ -1,5 +1,28 @@
-<li>
-  <h3>
-    <a href="{{ person.url }}">{{ person.name }}</a>
-  </h3>
+<li class="people-list-item">
+<div class="people-list-item-thumbnail-container">
+{% if person.headshot %}
+  <img src="/assets/images/people/{{ person.headshot }}" class="people-list-thumbnail"/>
+{% else %}
+  <i class="fa-solid fa-user fa-7x"></i>
+{% endif %}
+</div>
+<div class="people-list-item-content-container">
+
+<p><a href="{{ person.url }}">{{ person.name }}</a></p>
+<p>{{ person.role }}</p>
+<p>
+{% if person.github %}
+<a href="https://www.github.com/{{ person.github  }}"><i class="fa-brands fa-github"></i></a>
+{% endif %}
+{% if person.google_scholar %}
+<a href="{{ person.google_scholar }}"><i class="fa-solid fa-graduation-cap"></i></a>
+{% endif %}
+{% if person.personal_site %}
+<a href="{{ person.personal_site }}"><i class="fa-solid fa-house"></i></a>
+{% endif %}
+{% if person.linkedin %}
+<a href="{{ person.linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
+{% endif %}
+</p>
+</div>
 </li>

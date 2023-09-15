@@ -8,7 +8,7 @@ role: Senior Bioinformatics Scientist
 headshot: "wes_goar.jpg"
 
 github: wesleygoar
-linkedin:
+linkedin: https://www.linkedin.com/in/wes-goar-63856728
 google_scholar: https://scholar.google.com/citations?hl=en&user=jvaM-h8AAAAJ
 orcid: https://orcid.org/0000-0002-9954-3982
 ---

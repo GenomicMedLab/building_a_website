@@ -7,7 +7,7 @@ role: Software Developer
 headshot:
 
 github: katiestahl
-linkedin:
+linkedin: https://www.linkedin.com/in/katie-stahl-05b81a126/
 orcid:
 ---
 Katie Stahl descr
