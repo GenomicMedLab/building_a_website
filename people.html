@@ -16,7 +16,7 @@ permalink: /people/
 
 <h2>Trainees</h2>
 
-{% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Associate'" %}
+{% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher'" %}
 <ul class="people-list">
 {% for person in trainees %}
   {% include people_index_item.html %}

@@ -3,7 +3,10 @@ layout: default
 title: Papers
 permalink: /papers/
 ---
-<h1>Papers</h1>
+<div class="page-title-bar">
+<h1 class="text-white">Papers</h1>
+</div>
+<div class="wrapper">
 {% for paper in site.papers reversed %}
   {% capture year %}{{ paper.date | date: "%Y"}}{% endcapture %}
   {% capture nyear %}{{ paper.next.date | date: "%Y" }}{% endcapture %}
@@ -38,3 +41,4 @@ permalink: /papers/
 
 {% endfor %}
 </ul>
+</div>

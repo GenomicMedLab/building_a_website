@@ -3,34 +3,72 @@ layout: default
 ---
 <h1>{{ page.name }}</h1>
 
-<p>{{ page.role }}</p>
+<h3>{{ page.role }}</h3>
 
+
+<div class="person-container">
+<div class="person-attr-column">
 {% if page.headshot %}
-  <img src="/assets/images/people/{{ page.headshot }}" />
+  <img src="/assets/images/people/{{ page.headshot }}" class="person-headshot"/>
 {% else %}
   <i class="fa-solid fa-user fa-10x"></i>
 {% endif %}
-
-<p />
-
+<table class="person-links-box">
+      <colgroup>
+        <col span="1" style="width: 10%;">
+        <col span="1" style="width: 90%;">
+      </colgroup>
 {% if page.orcid %}
+<tr>
+<td>
 <a href="{{ page.orcid }}"><i class="fa-brands fa-orcid"></i></a>
+</td>
+<td><a href="{{ page.orcid }}">ORCiD</a></td>
+</tr>
+<tr>
 {% endif %}
 {% if page.github %}
-<a href="https://www.github.com/{{ page.github  }}"><i class="fa-brands fa-github"></i></a>
+<tr>
+<td>
+<a href="https://www.github.com/{{ page.github }}"><i class="fa-brands fa-github"></i></a>
+</td>
+<td><a href="{{ page.github }}">GitHub</a></td>
+</tr>
+<tr>
 {% endif %}
 {% if page.google_scholar %}
+<tr>
+<td>
 <a href="{{ page.google_scholar }}"><i class="fa-solid fa-graduation-cap"></i></a>
+</td>
+<td><a href="{{ page.google_scholar }}">Google Scholar</a></td>
+</tr>
+<tr>
 {% endif %}
 {% if page.personal_site %}
+<tr>
+<td>
 <a href="{{ page.personal_site }}"><i class="fa-solid fa-house"></i></a>
+</td>
+<td><a href="{{ page.personal_site }}">Personal Site</a></td>
+</tr>
+<tr>
 {% endif %}
 {% if page.linkedin %}
+<tr>
+<td>
 <a href="{{ page.linkedin }}"><i class="fa-brands fa-linkedin"></i></a>
+</td>
+<td><a href="{{ page.linkedin }}">LinkedIn</a></td>
+</tr>
+<tr>
 {% endif %}
+</table>
+</div>
 
+
+<div class="person-content-column">
 {{ content }}
-
 <h3>Papers</h3>
 
 {% for paper in site.papers reversed %}
@@ -52,3 +90,9 @@ layout: default
 {% endfor %}
 {% endif %}
 {% endfor %}
+</div>
+</div>
+<p />
+
+
+
