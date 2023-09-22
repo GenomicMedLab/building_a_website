@@ -1,7 +1,7 @@
 ---
 layout: paper
 
-title: "Phenopacket-tools: Building and validating GA4GH Phenopackets"
+name: "Phenopacket-tools: Building and validating GA4GH Phenopackets"
 date: "2023-05-17"
 authors: "Daniel Danis, Julius O. B. Jacobsen, Alex H. Wagner, Tudor Groza, Martha A. Beckwith, Lauren Rekerle, Leigh C. Carmody, Justin Reese, Harshad Hegde, Markus S. Ladewig, Berthold Seitz, Monica Munoz-Torres, Nomi L. Harris, Jordi Rambla, Michael Baudis, Christopher J. Mungall, Melissa A. Haendel, Peter N. Robinson"
 journal_cite: "Plos one 18 (5)"

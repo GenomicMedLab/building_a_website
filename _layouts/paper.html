@@ -33,7 +33,7 @@ layout: default
     {% endif %}
     <div class="side-column-section">
       <p class="header">Citation</p>
-      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
+      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.name }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
     </div>
   </div>
 
@@ -52,9 +52,6 @@ layout: default
       <div class="paper-text-container">
         <h2>Abstract</h2>
         <p>{{ page.content }}</p>
-
-        <!-- <h2>Citation</h2> -->
-        <!-- <p>{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p> -->
       </div>
     </div>
   </div>

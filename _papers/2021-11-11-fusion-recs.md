@@ -1,7 +1,7 @@
 ---
 layout: paper
 
-title: Recommendations for future extensions to the HGNC gene fusion nomenclature
+name: Recommendations for future extensions to the HGNC gene fusion nomenclature
 date: 2021-11-11
 authors: "Alex H. Wagner, Yassmine Akkari, Marilyn Li, Angshumoy Roy, Karen Tsuchiya & Gordana Raca"
 journal_cite:  Leukemia 35, 3611–3612

@@ -74,7 +74,7 @@ layout: default
       {% if paper.authors contains page.name %}
       <ul>
         <li>
-            <a href="{{ paper.url }}">{{ paper.title }}</a>
+            <a href="{{ paper.url }}">{{ paper.name }}</a>
         </li>
       </ul>
       {% else %}
@@ -82,7 +82,7 @@ layout: default
       {% if paper.authors contains name %}
       <ul>
           <li>
-              <a href="{{ paper.url }}">{{ paper.title }}</a>
+              <a href="{{ paper.url }}">{{ paper.name }}</a>
           </li>
       </ul>
       {% endif %}

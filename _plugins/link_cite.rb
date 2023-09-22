@@ -7,7 +7,7 @@ module Jekyll
             person_names += person.data["pub_names"]
             person_names.each do |person_name|
                 new_text = raw_text.gsub(%r{#{person_name}}) do |match|
-                    "<a href=\"#{person.url}\">#{match}</a>"
+                    "<a class=\"cite-link\" href=\"#{person.url}\">#{match}</a>"
                 end
                 if raw_text != new_text
                     raw_text = new_text

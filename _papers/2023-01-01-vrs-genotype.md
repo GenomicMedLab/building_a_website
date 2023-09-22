@@ -1,7 +1,7 @@
 ---
 layout: paper
 
-title: Development and application of a computable genotype model in the GA4GH Variation Representation Specification
+name: Development and application of a computable genotype model in the GA4GH Variation Representation Specification
 date: 2023-01-01
 authors: "Wesley Goar, Lawrence Babb, Srikar Chamala, Melissa Cline, Robert R. Freimuth, Reece K. Hart, Kori Kuzma, Jennifer Lee, Tristan Nelson, Andreas Prlić, Kevin Riehle, Anastasia Smith, Kathryn Stahl, Andrew D. Yates, Heidi L. Rehm, and Alex H. Wagner"
 journal_cite: "Pac Symp Biocomput. 2023;28:383-394"
