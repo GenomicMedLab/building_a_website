@@ -3,9 +3,7 @@ layout: default
 title: Papers
 permalink: /papers/
 ---
-<div class="page-title-bar">
-<h1 class="text-white">Papers</h1>
-</div>
+{%- include title.html -%}
 <div class="wrapper">
 {% for paper in site.papers reversed %}
   {% capture year %}{{ paper.date | date: "%Y"}}{% endcapture %}

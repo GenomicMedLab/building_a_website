@@ -1,53 +1,62 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<div class="two-column">
+  <div class="side-column">
+    <div class="side-column-section">
+      <p class="header">Links</p>
+      <ul class="side-list paper-links">
+        {% if page.preprint %}
+        <li><a href="{{ page.preprint }}">Preprint</a></li>
+        {% endif %}
+        {% if page.publisher_url %}
+        <li><a href="{{ page.publisher_url }}">Published</a></li>
+        {% endif %}
+        {% if page.pmid %}
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
+        {% endif %}
+        {% if page.github %}
+        <li><a href="{{ page.github }}">Code</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    {% if page.projects %}
+      <div class="side-column-section">
+        <p class="header">Projects</p>
+        <ul class="side-list paper-projects">
+        {% for p in page.projects %}
+        {% assign project = site.projects | where:"name", p  | first %}
+        <li><a href="{{ project.url }}">{{ project.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    <div class="side-column-section">
+      <p class="header">Citation</p>
+      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
+    </div>
+  </div>
 
-<div class="paper-content-container">
-<div class="paper-content">
-{% if page.thumbnail %}
-<div class="paper-figure-container">
-  <img
-    src="/assets/images/papers/{{ page.thumbnail }}"
-    alt="figure preview from paper"
-    class="paper-figure"
-  />
-</div>
-{% endif %}
+  <div class="main-column">
+    <div class="paper-content">
+      {% if page.thumbnail %}
+      <div class="paper-figure-container">
+        <img
+          src="/assets/images/papers/{{ page.thumbnail }}"
+          alt="figure preview from paper"
+          class="paper-figure"
+        />
+      </div>
+      {% endif %}
 
-<div class="paper-text-container">
-<h2>Abstract</h2>
-<p>{{ page.content }}</p>
+      <div class="paper-text-container">
+        <h2>Abstract</h2>
+        <p>{{ page.content }}</p>
 
-<h2>Citation</h2>
-<p>{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
-</div>
-</div>
-<div class="paper-sidebar">
-<h2>Links</h2>
-<ul>
-  {% if page.preprint %}
-  <li><a href="{{ page.preprint }}">Preprint</a></li>
-  {% endif %}
-  {% if page.publisher_url %}
-  <li><a href="{{ page.publisher_url }}">Publisher website</a></li>
-  {% endif %}
-  {% if page.pmid %}
-  <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
-  {% endif %}
-  {% if page.github %}
-  <li><a href="{{ page.github }}">Paper code</a></li>
-  {% endif %}
-</ul>
+        <!-- <h2>Citation</h2> -->
+        <!-- <p>{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.title }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p> -->
+      </div>
+    </div>
+  </div>
 
-{% if page.projects %}
-<h2>Projects</h2>
-<ul>
-{% for p in page.projects %}
-{% assign project = site.projects | where:"name", p  | first %}
-<li><a href="{{ project.url }}">{{ project.name }}</a></li>
-{% endfor %}
-</ul>
-{% endif %}
-</div>
 </div>

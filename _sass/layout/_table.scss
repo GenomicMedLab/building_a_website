@@ -1,0 +1,23 @@
+// table {
+//   margin-bottom: $spacing-unit;
+//   width: 100%;
+//   text-align: $table-text-align;
+//   border-collapse: collapse;
+//   border: 1px solid;
+//   th, td {
+//     padding: ($spacing-unit * 33.3333333333 * .01) ($spacing-unit * .5);
+//   }
+//   th {
+//     border: 1px solid;
+//   }
+//   td {
+//     border: 1px solid;
+//   }
+//
+//   @include media-query($on-laptop) {
+//     display: block;
+//     overflow-x: auto;
+//     -webkit-overflow-scrolling: touch;
+//             -ms-overflow-style: -ms-autohiding-scrollbar;
+//   }
+// }

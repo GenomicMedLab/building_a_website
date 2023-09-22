@@ -3,7 +3,8 @@
 # name file as YYYY-MM-DD-some-identifying-words.md
 layout: paper
 
-title:
+# title of paper
+name:
 # YYYY-MM-DD. Should be either most recent preprint posting, or date published.
 date:
 # should be a single string.

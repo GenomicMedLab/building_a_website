@@ -1,7 +1,7 @@
 ---
 layout: paper
 
-title: Normalization of Drug and Therapeutic Concepts with TheraPy
+name: Normalization of Drug and Therapeutic Concepts with TheraPy
 date: 2023-08-02
 authors: "Matthew Cannon, James Stevenson, Kori Kuzma, Susanna Kiwala, Jeremy L Warner, Obi L Griffith, Malachi Griffith, Alex H Wagner"
 journal_cite: "medRxiv 2023.07.27.23293245v1"

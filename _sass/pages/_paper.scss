@@ -1,0 +1,23 @@
+.paper-figure-container {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: calc($spacing-unit * 15);
+    padding: calc($spacing-unit * 0.7);
+  }
+}
+
+.side-list {
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.side-list > li {
+  list-style: none;
+}
+
+.citation {
+  font-size: calc($base-font-size * 0.8);
+}

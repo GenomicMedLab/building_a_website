@@ -1,7 +1,6 @@
 # Site settings
-title: Genomic Medicine Laboratory
+title: Genomic Medicine Lab
 email: team@genomicmedlab.org
-twitter: genomicmedlab
 github: genomicmedlab
 description: > # "The Wagner Lab at Nationwide Children's Hospital"
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -10,7 +9,7 @@ url: "" # the base hostname & protocol for your site
 category-list: [software, blog]
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
