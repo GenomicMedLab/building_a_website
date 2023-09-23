@@ -3,6 +3,7 @@ layout: default
 title: People
 permalink: /people/
 ---
+<div class="people-list-container">
 {% assign current_people = site.people | where:'alumnae', null %}
 
 <h2>Faculty</h2>
@@ -14,7 +15,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h2>Trainees</h2>
+<h2 class="top-border">Trainees</h2>
 
 {% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher'" %}
 <ul class="people-list">
@@ -23,7 +24,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h2>Staff</h2>
+<h2 class="top-border">Staff</h2>
 
 {% assign staff = current_people | where_exp:'person', "person.role == 'Software Developer' or person.role == 'Senior Bioinformatics Scientist'" %}
 <ul class="people-list">
@@ -34,7 +35,7 @@ permalink: /people/
 {% endfor %}
 </ul>
 
-<h2>Alumni</h2>
+<h2 class="top-border">Alumni</h2>
 
 {% assign alums = site.people | where:'alumnae', 'true' %}
 <ul class="people-list">
@@ -42,4 +43,4 @@ permalink: /people/
   {% include people_index_item.html %}
 {% endfor %}
 </ul>
-
+</div>

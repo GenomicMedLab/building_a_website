@@ -1,7 +1,7 @@
 ---
 layout: paper
 
-title: Exon-level expression profiling of ocular tissues
+name: Exon-level expression profiling of ocular tissues
 date: 2013-06-01
 authors: "Alex H. Wagner, V. Nikhil Anand, Wan-Heng Wang, Jon E. Chatterton, Duo Sun, Allan R. Shepard, Nasreen Jacobson, Iok-Hou Pang, Adam P. DeLuca, Thomas L. Casavant, Todd E. Scheetz, Robert F. Mullins, Terry A. Braun, Abbot F. Clark"
 journal_cite: "Exp Eye Res. 2013 Jun;111:105-11"

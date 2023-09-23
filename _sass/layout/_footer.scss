@@ -1,16 +1,16 @@
 .site-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 1);
-    color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
 
-    .footer-box {
-        margin: calc($spacing-unit / 2);
-        max-width: calc($spacing-unit * 8);
+  .footer-box {
+    margin: calc($spacing-unit / 2);
+    max-width: calc($spacing-unit * 8);
 
-        p {
-            margin-bottom: 0px;
-        }
+    p {
+      margin-bottom: 0px;
     }
+  }
 }

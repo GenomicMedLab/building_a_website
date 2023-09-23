@@ -3,7 +3,7 @@
 # name file as YYYY-MM-DD-some-identifying-words.md
 layout: paper
 
-title: "CIViCpy: A Python Software Development and Analysis Toolkit for the CIViC Knowledgebase"
+name: "CIViCpy: A Python Software Development and Analysis Toolkit for the CIViC Knowledgebase"
 date: 2020-03-19
 authors: "Alex H. Wagner, Susanna Kiwala, Adam C. Coffman, Joshua F. McMichael, Kelsy C. Cotto, Thomas B. Mooney, Erica K. Barnell, Kilannin Krysiak, Arpad M. Danos, Jason Walker, Obi L. Griffith, and Malachi Griffith"
 journal_cite: "JCO Clinical Cancer Informatics 2020 :4, 245-253"

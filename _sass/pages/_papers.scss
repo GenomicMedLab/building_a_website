@@ -1,0 +1,32 @@
+.papers-container {
+  margin-top: calc($spacing-unit / 2);
+}
+
+.paper-list {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.paper-list-item > p {
+    margin-bottom: 0px;
+}
+
+.paper-list-thumbnail {
+  width: 170px;
+  border: 2px solid black;
+  padding: 7px;
+}
+
+.year-header {
+  padding-left: calc($spacing-unit / 2);
+
+  h2 {
+    margin: 0px;
+  }
+}
+
+.border-above {
+    padding-top: calc($spacing-unit / 2);
+    border-top: 3px solid black;
+
+}

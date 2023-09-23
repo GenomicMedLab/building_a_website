@@ -7,16 +7,16 @@ layout: default
       <p class="header">Links</p>
       <ul class="side-list paper-links">
         {% if page.preprint %}
-        <li><a href="{{ page.preprint }}">Preprint</a></li>
+        <li><a href="{{ page.preprint }}" rel="noopener" target="_blank">Preprint</a></li>
         {% endif %}
         {% if page.publisher_url %}
-        <li><a href="{{ page.publisher_url }}">Published</a></li>
+        <li><a href="{{ page.publisher_url }}" rel="noopener" target="_blank">Published</a></li>
         {% endif %}
         {% if page.pmid %}
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/">PubMed</a></li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/" rel="noopener" target="_blank">PubMed</a></li>
         {% endif %}
         {% if page.github %}
-        <li><a href="{{ page.github }}">Code</a></li>
+        <li><a href="{{ page.github }}" rel="noopener" target="_blank">Code</a></li>
         {% endif %}
       </ul>
     </div>
@@ -33,7 +33,7 @@ layout: default
     {% endif %}
     <div class="side-column-section">
       <p class="header">Citation</p>
-      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.name }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}">{{ page.doi }}</a>.</p>
+      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.name }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}" rel="noopener" target="_blank">{{ page.doi }}</a>.</p>
     </div>
   </div>
 

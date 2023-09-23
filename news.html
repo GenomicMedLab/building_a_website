@@ -1,0 +1,18 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+<div class="news-list-container">
+  {% for post in site.posts %}
+    <div class="two-column news-list-item">
+      <div class="side-column">
+        {{ post.date | date:"%F" }}
+      </div>
+      <div class="main-column">
+        <a href="{{ post.url }}">{{ post.name }}</a>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

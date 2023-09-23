@@ -7,7 +7,6 @@
   min-height: calc($spacing-unit * 8);
   border-bottom: 5px solid;
 
-
   #menu-row {
     display: flex;
     flex-direction: row;
@@ -40,6 +39,12 @@
     .papers {
       background-color: $paper-type;
     }
+    .people {
+      background-color: $person-type;
+    }
+    .posts {
+      background-color: $post-type;
+    }
   }
 
   .nav-trigger {
@@ -55,10 +60,22 @@
     padding-left: calc($spacing-unit / $menu-horiz-spacing-coeff);
     padding-right: calc($spacing-unit / $menu-horiz-spacing-coeff);
     text-transform: uppercase;
-
   }
 }
 
 .papers-border {
-  border-bottom-color: $paper-type !important;
+  border-bottom-color: $paper-type;
+}
+
+.people-border {
+  border-bottom-color: $person-type;
+}
+
+.posts-border {
+  border-bottom-color: $post-type;
+}
+
+// janky category naming trick
+.-border {
+  border-bottom-color: $static-type;
 }
