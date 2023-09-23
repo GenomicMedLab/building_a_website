@@ -1,12 +1,25 @@
 ---
 layout: default
-title: Research
+title: Research Projects
 permalink: /research/
 ---
-<h1 class="current">Research Projects</h1>
-
-<ul>
-{% for project in site.projects %}
-<li><a href="{{ project.url }}">{{ project.name }}</a></li>
-{% endfor %}
-</ul>
+<div class="projects-container">
+  <div class="project-container">
+    {% assign project = site.projects | where_exp:"project","project.name == 'Variation Representation'" | first %}
+    <h2>{{ project.name }}</h2>
+    {{ project.excerpt }}
+    <a href="{{ project.url }}">More...</a>
+  </div>
+  <div class="project-container">
+    {% assign project = site.projects | where_exp:"project","project.name == 'Knowledgebase Integration'" | first %}
+    <h2>{{ project.name }}</h2>
+    {{ project.excerpt }}
+    <a href="{{ project.url }}">More...</a>
+  </div>
+  <div class="project-container">
+    {% assign project = site.projects | where_exp:"project","project.name == 'Gene Fusion Informatics'" | first %}
+    <h2>{{ project.name }}</h2>
+    {{ project.excerpt }}
+    <a href="{{ project.url }}">More...</a>
+  </div>
+</div>
