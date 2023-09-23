@@ -5,14 +5,27 @@ permalink: /news/
 ---
 <div class="news-list-container">
   {% for post in site.posts %}
+    {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: "%Y" }}{% endcapture %}
+
+    {% if year != nyear %}
+      {% if forloop.first %}
+        <div class="year-header">
+          <h2 class="news-year">{{ year }}</h2>
+        </div>
+      {% else %}
+        <div class="year-header border-above">
+          <h2 class="news-year">{{ year }}</h2>
+        </div>
+      {% endif %}
+    {% endif %}
     <div class="two-column news-list-item">
-      <div class="side-column">
-        {{ post.date | date:"%F" }}
+      <div class="side-column news-list-date">
+        <h3>{{ post.date | date: "%b %d" }}</h3>
       </div>
       <div class="main-column">
         <a href="{{ post.url }}">{{ post.name }}</a>
       </div>
     </div>
   {% endfor %}
-
 </div>
