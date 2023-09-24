@@ -1,0 +1,18 @@
+.projects-container {
+  margin-top: calc($spacing-unit / 2);
+}
+
+.projects-container .top-border {
+  border-top: 5px black solid;
+}
+
+.project-container {
+  padding-top: calc($spacing-unit / 2);
+  margin-bottom: calc($spacing-unit / 2);
+}
+
+.project-excerpt {
+  p {
+    display: inline;
+  }
+}

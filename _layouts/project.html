@@ -1,27 +1,35 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
+<div class="two-column">
+  <div class="side-column">
 
-{{ page.content }}
+    {% assign software = site.software | where_exp:"item", "item.projects contains page.name" %}
+    {% if software.size > 0 %}
+      <div class="side-column-section">
+        <p class="header">Software</p>
+        <ul class="side-list">
+        {% for s in software %}
+          <li><a href="{{ s.url }}">{{ s.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+  <div class="main-column">
+    {{ page.content }}
+    {% assign papers = site.papers | where_exp:"item", "item.projects contains page.name" %}
+    {% if papers.size > 0 %}
+      <div class="">
+        <h3 class="">Papers</h3>
+        <ul class="">
+        {% for paper in papers %}
+          <li class=""><a href="{{ paper.url }}">{{ paper.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
-{% assign papers = site.papers | where_exp:"item", "item.projects contains page.name" %}
-{% if papers.size > 0 %}
-<h3>Papers</h3>
-<ul>
-{% for paper in papers %}
-    <li><a href="{{ paper.url }}">{{ paper.name }}</a></li>
-{% endfor %}
-</ul>
-{% endif %}
-
-{% assign software = site.software | where_exp:"item", "item.projects contains page.name" %}
-{% if software.size > 0 %}
-<h3>Software</h3>
-<ul>
-{% for s in software %}
-    <li><a href="{{ s.url }}">{{ s.name }}</a></li>
-{% endfor %}
-</ul>
-{% endif %}
+  </div>
+</div>
 

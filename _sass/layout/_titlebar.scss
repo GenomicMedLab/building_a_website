@@ -45,6 +45,9 @@
     .posts {
       background-color: $post-type;
     }
+    .projects {
+      background-color: $projects-type;
+    }
   }
 
   .nav-trigger {
@@ -73,6 +76,10 @@
 
 .posts-border {
   border-bottom-color: $post-type;
+}
+
+.projects-border {
+  border-bottom-color: $projects-type;
 }
 
 // janky category naming trick
