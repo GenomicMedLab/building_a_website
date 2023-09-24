@@ -18,6 +18,17 @@ layout: default
   </div>
   <div class="main-column">
     {{ page.content }}
+
+    {% assign project_posts = site.posts | where_exp:"item", "item.projects contains page.name" %}
+    {% if project_posts %}
+      <h3>Recent news</h3>
+      <ul>
+      {% for post in project_posts limit:3 %}
+        <li><a href="{{ post.url }}">{{ post.name }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+
     {% assign papers = site.papers | where_exp:"item", "item.projects contains page.name" %}
     {% if papers.size > 0 %}
       <div class="">
@@ -29,7 +40,6 @@ layout: default
         </ul>
       </div>
     {% endif %}
-
   </div>
 </div>
 

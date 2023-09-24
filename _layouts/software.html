@@ -1,21 +1,27 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
-
-<ul>
-    {% if page.source %}
-    <li><a href="{{ page.source }}">Source</a></li>
-    {% endif %}
-    {% if page.docs %}
-    <li><a href="{{ page.docs }}">Documentation</a></li>
-    {% endif %}
-    {% if page.distribution %}
-    <li><a href="{{ page.distribution }}">Distribution</a></li>
-    {% endif %}
-    {% if page.live %}
-    <li><a href="{{ page.live }}">Live service</a></li>
-    {% endif %}
-</ul>
-
-<p>{{ page.content }}</p>
+<div class="two-column">
+  <div class="side-column">
+    <div class="side-column-section">
+      <p class="header">Links</p>
+      <ul class="side-list">
+        {% if page.source %}
+          <li><a href="{{ page.source }}" rel="noopener" target="_blank">Source</a></li>
+        {% endif %}
+        {% if page.docs %}
+          <li><a href="{{ page.docs }}" rel="noopener" target="_blank">Documentation</a></li>
+        {% endif %}
+        {% if page.distribution %}
+          <li><a href="{{ page.distribution }}" rel="noopener" target="_blank">Distribution</a></li>
+        {% endif %}
+        {% if page.live %}
+          <li><a href="{{ page.live }}" rel="noopener" target="_blank">Live service</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+  <div class="main-column">
+    <p>{{ page.content }}</p>
+  </div>
+</div>

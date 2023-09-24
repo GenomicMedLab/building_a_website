@@ -18,10 +18,12 @@ layout: default
         </colgroup>
       {% if page.orcid %}
       <tr>
-      <td>
-      <a href="{{ page.orcid }}" rel="noopener" target="_blank"><i class="fa-brands fa-orcid"></i></a>
-      </td>
-      <td><a href="{{ page.orcid }}" rel="noopener" target="_blank">ORCiD</a></td>
+        <td>
+          <a href="{{ page.orcid }}" rel="noopener" target="_blank"><i class="fa-brands fa-orcid"></i></a>
+        </td>
+        <td>
+          <a href="{{ page.orcid }}" rel="noopener" target="_blank">ORCiD</a>
+        </td>
       </tr>
       <tr>
       {% endif %}
@@ -78,28 +80,25 @@ layout: default
       </ul>
     {% endif %}
 
-
     <h3>Papers</h3>
-
     {% for paper in site.papers reversed %}
       {% if paper.authors contains page.name %}
       <ul>
         <li>
-            <a href="{{ paper.url }}">{{ paper.name }}</a>
+          <a href="{{ paper.url }}">{{ paper.name }}</a>
         </li>
       </ul>
       {% else %}
       {% for name in page.pub_names %}
       {% if paper.authors contains name %}
       <ul>
-          <li>
-              <a href="{{ paper.url }}">{{ paper.name }}</a>
-          </li>
+        <li>
+          <a href="{{ paper.url }}">{{ paper.name }}</a>
+        </li>
       </ul>
       {% endif %}
       {% endfor %}
       {% endif %}
     {% endfor %}
-
   </div>
 </div>

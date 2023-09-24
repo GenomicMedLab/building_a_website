@@ -48,6 +48,9 @@
     .projects {
       background-color: $projects-type;
     }
+    .software {
+      background-color: $software-type;
+    }
   }
 
   .nav-trigger {
@@ -80,6 +83,10 @@
 
 .projects-border {
   border-bottom-color: $projects-type;
+}
+
+.software-border {
+  border-bottom-color: $software-type;
 }
 
 // janky category naming trick
