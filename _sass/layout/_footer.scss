@@ -5,6 +5,38 @@
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
 
+  .icon-box-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    .icon-box {
+      height: 10px;
+      width: 10px;
+    }
+      .paper-type {
+        background-color: $paper-type;
+      }
+      .person-type {
+        background-color: $person-type;
+      }
+      .project-type {
+        background-color: $project-type;
+      }
+      .software-type {
+        background-color: $software-type;
+      }
+      .post-type {
+        background-color: $post-type;
+      }
+
+    > *:not(:first-child) {
+      margin-left: 10px;
+    }
+    > *:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
   .footer-box {
     margin: calc($spacing-unit / 2);
     max-width: calc($spacing-unit * 8);
