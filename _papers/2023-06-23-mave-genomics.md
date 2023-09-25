@@ -13,5 +13,6 @@ github: https://github.com/ave-dcd/dcd_mapping
 thumbnail: mave_genomics_paper_preview.png
 
 projects:
+  - "Variation Representation"
 ---
 The Data Coordination and Dissemination Workstream of the Atlas of Variant Effects Alliance developed a novel method to map multiplexed assays of variant effect data to human reference sequences. This method was applied to 209 human score sets in MaveDB, across approximately 2.5 million protein and genomic variants, and successfully mapped 99.00% of examined variants. This effort enables the standardization and dissemination of MAVE data to precision medicine resources including the UCSC Genome Browser, ultimately assisting downstream users in the clinical assessment of variant pathogenicity.

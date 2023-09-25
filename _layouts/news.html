@@ -2,21 +2,32 @@
 layout: default
 ---
 <div class="news-content-container two-column">
-  <div class="news-sidebar side-column">
-
-    <h2>{{ page.date | date: "%F" }}</h2>
+  <div class="side-column">
+    <p class="date">{{ page.date | date: "%B %-d, %Y" }}</p>
 
     {% if page.people %}
-    <div class="people">
-    <h2>People</h2>
-    <ul>
-    {% for p in page.people %}
-    {% assign person = site.people | where:"name", p  | first %}
-    <li><a href="{{ person.url }}">{{ person.name }}</a></li>
-    {% endfor %}
-    </ul>
-    </div>
+      <div class="side-column-section">
+        <p class="header">People</p>
+        <ul class="side-list">
+        {% for p in page.people %}
+        {% assign person = site.people | where:"name", p  | first %}
+        <li><a href="{{ person.url }}">{{ person.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
     {% endif %}
+    {% if page.projects %}
+      <div class="side-column-section">
+        <p class="header">Projects</p>
+        <ul class="side-list">
+          {% for p in page.projects %}
+            {% assign project = site.projects | where:"name", p | first %}
+            <li><a href="{{ project.url }}">{{ project.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
   </div>
 
   <div class="news-content main-column">

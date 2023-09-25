@@ -2,6 +2,9 @@
 layout: project
 
 name: Knowledgebase Integration
+links:
+  - name: VICC Project Home
+    url: https://cancervariants.org/projects/integration/
 ---
 The availability of high-throughput, low-cost sequencing has transformed the landscape of biomedical research by dramatically expanding our capacity to interrogate the sequence of the human genome. Consequently, there has been an explosion of biomedical literature describing the role of specific genomic variants and their impact on human diseases.
 

@@ -4,75 +4,25 @@ layout: default
 <div class="two-column">
   <div class="side-column">
     <div class="side-column-section">
-      {% if page.headshot %}
-        <img src="/assets/images/people/{{ page.headshot }}" class="person-headshot"/>
-      {% else %}
-        <i class="fa-solid fa-user fa-10x"></i>
-      {% endif %}
+      <div class="side-img-container">
+        {% if page.headshot %}
+          <img src="/assets/images/people/{{ page.headshot }}" class="person-headshot"/>
+        {% else %}
+          <i class="fa-solid fa-user fa-10x"></i>
+        {% endif %}
+      </div>
     </div>
     <div class="side-column-section">
-      <table class="person-links-box">
-        <colgroup>
-          <col span="1" style="width: 10%;">
-          <col span="1" style="width: 90%;">
-        </colgroup>
-      {% if page.orcid %}
-      <tr>
-        <td>
-          <a href="{{ page.orcid }}" rel="noopener" target="_blank"><i class="fa-brands fa-orcid"></i></a>
-        </td>
-        <td>
-          <a href="{{ page.orcid }}" rel="noopener" target="_blank">ORCiD</a>
-        </td>
-      </tr>
-      <tr>
-      {% endif %}
-      {% if page.github %}
-      <tr>
-      <td>
-      <a href="https://www.github.com/{{ page.github }}" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
-      </td>
-      <td><a href="https://www.github.com/{{ page.github }}" rel="noopener" target="_blank">GitHub</a></td>
-      </tr>
-      <tr>
-      {% endif %}
-      {% if page.google_scholar %}
-      <tr>
-      <td>
-      <a href="{{ page.google_scholar }}" rel="noopener" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a>
-      </td>
-      <td><a href="{{ page.google_scholar }}" rel="noopener" target="_blank">Google Scholar</a></td>
-      </tr>
-      <tr>
-      {% endif %}
-      {% if page.personal_site %}
-      <tr>
-      <td>
-      <a href="{{ page.personal_site }}" rel="noopener" target="_blank"><i class="fa-solid fa-house"></i></a>
-      </td>
-      <td><a href="{{ page.personal_site }}" rel="noopener" target="_blank">Personal Site</a></td>
-      </tr>
-      <tr>
-      {% endif %}
-      {% if page.linkedin %}
-      <tr>
-      <td>
-      <a href="{{ page.linkedin }}" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </td>
-      <td><a href="{{ page.linkedin }}" rel="noopener" target="_blank">LinkedIn</a></td>
-      </tr>
-      <tr>
-      {% endif %}
-      </table>
-
+      <p class="header" />
+      {%- include person_links.html -%}
     </div>
   </div>
-  <div class="main-column">
+  <div class="main-column person">
     {{ content }}
 
     {% assign person_posts = site.posts | where_exp:"item", "item.people contains page.name" %}
     {% if person_posts %}
-      <h3>Recent news</h3>
+      <p class="subsection-header">Recent news</p>
       <ul>
       {% for post in person_posts limit:3 %}
         <li><a href="{{ post.url }}">{{ post.name }}</a></li>
@@ -80,25 +30,23 @@ layout: default
       </ul>
     {% endif %}
 
-    <h3>Papers</h3>
+    <p class="subsection-header">Papers</p>
+    <ul>
     {% for paper in site.papers reversed %}
       {% if paper.authors contains page.name %}
-      <ul>
         <li>
           <a href="{{ paper.url }}">{{ paper.name }}</a>
         </li>
-      </ul>
       {% else %}
       {% for name in page.pub_names %}
       {% if paper.authors contains name %}
-      <ul>
         <li>
           <a href="{{ paper.url }}">{{ paper.name }}</a>
         </li>
-      </ul>
       {% endif %}
       {% endfor %}
       {% endif %}
     {% endfor %}
+  </ul>
   </div>
 </div>

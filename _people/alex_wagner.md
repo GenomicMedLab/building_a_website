@@ -16,3 +16,5 @@ linkedin: https://www.linkedin.com/in/alexphd
 personal_site: https://alexwagner.info
 ---
 Alex Wagner is a principal investigator in the Steve and Cindy Rasmussen Institute for Genomic Medicine at Nationwide Children’s Hospital where he leads the development of tools and standards for advancing precision medicine and our knowledge of genomic alterations in cancers. Dr. Wagner applies his research to drive rapid analysis of patient genomes, translating genetic alterations in children with cancers and other rare genetic disorders into clinical action. He is also a strong advocate for open science resources and initiatives.
+
+Todos here include referencing roles in GA4GH and VICC. And also previous roles/institutions.

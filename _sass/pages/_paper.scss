@@ -2,10 +2,21 @@
   display: flex;
   justify-content: center;
 
-  img {
+  .paper-figure {
+    // TODO this is all messed up
+    // it was ok but too tall this way:
     width: 100%;
     max-width: calc($spacing-unit * 15);
     padding: calc($spacing-unit * 0.7);
+
+    // max-height: 300px;
+    // $img-padding: calc($spacing-unit * 0.7);
+    // max-width: calc($main-column-width - 8 * $img-padding);
+    // border: 3px solid black;
+    // padding: $img-padding;
+    // margin-bottom: $img-padding;
+    // margin-left: $img-padding;
+    // margin-right: $img-padding;
   }
 }
 

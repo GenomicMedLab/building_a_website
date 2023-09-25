@@ -11,17 +11,17 @@ permalink: /news/
     {% if year != nyear %}
       {% if forloop.first %}
         <div class="year-header">
-          <h2 class="news-year">{{ year }}</h2>
+          <p class="news-year">{{ year }}</p>
         </div>
       {% else %}
         <div class="year-header border-above">
-          <h2 class="news-year">{{ year }}</h2>
+          <p class="news-year">{{ year }}</p>
         </div>
       {% endif %}
     {% endif %}
     <div class="two-column news-list-item">
       <div class="side-column news-list-date">
-        <h3>{{ post.date | date: "%b %d" }}</h3>
+        <p>{{ post.date | date: "%B %-d" }}</p>
       </div>
       <div class="main-column">
         <a href="{{ post.url }}">{{ post.name }}</a>

@@ -2,6 +2,7 @@ $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Se
 // $base-font-family: "BuckeyeSans","proximanova","Arial",sans-serif;
 $code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
 $base-font-size:   16px !default;
+$header-font-size: calc($base-font-size * 1.5);
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -19,6 +20,8 @@ $on-laptop:        800px !default;
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
 
+$main-column-width: calc($content-width * .77);
+
 // type colorscheme
 $paper-type:       #79b2c6;
 $person-type:      #7D1D3F;
@@ -26,3 +29,4 @@ $post-type:        #F9A03F;
 $projects-type:    #816E94;
 $software-type:    #89F943;
 $static-type:      #5E5E5E;
+

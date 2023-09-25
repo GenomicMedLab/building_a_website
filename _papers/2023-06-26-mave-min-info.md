@@ -10,6 +10,6 @@ pmid:
 publisher_url:
 preprint: https://arxiv.org/abs/2306.15113
 
-projects:  # names of lab project(s) to reference
+projects: ["Variation Representation"]
 ---
 Multiplexed Assays of Variant Effect (MAVEs) have emerged as a powerful approach for interrogating thousands of genetic variants in a single experiment. The flexibility and widespread adoption of these techniques across diverse disciplines has led to a heterogeneous mix of data formats and descriptions, which complicates the downstream use of the resulting datasets. To address these issues and promote reproducibility and reuse of MAVE data, we define a set of minimum information standards for MAVE data and metadata and outline a controlled vocabulary aligned with established biomedical ontologies for describing these experimental designs.

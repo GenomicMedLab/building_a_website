@@ -3,6 +3,16 @@ layout: default
 ---
 <div class="two-column">
   <div class="side-column">
+    {% if page.links.size > 0 %}
+      <div class="side-column-section">
+        <p class="header">Links</p>
+        <ul class="side-list">
+        {% for link in page.links %}
+          <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
     {% assign software = site.software | where_exp:"item", "item.projects contains page.name" %}
     {% if software.size > 0 %}
@@ -21,7 +31,7 @@ layout: default
 
     {% assign project_posts = site.posts | where_exp:"item", "item.projects contains page.name" %}
     {% if project_posts %}
-      <h3>Recent news</h3>
+      <p class="subsection-header">Recent news</h3>
       <ul>
       {% for post in project_posts limit:3 %}
         <li><a href="{{ post.url }}">{{ post.name }}</a></li>
@@ -31,14 +41,12 @@ layout: default
 
     {% assign papers = site.papers | where_exp:"item", "item.projects contains page.name" %}
     {% if papers.size > 0 %}
-      <div class="">
-        <h3 class="">Papers</h3>
-        <ul class="">
-        {% for paper in papers %}
-          <li class=""><a href="{{ paper.url }}">{{ paper.name }}</a></li>
-        {% endfor %}
-        </ul>
-      </div>
+      <p class="subsection-header">Papers</p>
+      <ul class="">
+      {% for paper in papers %}
+        <li class=""><a href="{{ paper.url }}">{{ paper.name }}</a></li>
+      {% endfor %}
+      </ul>
     {% endif %}
   </div>
 </div>
