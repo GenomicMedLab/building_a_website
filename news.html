@@ -3,21 +3,15 @@ layout: default
 title: News
 permalink: /news/
 ---
-<div class="news-list-container">
+<div class="news-list-container item-index">
   {% for post in site.posts %}
     {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture nyear %}{{ post.next.date | date: "%Y" }}{% endcapture %}
 
     {% if year != nyear %}
-      {% if forloop.first %}
-        <div class="year-header">
-          <p class="news-year">{{ year }}</p>
-        </div>
-      {% else %}
-        <div class="year-header border-above">
-          <p class="news-year">{{ year }}</p>
-        </div>
-      {% endif %}
+      <div class="year-header">
+        <h3 class="news-year">{{ year }}</h3>
+      </div>
     {% endif %}
     <div class="two-column news-list-item">
       <div class="side-column news-list-date">
