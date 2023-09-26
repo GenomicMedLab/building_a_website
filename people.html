@@ -3,44 +3,44 @@ layout: default
 title: People
 permalink: /people/
 ---
-<div class="people-list-container">
-{% assign current_people = site.people | where:'alumnae', null %}
+<div class="people-list-container item-index">
+  {% assign current_people = site.people | where:'alumnae', null %}
 
-<h2>Faculty</h2>
+  <h3>Faculty</h3>
 
-{% assign faculty = current_people | where:'role', 'Principal Investigator' %}
-<ul class="people-list">
-{% for person in faculty %}
-{% include people_index_item.html %}
-{% endfor %}
-</ul>
-
-<h2 class="top-border">Trainees</h2>
-
-{% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher'" %}
-<ul class="people-list">
-{% for person in trainees %}
+  {% assign faculty = current_people | where:'role', 'Principal Investigator' %}
+  <ul class="people-list">
+  {% for person in faculty %}
   {% include people_index_item.html %}
-{% endfor %}
-</ul>
+  {% endfor %}
+  </ul>
 
-<h2 class="top-border">Staff</h2>
+  <h3>Trainees</h3>
 
-{% assign staff = current_people | where_exp:'person', "person.role == 'Software Developer' or person.role == 'Senior Bioinformatics Scientist'" %}
-<ul class="people-list">
-{% for person in site.people %}
-  {% if person.role == "Software Developer" or person.role == "Senior Bioinformatics Scientist" %}
-  {% include people_index_item.html %}
-  {% endif %}
-{% endfor %}
-</ul>
+  {% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher'" %}
+  <ul class="people-list">
+  {% for person in trainees %}
+    {% include people_index_item.html %}
+  {% endfor %}
+  </ul>
 
-<h2 class="top-border">Alumni</h2>
+  <h3>Staff</h3>
 
-{% assign alums = site.people | where:'alumnae', 'true' %}
-<ul class="people-list">
-{% for person in alums %}
-  {% include people_index_item.html %}
-{% endfor %}
-</ul>
+  {% assign staff = current_people | where_exp:'person', "person.role == 'Software Developer' or person.role == 'Senior Bioinformatics Scientist'" %}
+  <ul class="people-list">
+  {% for person in site.people %}
+    {% if person.role == "Software Developer" or person.role == "Senior Bioinformatics Scientist" %}
+    {% include people_index_item.html %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+
+  <h3>Alumni</h3>
+
+  {% assign alums = site.people | where:'alumnae', 'true' %}
+  <ul class="people-list">
+  {% for person in alums %}
+    {% include people_index_item.html %}
+  {% endfor %}
+  </ul>
 </div>

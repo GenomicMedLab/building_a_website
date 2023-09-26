@@ -1,0 +1,8 @@
+.item-index {
+  h1, h2, h3 {
+    margin-top: calc($spacing-unit / 2);
+    border-top: 5px black solid;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

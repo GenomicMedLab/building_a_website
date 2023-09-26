@@ -43,7 +43,7 @@ layout: default
     {% if papers.size > 0 %}
       <p class="subsection-header">Papers</p>
       <ul class="">
-      {% for paper in papers %}
+      {% for paper in papers reversed %}
         <li class=""><a href="{{ paper.url }}">{{ paper.name }}</a></li>
       {% endfor %}
       </ul>

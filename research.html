@@ -3,26 +3,26 @@ layout: default
 title: Research Projects
 permalink: /research/
 ---
-<div class="projects-container">
+<div class="projects-container item-index">
   <div class="project-container">
     {% assign project = site.projects | where_exp:"project","project.name == 'Variation Representation'" | first %}
-    <a href="{{ project.url }}"><h2>{{ project.name }}</h2></a>
+    <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
     <div class="project-excerpt">
       {{ project.excerpt }}
       <a href="{{ project.url }}">Learn more...</a>
     </div>
   </div>
-  <div class="project-container top-border">
+  <div class="project-container">
     {% assign project = site.projects | where_exp:"project","project.name == 'Knowledgebase Integration'" | first %}
-    <a href="{{ project.url }}"><h2>{{ project.name }}</h2></a>
+    <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
     <div class="project-excerpt">
       {{ project.excerpt }}
       <a href="{{ project.url }}">Learn more...</a>
     </div>
   </div>
-  <div class="project-container top-border">
+  <div class="project-container">
     {% assign project = site.projects | where_exp:"project","project.name == 'Gene Fusion Informatics'" | first %}
-    <a href="{{ project.url }}"><h2>{{ project.name }}</h2></a>
+    <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
     <div class="project-excerpt">
       {{ project.excerpt }}
       <a href="{{ project.url }}">Learn more...</a>

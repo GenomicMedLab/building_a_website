@@ -1,17 +1,7 @@
-.people-list-container {
-    h2 {
-    padding-top: calc($spacing-unit / 2);
-
-    }
-  .top-border {
-    border-top: 5px black solid;
-  }
-}
 .people-list {
   list-style-type: none;
   margin-left: 0px;
   display: flex;
-  // flex-direction: column;
   flex-wrap: wrap;
   max-width: 100% !important;
 }

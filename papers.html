@@ -3,43 +3,43 @@ layout: default
 title: Papers
 permalink: /papers/
 ---
-<div class="papers-container">
-{% for paper in site.papers reversed %}
-  {% capture year %}{{ paper.date | date: "%Y"}}{% endcapture %}
-  {% capture nyear %}{{ paper.next.date | date: "%Y" }}{% endcapture %}
+<div class="papers-container item-index">
+  {% for paper in site.papers reversed %}
+    {% capture year %}{{ paper.date | date: "%Y"}}{% endcapture %}
+    {% capture nyear %}{{ paper.next.date | date: "%Y" }}{% endcapture %}
 
-  {% if year != nyear %}
-  {% if forloop.first %}
-    <div class="year-header">
-      <h2 class="papers-year">{{ year }}</h2>
-    </div>
-    <ul class="paper-list">
-  {% else %}
-    </ul>
-    <div class="year-header border-above">
-      <h2 class="papers-year">{{ year }}</h2>
-    </div>
-    <ul class="paper-list">
-  {% endif %}
-  {% endif %}
+    {% if year != nyear %}
+    {% if forloop.first %}
+      <div class="year-header">
+        <h2 class="papers-year">{{ year }}</h2>
+      </div>
+      <ul class="paper-list">
+    {% else %}
+      </ul>
+      <div class="year-header">
+        <h2 class="papers-year">{{ year }}</h2>
+      </div>
+      <ul class="paper-list">
+    {% endif %}
+    {% endif %}
 
-  <li>
-  <div class="two-column paper-list-item-container">
-    <div class="side-column paper-list-thumbnail-container">
-      <img
-        src="/assets/images/papers/{{ paper.thumbnail }}"
-        alt="figure preview from paper"
-        class="paper-list-thumbnail"
-      />
+    <li>
+    <div class="two-column paper-list-item-container">
+      <div class="side-column paper-list-thumbnail-container">
+        <img
+          src="/assets/images/papers/{{ paper.thumbnail }}"
+          alt="figure preview from paper"
+          class="paper-list-thumbnail"
+        />
+      </div>
+      <div class="main-column paper-list-item">
+        <p>{% render_bold_cite %}{{ paper.authors }}{% endrender_bold_cite %}.</p>
+        <p class="paper-list-item-article-link"><a href="{{ paper.url }}">"{{ paper.name }}"</a></p>
+        <p>{{ paper.journal_cite }} ({{ year }})</p>
+      </div>
     </div>
-    <div class="main-column paper-list-item">
-      <p>{% render_bold_cite %}{{ paper.authors }}{% endrender_bold_cite %}.</p>
-      <p class="paper-list-item-article-link"><a href="{{ paper.url }}">"{{ paper.name }}"</a></p>
-      <p>{{ paper.journal_cite }} ({{ year }})</p>
-    </div>
-  </div>
-  </li>
+    </li>
 
-{% endfor %}
-</ul>
+  {% endfor %}
+  </ul>
 </div>
