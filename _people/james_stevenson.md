@@ -3,7 +3,7 @@ layout: person
 
 name: James Stevenson
 pub_names: []
-role: Software Developer
+role: "Bioinformatics Software Developer"
 headshot: "james_stevenson.jpg"
 
 github: jsstevenson

@@ -3,7 +3,7 @@ layout: person
 
 name: Katie Stahl
 pub_names: [Kathryn Stahl, Stahl K]
-role: Software Developer
+role: "Bioinformatics Software Developer"
 headshot: katie_stahl.png
 
 github: katiestahl

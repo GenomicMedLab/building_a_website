@@ -1,17 +1,22 @@
 {% if page.collection == "people" or page.collection == "papers" or page.collection == "posts" or page.collection == "projects" or page.collection == "software" %}
-<div class="page-title-box two-column wrapper">
-  <div class="side-column badge-container">
-    <div class="badge {{ page.collection }}">
-      {{ page.collection }}
+  <div class="page-title-box two-column wrapper">
+    <div class="side-column badge-container">
+      <div class="badge {{ page.collection }}">
+        {{ page.collection }}
+      </div>
+    </div>
+    <div class="main-column">
+      <h1 class="title-text">{{ page.name }}</h1>
+      {% if page.collection == "posts" %}
+        {% assign subtitle = page.date | date: "%B %-d, %Y" %}
+      {% elsif page.collection == "people" %}
+        {% assign subtitle = page.role %}
+      {% endif %}
+      <h3 class="subtitle-text">{{ subtitle }}</h3>
     </div>
   </div>
-  <div class="main-column">
-    <h1 class="title-text">{{ page.name }}</h1>
-  <h3 class="subtitle-text">{{ page.subtitle }}</h3>
-  </div>
-</div>
 {% else %}
-<div class="page-title-box one-column wrapper">
-  <h1 class="title-text">{{ page.title }}</h1>
-</div>
+  <div class="page-title-box one-column wrapper">
+    <h1 class="title-text">{{ page.title }}</h1>
+  </div>
 {% endif %}
