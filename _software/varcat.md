@@ -7,9 +7,7 @@ source:
 docs:
 # e.g. PyPI link
 distribution:
-# URL public facing service
 live:
-projects: ["Knowledgebase Integration"]
+projects: ["Variation Assessment"]
 ---
-
 
