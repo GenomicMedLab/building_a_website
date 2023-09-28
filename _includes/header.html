@@ -1,9 +1,10 @@
 <!-- <header id="site-header" role="banner" style="background-image: url('{{ "assets/images/default_code_bg.png" | relative_url }}'); background-repeat: no-repeat; background-position: bottom-right;"> -->
 {% if page.title contains "html" %}
-<header role="banner" style="background-color: #000000;" class="site-header {{ page.title }}-border">
+<header role="banner" class="site-header {{ page.title }}-border">
 {% else %}
-<header role="banner" style="background-color: #000000;" class="site-header {{ page.collection }}-border">
+<header role="banner" class="site-header {{ page.collection }}-border">
 {% endif %}
+<div class="header-bg-img-container bg-img-tint" style="background-image: url('{{ "assets/images/site/nch-banner.png" | relative_url }}'); background-position: center;">
   <div id="menu-row">
     <div class="site-title-container navbar-offset">
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -32,4 +33,5 @@
     <div class="navbar-offset"></div>
   </div>
   {%- include title.html -%}
+</div>
 </header>

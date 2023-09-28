@@ -4,8 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: calc($spacing-unit * 8);
+  $title-height: calc($spacing-unit * 5);
+  min-height: $title-height;
   border-bottom: 5px solid;
+
+  .header-bg-img-container {
+    min-height: $title-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+  }
+
+  .bg-img-tint {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+  }
 
   #menu-row {
     display: flex;
@@ -19,6 +33,7 @@
       padding-left: calc($spacing-unit / 5);
       text-decoration: none;
     }
+    // background-color: rgba(0, 0, 0, 0.4)
   }
 
   .badge-container {
@@ -34,22 +49,6 @@
       padding-bottom: calc($spacing-unit / 6);
       padding-left: calc($spacing-unit / 3);
       padding-right: calc($spacing-unit / 3);
-    }
-
-    .papers {
-      background-color: $paper-type;
-    }
-    .people {
-      background-color: $person-type;
-    }
-    .posts {
-      background-color: $post-type;
-    }
-    .projects {
-      background-color: $project-type;
-    }
-    .software {
-      background-color: $software-type;
     }
   }
 
@@ -67,29 +66,14 @@
     padding-right: calc($spacing-unit / $menu-horiz-spacing-coeff);
     text-transform: uppercase;
   }
-}
 
-.papers-border {
-  border-bottom-color: $paper-type;
-}
+        .title-box {
+            width: $content-width;
+            padding: calc($spacing-unit / 2);
+        }
 
-.people-border {
-  border-bottom-color: $person-type;
-}
-
-.posts-border {
-  border-bottom-color: $post-type;
-}
-
-.projects-border {
-  border-bottom-color: $project-type;
-}
-
-.software-border {
-  border-bottom-color: $software-type;
-}
-
-// janky category naming trick
-.-border {
-  border-bottom-color: $static-type;
+  .title-text,
+  .subtitle-text {
+    margin-bottom: 5px;
+  }
 }

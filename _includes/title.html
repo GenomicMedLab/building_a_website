@@ -1,11 +1,11 @@
 {% if page.collection == "people" or page.collection == "papers" or page.collection == "posts" or page.collection == "projects" or page.collection == "software" %}
   <div class="page-title-box two-column wrapper">
-    <div class="side-column badge-container">
-      <div class="badge {{ page.collection }}">
-        {{ page.collection }}
-      </div>
-    </div>
-    <div class="main-column">
+    <!-- <div class="side-column badge-container"> -->
+    <!--   <div class="badge {{ page.collection }}"> -->
+    <!--     {{ page.collection }} -->
+    <!--   </div> -->
+    <!-- </div> -->
+    <div class="title-box">
       <h1 class="title-text">{{ page.name }}</h1>
       {% if page.collection == "posts" %}
         {% assign subtitle = page.date | date: "%B %-d, %Y" %}
