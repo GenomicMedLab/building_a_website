@@ -33,7 +33,12 @@
       padding-left: calc($spacing-unit / 5);
       text-decoration: none;
     }
-    // background-color: rgba(0, 0, 0, 0.4)
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   .badge-container {
@@ -67,10 +72,10 @@
     text-transform: uppercase;
   }
 
-        .title-box {
-            width: $content-width;
-            padding: calc($spacing-unit / 2);
-        }
+  .title-box {
+    width: $content-width;
+    padding: calc($spacing-unit / 2);
+  }
 
   .title-text,
   .subtitle-text {
