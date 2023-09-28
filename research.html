@@ -28,4 +28,12 @@ permalink: /research/
       <a href="{{ project.url }}">Learn more...</a>
     </div>
   </div>
+  <div class="project-container">
+    {% assign project = site.projects | where_exp:"project","project.name == 'Variation Assessment'" | first %}
+    <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+    <div class="project-excerpt">
+      {{ project.excerpt }}
+      <a href="{{ project.url }}">Learn more...</a>
+    </div>
+  </div>
 </div>
