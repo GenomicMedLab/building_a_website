@@ -7,6 +7,10 @@ name: "CIViCpy: A Python Software Development and Analysis Toolkit for the CIViC
 date: 2020-03-19
 authors: "Alex H. Wagner, Susanna Kiwala, Adam C. Coffman, Joshua F. McMichael, Kelsy C. Cotto, Thomas B. Mooney, Erica K. Barnell, Kilannin Krysiak, Arpad M. Danos, Jason Walker, Obi L. Griffith, and Malachi Griffith"
 journal_cite: "JCO Clinical Cancer Informatics 2020 :4, 245-253"
+journal: "JCO Clinical Cancer Informatics"
+volume: 4
+issue:
+pages: "245-253"
 doi: https://doi.org/10.1200/cci.19.00127
 pmid: 32191543
 publisher_url: https://ascopubs.org/doi/10.1200/CCI.19.00127?url_ver=Z39.88-2003

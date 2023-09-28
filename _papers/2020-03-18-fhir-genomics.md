@@ -4,10 +4,12 @@ layout: paper
 name: "FHIR Genomics: enabling standardization for precision medicine use cases"
 date: 2020-03-18
 authors: "Gil Alterovitz, Bret Heale, James Jones, David Kreda, Fan Lin, Lei Liu, Xin Liu, Kenneth D. Mandl, David W. Poloway, Rachel Ramoni, Alex Wagner & Jeremy L. Warner"
-journal_cite: "npj Genom. Med. 5, 13"
-doi: https://doi.org/10.1038/s41525-020-0115-6
+journal: "npj Genomic Medicine"
+volume: 5
+number: 13
+doi: "https://doi.org/10.1038/s41525-020-0115-6"
 pmid:  32194985
-publisher_url: https://www.nature.com/articles/s41525-020-0115-6
+publisher_url: "https://www.nature.com/articles/s41525-020-0115-6"
 
 thumbnail: fhir-genomics-preview.png
 

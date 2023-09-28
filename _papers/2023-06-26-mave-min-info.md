@@ -4,7 +4,6 @@ layout: paper
 name: Minimum information and guidelines for reporting a Multiplexed Assay of Variant Effect
 date:  2023-06-26
 authors: "Melina Claussnitzer, Victoria N. Parikh, Alex H. Wagner, Jeremy A. Arbesfeld, Carol J. Bult, Helen V. Firth, Lara A. Muffley, Alex N. Nguyen Ba, Kevin Riehle, Frederick P. Roth, Daniel Tabet, Benedetta Bolognesi, Andrew M. Glazer, Alan F. Rubin"
-journal_cite: "arXiv 2306.15113"
 doi: https://doi.org/10.48550/arXiv.2306.15113
 pmid:
 publisher_url:

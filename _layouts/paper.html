@@ -32,8 +32,14 @@ layout: default
       </div>
     {% endif %}
     <div class="side-column-section">
+      {% if page.publisher_url %}
+        {% capture journal_cite %}{{ page.journal }}{% if page.volume %}, vol. {{ page.volume }}{% endif %}{% if page.issue %}, iss. {{ page.issue }}{% endif %}{% if page.number %}, no. {{ page.number }}{% endif %}{% if page.pages %}, pp. {{ page.pages }}{% endif %}.{% endcapture %}
+      {% else %}
+        {% capture preprint_server %}{% if page.preprint contains "biorxiv" %}bioRxiv{% elsif page.preprint contains "medrxiv" %}medRxiv{% else %}arXiv{% endif %}{% endcapture %}
+        {% capture journal_cite %}{{ preprint_server }} {{ page.preprint | split:"/" | last}}{% endcapture %}
+      {% endif %}
       <p class="header">Citation</p>
-      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.name }}." {{ page.journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}" rel="noopener" target="_blank">{{ page.doi }}</a>.</p>
+      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.name }}." {{ journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}" rel="noopener" target="_blank">{{ page.doi }}</a>.</p>
     </div>
   </div>
 

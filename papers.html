@@ -29,8 +29,14 @@ permalink: /papers/
       </div>
       <div class="main-column paper-list-item">
         <p>{% render_bold_cite %}{{ paper.authors }}{% endrender_bold_cite %}.</p>
-        <p class="paper-list-item-article-link"><a href="{{ paper.url }}">"{{ paper.name }}"</a></p>
-        <p>{{ paper.journal_cite }} ({{ year }})</p>
+        <p class="paper-list-item-article-link"><a href="{{ paper.url }}">"{{ paper.name }}."</a></p>
+        {% if paper.publisher_url %}
+          {% capture journal_cite %}{{ paper.journal }}{% if paper.volume %}, vol. {{ paper.volume }}{% endif %}{% if paper.issue %}, iss. {{ paper.issue }}{% endif %}{% if paper.number %}, no. {{ paper.number }}{% endif %}{% if paper.pages %}, pp. {{ paper.pages }}{% endif %}.{% endcapture %}
+        {% else %}
+          {% capture preprint_server %}{% if paper.preprint contains "biorxiv" %}bioRxiv{% elsif paper.preprint contains "medrxiv" %}medRxiv{% else %}arXiv{% endif %}{% endcapture %}
+          {% capture journal_cite %}{{ preprint_server }} {{ paper.preprint | split:"/" | last}}{% endcapture %}
+        {% endif %}
+        <p>{{ journal_cite }} ({{ year }}).</p>
       </div>
     </div>
     </li>

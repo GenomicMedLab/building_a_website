@@ -4,8 +4,9 @@ layout: paper
 name:  "Accessing clinical-grade genomic classification data through the ClinGen Data Platform"
 date: 2023-01-01
 authors: "Karen P. Dalton, Heidi L. Rehm, Matt W. Wright, Mark E. Mandell, Kilannin Krysiak, Lawrence Babb, Kevin Riehle, Tristan Nelson, and Alex H. Wagner"
-journal_cite: "Pac Symp Biocomput. 2023;28:531-535"
 doi: https://doi.org/10.1142/9789811270611_0048
+journal: Biocomputing
+pages: "531-535"
 pmid: 36541006
 publisher_url: https://www.worldscientific.com/doi/abs/10.1142/9789811270611_0048
 

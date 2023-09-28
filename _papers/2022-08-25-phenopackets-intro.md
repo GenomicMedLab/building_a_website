@@ -4,7 +4,9 @@ layout: paper
 name: "GA4GH Phenopackets: A Practical Introduction"
 date: "2023-03-01"
 authors: "Markus S. Ladewig, Julius O. B. Jacobsen, Alex H. Wagner, Daniel Danis, Baha El Kassaby, Michael Gargano, Tudor Groza, Michael Baudis, Robin Steinhaus, Dominik Seelow, Nikolaos E. Bechrakis, Christopher J. Mungall, Paul N. Schofield, Olivier Elemento, Lindsay Smith, Julie A. McMurry, Monica Munoz-Torres, Melissa A. Haendel, Peter N. Robinson"
-journal_cite: "Advanced Genetics, Volume 4, Issue 1, March 2023"
+journal: Advanced Genetics
+volume: 4
+issue: 1
 doi: "https://doi.org/10.1002/ggn2.202200016"
 pmid: "36910590"
 publisher_url: "https://onlinelibrary.wiley.com/doi/full/10.1002/ggn2.202200016"
