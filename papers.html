@@ -9,18 +9,13 @@ permalink: /papers/
     {% capture nyear %}{{ paper.next.date | date: "%Y" }}{% endcapture %}
 
     {% if year != nyear %}
-    {% if forloop.first %}
+      {% if forloop.index != 1 %}
+        </ul>
+      {% endif %}
       <div class="year-header">
         <h2 class="papers-year">{{ year }}</h2>
       </div>
       <ul class="paper-list">
-    {% else %}
-      </ul>
-      <div class="year-header">
-        <h2 class="papers-year">{{ year }}</h2>
-      </div>
-      <ul class="paper-list">
-    {% endif %}
     {% endif %}
 
     <li>
