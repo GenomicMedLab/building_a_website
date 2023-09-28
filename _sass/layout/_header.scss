@@ -24,10 +24,12 @@
   #menu-row {
     display: flex;
     flex-direction: row;
+    width: 100%;
+
     justify-content: space-between;
-    .navbar-offset {
-      width: #{$spacing-unit * 8};
-    }
+    // .navbar-offset {
+    //   width: #{$spacing-unit * 8};
+    // }
 
     .site-title {
       padding-left: calc($spacing-unit / 5);
@@ -41,22 +43,6 @@
     }
   }
 
-  .badge-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .badge {
-      font-size: $small-font-size;
-      text-transform: uppercase;
-      margin: auto;
-      padding-top: calc($spacing-unit / 6);
-      padding-bottom: calc($spacing-unit / 6);
-      padding-left: calc($spacing-unit / 3);
-      padding-right: calc($spacing-unit / 3);
-    }
-  }
-
   .nav-trigger {
     display: none;
   }
@@ -66,15 +52,18 @@
   }
 
   .page-link {
-    $menu-horiz-spacing-coeff: 2.5;
+    $menu-horiz-spacing-coeff: 5;
     padding-left: calc($spacing-unit / $menu-horiz-spacing-coeff);
-    padding-right: calc($spacing-unit / $menu-horiz-spacing-coeff);
+    // padding-right: calc($spacing-unit / $menu-horiz-spacing-coeff);
     text-transform: uppercase;
   }
 
   .title-box {
     width: $content-width;
     padding: calc($spacing-unit / 2);
+    h1 {
+      font-weight: bold;
+    }
   }
 
   .title-text,
