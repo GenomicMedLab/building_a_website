@@ -5,7 +5,7 @@ permalink: /papers/
 ---
 <div class="papers">
   <p class="papers-context">See <a href="https://scholar.google.com/citations?user=cwG4QRAAAAAJ&hl=en&oi=ao" target="_blank" rel="noopen">Google Scholar</a> for a complete publication list.</p>
-  <div class="papers-container item-index">
+  <div class="papers-container">
     {% for paper in site.papers reversed %}
       {% capture year %}{{ paper.date | date: "%Y"}}{% endcapture %}
       {% capture nyear %}{{ paper.next.date | date: "%Y" }}{% endcapture %}
@@ -15,14 +15,10 @@ permalink: /papers/
         {% endif %}
         {% if year == "2018" %}
           <!-- temporary fix to catch older stuff (note that we hardcode 2018 because there's no 2019 papers right now). It would be smarter to refactor the list content into an _includes template and just generate two different year arrays. --!>
-          <div class="section-header">
-            <h2>2019 and previous</h2>
-          </div>
+          <h2 class="section-header">2019 and previous</h2>
           <ul class="paper-list">
         {% elsif year > "2019" %}
-          <div class="section-header">
-            <h2>{{ year }}</h2>
-          </div>
+          <h2 class="section-header">{{ year }}</h2>
           <ul class="paper-list">
         {% else %}
           <ul class="paper-list">
