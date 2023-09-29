@@ -8,11 +8,6 @@ url: "" # the base hostname & protocol for your site
 
 category-list: [software, blog]
 
-# Build settings
-# theme: minima
-plugins:
-  - jekyll-feed
-
 collections:
   people:
     output: true
