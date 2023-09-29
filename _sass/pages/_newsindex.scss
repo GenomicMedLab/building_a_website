@@ -1,31 +1,25 @@
 .news-list-container {
   margin-top: calc($spacing-unit / 2);
 
-  .news-year {
-    font-size: $header-font-size;
-    font-weight: bold;
-  }
-
   .news-list-item {
-        .side-column {
-            padding-top: 0px !important;
-        }
-        .main-column {
-            padding-top: 0px !important;
-        }
+    .side-column {
+      padding-top: 0px !important;
+    }
+    .main-column {
+      padding-top: 0px !important;
+    }
     margin-top: 0px !important;
 
-        .main-column {
-            .title-link {
-                font-weight: bold;
-            }
-        }
+    .main-column {
+      .title-link {
+        font-weight: bold;
+      }
+    }
 
     .news-descr {
       p {
         display: inline;
       }
     }
-
   }
 }

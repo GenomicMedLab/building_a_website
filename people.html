@@ -7,7 +7,7 @@ permalink: /people/
 <div class="people-list-container item-index">
   {% assign current_people = site.people | where:'alumnae', null %}
 
-  <h3>Faculty</h3>
+  <div class="section-header"><h3>Faculty</h3></div>
 
   {% assign faculty = current_people | where:'role', 'Principal Investigator' %}
   <ul class="people-list">
@@ -16,7 +16,7 @@ permalink: /people/
   {% endfor %}
   </ul>
 
-  <h3>Trainees</h3>
+  <div class="section-header"><h3>Trainees</h3></div>
 
   {% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher'" %}
   <ul class="people-list">
@@ -25,7 +25,7 @@ permalink: /people/
   {% endfor %}
   </ul>
 
-  <h3>Staff</h3>
+  <div class="section-header"><h3>Staff</h3></div>
 
   {% assign staff = current_people | where_exp:'person', "person.role == 'Bioinformatics Software Developer' or person.role == 'Senior Bioinformatics Scientist'" %}
   <ul class="people-list">
@@ -34,7 +34,7 @@ permalink: /people/
   {% endfor %}
   </ul>
 
-  <h3>Alumni</h3>
+  <div class="section-header"><h3>Alumni</h3></div>
 
   {% assign alums = site.people | where:'alumnae', 'true' %}
   <ul class="people-list">

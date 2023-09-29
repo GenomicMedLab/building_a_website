@@ -9,8 +9,8 @@ permalink: /news/
     {% capture nyear %}{{ post.next.date | date: "%Y" }}{% endcapture %}
 
     {% if year != nyear %}
-      <div class="year-header">
-        <h3 class="news-year">{{ year }}</h3>
+      <div class="section-header">
+        <h2>{{ year }}</h2>
       </div>
     {% endif %}
     <div class="two-column news-list-item">
