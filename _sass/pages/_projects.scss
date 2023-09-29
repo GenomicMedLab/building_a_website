@@ -1,20 +1,18 @@
 .projects-container {
-  margin-top: calc($spacing-unit / 2);
-}
-
-.project-container {
-  padding-top: calc($spacing-unit / 2);
-  margin-bottom: calc($spacing-unit / 2);
-  h2 > a {
-    text-decoration: none;
-  }
-    h2 > a:hover {
-        text-decoration: underline;
+  .project-container {
+    padding-top: calc($spacing-unit / 2);
+    margin-bottom: calc($spacing-unit / 2);
+    h2 > a {
+      text-decoration: none;
     }
-}
+    h2 > a:hover {
+      text-decoration: underline;
+    }
+  }
 
-.project-excerpt {
-  p {
-    display: inline;
+  .project-excerpt {
+    p {
+      display: inline;
+    }
   }
 }
