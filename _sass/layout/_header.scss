@@ -55,6 +55,9 @@
     text-transform: uppercase;
   }
 
+  .page-title-box {
+    width: 100%;
+  }
   .title-box {
     $title-spacing: calc($spacing-unit / 2);
     padding-top: $title-spacing;
