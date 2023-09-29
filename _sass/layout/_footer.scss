@@ -1,44 +1,32 @@
 .site-footer-container {
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
+  $footer-height: calc($spacing-unit * 3.5);
+  min-height: $footer-height;
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    .icon-box-container {
-      margin-top: 8px;
+    .footer-column {
+      min-height: $footer-height;
       display: flex;
-      flex-direction: row;
-      .icon-box {
-        height: 10px;
-        width: 10px;
-      }
-      > *:not(:first-child) {
-        margin-left: 10px;
-      }
-      > *:not(:last-child) {
-        margin-right: 10px;
-      }
+      flex-direction: column;
+      justify-content: center;
     }
 
-    $footer-spacing: calc($spacing-unit / 2);
-
-    .footer-box {
-      margin-top: $footer-spacing;
-      margin-bottom: $footer-spacing;
-      max-width: calc($spacing-unit * 8);
-
+    .footer-column.left {
       p {
         margin-bottom: 0px;
+        font-size: calc($base-font-size * 0.8);
+
       }
     }
 
-    .footer-box .left {
-      margin-right: $footer-spacing;
-    }
-    .footer-box .right {
-      margin-left: $footer-spacing;
+    .footer-column.right {
+      .nch-logo {
+        height: 50px;
+      }
     }
   }
 }

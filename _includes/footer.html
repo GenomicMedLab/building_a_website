@@ -1,14 +1,17 @@
 <footer class="site-footer-container">
   <div class="footer wrapper">
-    <div class="footer-box left">
-      <p>{{ site.title | escape }}</p>
-    </div>
-    <div class="footer-box right">
+    <div class="footer-column left">
       <p>Steve and Cindy Rasmussen Institute for Genomic Medicine</p>
-      <p>575 Children's Crossroad</p>
-      <p>Columbus, OH 43215</p>
+      <p>Abigail Wexner Research Institute</p>
+      <p>Nationwide Children's Hospital</p>
     </div>
-
+    <div class="footer-column right">
+      <div class="logo-container">
+        <img
+          class="nch-logo"
+          src="{{ 'assets/images/site/nch-logo-dark.png' | relative_url }}"
+        />
+      </div>
+    </div>
   </div>
-
 </footer>
