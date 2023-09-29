@@ -6,6 +6,8 @@
         {% assign subtitle = page.date | date: "%B %-d, %Y" %}
       {% elsif page.collection == "people" %}
         {% assign subtitle = page.role %}
+      {% elsif page.collection == "projects" %}
+        {% assign subtitle = "Research Project" %}
       {% elsif page.collection == "papers" %}
         {% capture year %}{{ page.date | date:"%Y" }}{% endcapture %}
         {% if page.publisher_url == null %}
