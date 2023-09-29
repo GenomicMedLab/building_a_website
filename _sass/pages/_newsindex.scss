@@ -7,13 +7,25 @@
   }
 
   .news-list-item {
-    font-size: calc($base-font-size * 1.2);
+        .side-column {
+            padding-top: 0px !important;
+        }
+        .main-column {
+            padding-top: 0px !important;
+        }
     margin-top: 0px !important;
 
-    .news-list-date {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+        .main-column {
+            .title-link {
+                font-weight: bold;
+            }
+        }
+
+    .news-descr {
+      p {
+        display: inline;
+      }
     }
+
   }
 }

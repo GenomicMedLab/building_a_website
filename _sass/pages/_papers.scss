@@ -1,29 +1,30 @@
-.papers-context {
-  padding: calc($spacing-unit / 2);
-}
-.papers-container {
-  margin-top: calc($spacing-unit / 2);
-}
+.papers {
+  $papers-spacing: calc($spacing-unit / 2);
+  .papers-context {
+    padding-top: $papers-spacing;
+  }
+  .papers-container {
+    margin-top: $papers-spacing;
+  }
 
-.paper-list {
-  list-style-type: none;
-  margin-left: 0px;
-}
+  .paper-list {
+    list-style-type: none;
+    margin-left: 0px;
+  }
 
-.paper-list-item > p {
+  .paper-list-item > p {
     margin-bottom: 0px;
-}
+  }
 
-.paper-list-thumbnail {
-  width: 170px;
-  border: 2px solid black;
-  padding: 7px;
-}
+  .paper-list-thumbnail {
+    width: 170px;
+    border: 2px solid black;
+    padding: 7px;
+  }
 
-.year-header {
-  padding-left: calc($spacing-unit / 2);
-
-  h2 {
-    margin: 0px;
+  .year-header {
+    h2 {
+      margin: 0px;
+    }
   }
 }

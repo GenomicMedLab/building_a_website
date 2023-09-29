@@ -202,7 +202,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit * .5;
   padding-left: $spacing-unit * .5;
-  @extend %clearfix;
+  // @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));

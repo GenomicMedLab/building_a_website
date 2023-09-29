@@ -27,12 +27,8 @@
     width: 100%;
 
     justify-content: space-between;
-    // .navbar-offset {
-    //   width: #{$spacing-unit * 8};
-    // }
 
     .site-title {
-      padding-left: calc($spacing-unit / 5);
       text-decoration: none;
     }
     a {
@@ -47,20 +43,23 @@
     display: none;
   }
 
+  .trigger > *:not(:last-child) {
+    padding-right: calc($spacing-unit / 2);
+  }
+
   label {
     display: none;
   }
 
   .page-link {
-    $menu-horiz-spacing-coeff: 5;
-    padding-left: calc($spacing-unit / $menu-horiz-spacing-coeff);
-    // padding-right: calc($spacing-unit / $menu-horiz-spacing-coeff);
     text-transform: uppercase;
   }
 
   .title-box {
     width: $content-width;
-    padding: calc($spacing-unit / 2);
+    $title-spacing: calc($spacing-unit / 2);
+    padding-top: $title-spacing;
+    padding-bottom: $title-spacing;
     h1 {
       font-weight: bold;
     }
