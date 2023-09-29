@@ -14,10 +14,25 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
-}
 
-.people-list-thumbnail {
-  width: 100px;
+  .thumbnail-container {
+    width: 100px;
+    height: 100%;
+
+    .placeholder-pic-container {
+      height: 110px;
+      padding: calc($spacing-unit / 3);
+      border: 3px solid black;
+      display: flex;
+      flex-align: row;
+      justify-content: center;
+      align-items: center;
+
+      .placeholder-pic {
+        font-size: 3em;
+      }
+    }
+  }
 }
 
 .people-list-item-content-container {

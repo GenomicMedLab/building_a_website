@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-<div class="two-column">
+<div class="person two-column">
   <div class="side-column">
     <div class="side-column-section">
       <div class="side-img-container">
         {% if page.headshot %}
           <img src="/assets/images/people/{{ page.headshot }}" class="person-headshot"/>
         {% else %}
-          <i class="fa-solid fa-user fa-10x"></i>
+          <div class="placeholder-pic-container">
+            <i class="fa-solid fa-user placeholder-pic"></i>
+          </div>
         {% endif %}
       </div>
     </div>
