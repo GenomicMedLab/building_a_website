@@ -5,7 +5,7 @@
   .paper-figure {
     max-height: 300px;
     $img-padding: calc($spacing-unit * 0.7);
-    max-width: calc($main-column-width * .6);
+    max-width: calc($main-column-width * 0.6);
     border: 3px solid black;
     padding: $img-padding;
     margin-bottom: $img-padding;
@@ -25,4 +25,7 @@
 
 .citation {
   font-size: calc($base-font-size * 0.8);
+  .cite-link {
+    font-weight: bold;
+  }
 }
