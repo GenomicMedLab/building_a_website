@@ -1,6 +1,5 @@
 ---
 layout: person
-title: Alex H Wagner
 
 name: Alex Wagner
 pub_names: [Alex H. Wagner, Alex H Wagner, Wagner AH]

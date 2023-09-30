@@ -15,4 +15,9 @@
   <link href="/assets/css/regular.min.css" rel="stylesheet">
   <link href="/assets/css/brands.min.css" rel="stylesheet">
   <link href="/assets/css/solid.min.css" rel="stylesheet">
+  {% if page.name contains ".html" or page.name contains ".md" %}
+    <title>Genomic Medicine Lab | {{ page.title }}</title>
+  {% else %}
+    <title>Genomic Medicine Lab | {{ page.name }}</title>
+  {% endif %}
 </head>
