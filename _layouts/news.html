@@ -1,34 +1,31 @@
 ---
 layout: default
 ---
+
 <div class="news-content-container two-column">
   <div class="side-column">
     {% if page.people %}
-      <div class="side-column-section">
-        <p class="header">People</p>
-        <ul class="side-list">
-        {% for p in page.people %}
-        {% assign person = site.people | where:"name", p  | first %}
+    <div class="side-column-section">
+      <p class="header">People</p>
+      <ul class="side-list">
+        {% for p in page.people %} {% assign person = site.people |
+        where:"name", p | first %}
         <li><a href="{{ person.url }}">{{ person.name }}</a></li>
         {% endfor %}
-        </ul>
-      </div>
+      </ul>
+    </div>
+    {% endif %} {% if page.projects %}
+    <div class="side-column-section">
+      <p class="header">Projects</p>
+      <ul class="side-list">
+        {% for p in page.projects %} {% assign project = site.projects |
+        where:"name", p | first %}
+        <li><a href="{{ project.url }}">{{ project.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
     {% endif %}
-    {% if page.projects %}
-      <div class="side-column-section">
-        <p class="header">Projects</p>
-        <ul class="side-list">
-          {% for p in page.projects %}
-            {% assign project = site.projects | where:"name", p | first %}
-            <li><a href="{{ project.url }}">{{ project.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-
   </div>
 
-  <div class="news-content main-column">
-    {{ page.content }}
-  </div>
+  <div class="news-content main-column">{{ page.content }}</div>
 </div>

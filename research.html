@@ -3,34 +3,47 @@ layout: default
 title: Research Projects
 permalink: /research/
 ---
+
 <div class="projects-container item-index">
   <div class="project-container">
-    {% assign project = site.projects | where_exp:"project","project.name == 'Variation Representation'" | first %}
-    <h2 class="section-header"><a href="{{ project.url }}">{{ project.name }}</a></h2>
+    {% assign project = site.projects | where_exp:"project","project.name ==
+    'Variation Representation'" | first %}
+    <h2 class="section-header">
+      <a href="{{ project.url }}">{{ project.name }}</a>
+    </h2>
     <div class="project-excerpt">
       {{ project.excerpt }}
       <a href="{{ project.url }}">Learn more...</a>
     </div>
   </div>
   <div class="project-container">
-    {% assign project = site.projects | where_exp:"project","project.name == 'Knowledgebase Integration'" | first %}
-    <h2 class="section-header"><a href="{{ project.url }}">{{ project.name }}</a></h2>
+    {% assign project = site.projects | where_exp:"project","project.name ==
+    'Knowledgebase Integration'" | first %}
+    <h2 class="section-header">
+      <a href="{{ project.url }}">{{ project.name }}</a>
+    </h2>
     <div class="project-excerpt">
       {{ project.excerpt }}
       <a href="{{ project.url }}">Learn more...</a>
     </div>
   </div>
   <div class="project-container">
-    {% assign project = site.projects | where_exp:"project","project.name == 'Gene Fusion Informatics'" | first %}
-    <h2 class="section-header"><a href="{{ project.url }}">{{ project.name }}</a></h2>
+    {% assign project = site.projects | where_exp:"project","project.name ==
+    'Gene Fusion Informatics'" | first %}
+    <h2 class="section-header">
+      <a href="{{ project.url }}">{{ project.name }}</a>
+    </h2>
     <div class="project-excerpt">
       {{ project.excerpt }}
       <a href="{{ project.url }}">Learn more...</a>
     </div>
   </div>
   <div class="project-container">
-    {% assign project = site.projects | where_exp:"project","project.name == 'Variation Assessment'" | first %}
-    <h2 class="section-header"><a href="{{ project.url }}">{{ project.name }}</a></h2>
+    {% assign project = site.projects | where_exp:"project","project.name ==
+    'Variation Assessment'" | first %}
+    <h2 class="section-header">
+      <a href="{{ project.url }}">{{ project.name }}</a>
+    </h2>
     <div class="project-excerpt">
       {{ project.excerpt }}
       <a href="{{ project.url }}">Learn more...</a>

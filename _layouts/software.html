@@ -1,22 +1,34 @@
 ---
 layout: default
 ---
+
 <div class="two-column">
   <div class="side-column">
     <div class="side-column-section">
       <p class="header">Links</p>
       <ul class="side-list">
         {% if page.source %}
-          <li><a href="{{ page.source }}" rel="noopener" target="_blank">Source</a></li>
-        {% endif %}
-        {% if page.docs %}
-          <li><a href="{{ page.docs }}" rel="noopener" target="_blank">Documentation</a></li>
-        {% endif %}
-        {% if page.distribution %}
-          <li><a href="{{ page.distribution }}" rel="noopener" target="_blank">Distribution</a></li>
-        {% endif %}
-        {% if page.live %}
-          <li><a href="{{ page.live }}" rel="noopener" target="_blank">Live service</a></li>
+        <li>
+          <a href="{{ page.source }}" rel="noopener" target="_blank">Source</a>
+        </li>
+        {% endif %} {% if page.docs %}
+        <li>
+          <a href="{{ page.docs }}" rel="noopener" target="_blank"
+            >Documentation</a
+          >
+        </li>
+        {% endif %} {% if page.distribution %}
+        <li>
+          <a href="{{ page.distribution }}" rel="noopener" target="_blank"
+            >Distribution</a
+          >
+        </li>
+        {% endif %} {% if page.live %}
+        <li>
+          <a href="{{ page.live }}" rel="noopener" target="_blank"
+            >Live service</a
+          >
+        </li>
         {% endif %}
       </ul>
     </div>

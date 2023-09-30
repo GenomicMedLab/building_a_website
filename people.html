@@ -11,36 +11,35 @@ permalink: /people/
 
   {% assign faculty = current_people | where:'role', 'Principal Investigator' %}
   <ul class="people-list">
-  {% for person in faculty %}
-  {% include people_index_item.html %}
-  {% endfor %}
+    {% for person in faculty %}
+      {% include people_index_item.html %}
+    {% endfor %}
   </ul>
 
   <h3 class="section-header">Trainees</h3>
 
   {% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher'" %}
   <ul class="people-list">
-  {% for person in trainees %}
-    {% include people_index_item.html %}
-  {% endfor %}
+    {% for person in trainees %}
+      {% include people_index_item.html %}
+    {% endfor %}
   </ul>
 
   <h3 class="section-header">Staff</h3>
 
   {% assign staff = current_people | where_exp:'person', "person.role == 'Bioinformatics Software Developer' or person.role == 'Senior Bioinformatics Scientist'" %}
   <ul class="people-list">
-  {% for person in staff %}
-    {% include people_index_item.html %}
-  {% endfor %}
+    {% for person in staff %}
+      {% include people_index_item.html %}
+    {% endfor %}
   </ul>
 
   <h3 class="section-header">Alumni</h3>
 
   {% assign alums = site.people | where:'alumnae', 'true' %}
   <ul class="people-list">
-  {% for person in alums %}
-    {% include people_index_item.html %}
-  {% endfor %}
+    {% for person in alums %}
+      {% include people_index_item.html %}
+    {% endfor %}
   </ul>
 </div>
-

@@ -1,32 +1,43 @@
 <li class="people-list-item">
   <div class="thumbnail-container">
     {% if person.headshot %}
-      <img src="/assets/images/people/{{ person.headshot }}" class="people-list-thumbnail"/>
+    <img
+      src="/assets/images/people/{{ person.headshot }}"
+      class="people-list-thumbnail"
+    />
     {% else %}
-      <div class="placeholder-pic-container">
-        <i class="fa-solid fa-user placeholder-pic"></i>
-      </div>
+    <div class="placeholder-pic-container">
+      <i class="fa-solid fa-user placeholder-pic"></i>
+    </div>
     {% endif %}
   </div>
   <div class="people-list-item-content-container">
-
     <p><a href="{{ person.url }}">{{ person.name }}</a></p>
     <p>{{ person.role }}</p>
     <p>
       {% if person.orcid %}
-        <a href="{{ person.orcid }}" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i></a>
-      {% endif %}
-      {% if person.github %}
-        <a href="https://www.github.com/{{ person.github  }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-      {% endif %}
-      {% if person.google_scholar %}
-        <a href="{{ person.google_scholar }}" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i></a>
-      {% endif %}
-      {% if person.personal_site %}
-        <a href="{{ person.personal_site }}" target="_blank" rel="noopener"><i class="fa-solid fa-house"></i></a>
-      {% endif %}
-      {% if person.linkedin %}
-        <a href="{{ person.linkedin }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="{{ person.orcid }}" target="_blank" rel="noopener"
+        ><i class="fa-brands fa-orcid"></i
+      ></a>
+      {% endif %} {% if person.github %}
+      <a
+        href="https://www.github.com/{{ person.github  }}"
+        target="_blank"
+        rel="noopener"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      {% endif %} {% if person.google_scholar %}
+      <a href="{{ person.google_scholar }}" target="_blank" rel="noopener"
+        ><i class="fa-solid fa-graduation-cap"></i
+      ></a>
+      {% endif %} {% if person.personal_site %}
+      <a href="{{ person.personal_site }}" target="_blank" rel="noopener"
+        ><i class="fa-solid fa-house"></i
+      ></a>
+      {% endif %} {% if person.linkedin %}
+      <a href="{{ person.linkedin }}" target="_blank" rel="noopener"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
       {% endif %}
     </p>
   </div>

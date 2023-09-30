@@ -1,5 +1,23 @@
 {
-  "dependencies": {
+  "name": "genomicmedlab.org",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.3.0",
     "prettier": "^3.0.3"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genomicmedlab/genomicmedlab.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/genomicmedlab/genomicmedlab.org/issues"
+  },
+  "homepage": "https://github.com/genomicmedlab/genomicmedlab.org#readme",
+  "description": ""
 }

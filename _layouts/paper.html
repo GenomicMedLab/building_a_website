@@ -1,45 +1,69 @@
 ---
 layout: default
 ---
+
 <div class="two-column">
   <div class="side-column">
     <div class="side-column-section">
       <p class="header">Links</p>
       <ul class="side-list paper-links">
         {% if page.preprint %}
-        <li><a href="{{ page.preprint }}" rel="noopener" target="_blank">Preprint</a></li>
-        {% endif %}
-        {% if page.publisher_url %}
-        <li><a href="{{ page.publisher_url }}" rel="noopener" target="_blank">Journal</a></li>
-        {% endif %}
-        {% if page.pmid %}
-        <li><a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/" rel="noopener" target="_blank">PubMed</a></li>
-        {% endif %}
-        {% if page.github %}
-        <li><a href="{{ page.github }}" rel="noopener" target="_blank">Code</a></li>
+        <li>
+          <a href="{{ page.preprint }}" rel="noopener" target="_blank"
+            >Preprint</a
+          >
+        </li>
+        {% endif %} {% if page.publisher_url %}
+        <li>
+          <a href="{{ page.publisher_url }}" rel="noopener" target="_blank"
+            >Journal</a
+          >
+        </li>
+        {% endif %} {% if page.pmid %}
+        <li>
+          <a
+            href="https://pubmed.ncbi.nlm.nih.gov/{{ page.pmid }}/"
+            rel="noopener"
+            target="_blank"
+            >PubMed</a
+          >
+        </li>
+        {% endif %} {% if page.github %}
+        <li>
+          <a href="{{ page.github }}" rel="noopener" target="_blank">Code</a>
+        </li>
         {% endif %}
       </ul>
     </div>
     {% if page.projects %}
-      <div class="side-column-section">
-        <p class="header">Projects</p>
-        <ul class="side-list paper-projects">
-        {% for p in page.projects %}
-        {% assign project = site.projects | where:"name", p  | first %}
+    <div class="side-column-section">
+      <p class="header">Projects</p>
+      <ul class="side-list paper-projects">
+        {% for p in page.projects %} {% assign project = site.projects |
+        where:"name", p | first %}
         <li><a href="{{ project.url }}">{{ project.name }}</a></li>
         {% endfor %}
-        </ul>
-      </div>
+      </ul>
+    </div>
     {% endif %}
     <div class="side-column-section">
-      {% if page.publisher_url %}
-        {% capture journal_cite %}{{ page.journal }}{% if page.volume %}, vol. {{ page.volume }}{% endif %}{% if page.issue %}, iss. {{ page.issue }}{% endif %}{% if page.number %}, no. {{ page.number }}{% endif %}{% if page.pages %}, pp. {{ page.pages }}{% endif %}{% endcapture %}
-      {% else %}
-        {% capture preprint_server %}{% if page.preprint contains "biorxiv" %}bioRxiv{% elsif page.preprint contains "medrxiv" %}medRxiv{% else %}arXiv{% endif %}{% endcapture %}
-        {% capture journal_cite %}{{ preprint_server }} {{ page.preprint | split:"/" | last}}{% endcapture %}
-      {% endif %}
+      {% if page.publisher_url %} {% capture journal_cite %}{{ page.journal }}{%
+      if page.volume %}, vol. {{ page.volume }}{% endif %}{% if page.issue %},
+      iss. {{ page.issue }}{% endif %}{% if page.number %}, no. {{ page.number
+      }}{% endif %}{% if page.pages %}, pp. {{ page.pages }}{% endif %}{%
+      endcapture %} {% else %} {% capture preprint_server %}{% if page.preprint
+      contains "biorxiv" %}bioRxiv{% elsif page.preprint contains "medrxiv"
+      %}medRxiv{% else %}arXiv{% endif %}{% endcapture %} {% capture
+      journal_cite %}{{ preprint_server }} {{ page.preprint | split:"/" |
+      last}}{% endcapture %} {% endif %}
       <p class="header">Citation</p>
-      <p class="citation">{% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{ page.name }}." {{ journal_cite }} ({{page.date | date: "%Y" }}). doi: <a href="{{ page.doi }}" rel="noopener" target="_blank">{{ page.doi }}</a>.</p>
+      <p class="citation">
+        {% render_link_cite %}{{ page.authors }}{% endrender_link_cite %}. "{{
+        page.name }}." {{ journal_cite }} ({{page.date | date: "%Y" }}). doi:
+        <a href="{{ page.doi }}" rel="noopener" target="_blank"
+          >{{ page.doi }}</a
+        >.
+      </p>
     </div>
   </div>
 
@@ -61,5 +85,4 @@ layout: default
       </div>
     </div>
   </div>
-
 </div>

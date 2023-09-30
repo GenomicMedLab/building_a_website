@@ -1,16 +1,20 @@
 ---
 layout: default
 ---
+
 <div class="person two-column">
   <div class="side-column">
     <div class="side-column-section">
       <div class="side-img-container">
         {% if page.headshot %}
-          <img src="/assets/images/people/{{ page.headshot }}" class="person-headshot"/>
+        <img
+          src="/assets/images/people/{{ page.headshot }}"
+          class="person-headshot"
+        />
         {% else %}
-          <div class="placeholder-pic-container">
-            <i class="fa-solid fa-user placeholder-pic"></i>
-          </div>
+        <div class="placeholder-pic-container">
+          <i class="fa-solid fa-user placeholder-pic"></i>
+        </div>
         {% endif %}
       </div>
     </div>
@@ -20,35 +24,29 @@ layout: default
     </div>
   </div>
   <div class="main-column person">
-    {{ content }}
-
-    {% assign person_posts = site.posts | where_exp:"item", "item.people contains page.name" %}
-    {% if person_posts.size > 0 %}
-      <p class="subsection-header">Recent news</p>
-      <ul>
+    {{ content }} {% assign person_posts = site.posts | where_exp:"item",
+    "item.people contains page.name" %} {% if person_posts.size > 0 %}
+    <p class="subsection-header">Recent news</p>
+    <ul>
       {% for post in person_posts limit:3 %}
-        <li><a href="{{ post.url }}">{{ post.name }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.name }}</a></li>
       {% endfor %}
-      </ul>
+    </ul>
     {% endif %}
 
     <p class="subsection-header">Papers</p>
     <ul>
-    {% for paper in site.papers reversed %}
-      {% if paper.authors contains page.name %}
-        <li>
-          <a href="{{ paper.url }}">{{ paper.name }}</a>
-        </li>
-      {% else %}
-      {% for name in page.pub_names %}
-      {% if paper.authors contains name %}
-        <li>
-          <a href="{{ paper.url }}">{{ paper.name }}</a>
-        </li>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-    {% endfor %}
-  </ul>
+      {% for paper in site.papers reversed %} {% if paper.authors contains
+      page.name %}
+      <li>
+        <a href="{{ paper.url }}">{{ paper.name }}</a>
+      </li>
+      {% else %} {% for name in page.pub_names %} {% if paper.authors contains
+      name %}
+      <li>
+        <a href="{{ paper.url }}">{{ paper.name }}</a>
+      </li>
+      {% endif %} {% endfor %} {% endif %} {% endfor %}
+    </ul>
   </div>
 </div>
