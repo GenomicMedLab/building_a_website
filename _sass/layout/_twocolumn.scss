@@ -6,9 +6,7 @@
 
   .side-column {
     width: calc($content-width * 0.23);
-    // padding-top: $column-padding;
     padding-right: $column-padding;
-    // padding-bottom: $column-padding;
 
     .date {
       text-transform: uppercase;
@@ -39,14 +37,10 @@
 
   .main-column {
     width: $main-column-width;
-    // padding-top: $column-padding;
     padding-left: $column-padding;
-    // padding-bottom: $column-padding;
 
     .subsection-header {
       margin-top: $spacing-unit;
-      text-transform: uppercase;
-      font-weight: bold;
     }
 
     li {
