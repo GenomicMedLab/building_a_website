@@ -3,7 +3,11 @@ page.collection == "posts" or page.collection == "projects" or page.collection
 == "software" %}
 <div class="page-title-box wrapper">
   <div class="title-box">
-    <h1 class="title-text">{{ page.name }}</h1>
+    {% if page.name.size < 200 %}
+      <h1 class="title-text">{{ page.name }}</h1>
+    {% else %}
+      <h1 class="title-text condensed-title">{{ page.name }}</h1>
+    {% endif %}
     {% if page.collection == "posts" %} {% assign subtitle = page.date | date:
     "%B %-d, %Y" %} {% elsif page.collection == "people" %} {% assign subtitle =
     page.role %} {% elsif page.collection == "projects" %} {% assign subtitle =
