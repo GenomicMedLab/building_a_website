@@ -1,6 +1,5 @@
 .projects-container {
   .project-container {
-    padding-top: calc($spacing-unit / 2);
     margin-bottom: calc($spacing-unit / 2);
     h2 > a {
       text-decoration: none;
@@ -8,6 +7,9 @@
     h2 > a:hover {
       text-decoration: underline;
     }
+  }
+  .project-container:not(:first-child) {
+    padding-top: calc($spacing-unit / 2);
   }
 
   .project-excerpt {

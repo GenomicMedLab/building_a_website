@@ -6,7 +6,7 @@
   justify-content: space-between;
   $title-height: calc($spacing-unit * 5);
   min-height: $title-height;
-  border-bottom: 5px solid;
+  margin-bottom: $spacing-unit;
 
   .header-bg-img-container {
     min-height: $title-height;

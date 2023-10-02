@@ -1,25 +1,18 @@
 .news-list-container {
-  margin-top: calc($spacing-unit / 2);
-
   p {
     margin-bottom: 0px;
   }
 
-  .news-list-item {
-    .side-column {
-      padding-top: 0px !important;
-    }
-    .main-column {
-      padding-top: 0px !important;
-    }
-    margin-top: 0px !important;
+  .news-list-item:not(:last-child) {
+    margin-bottom: calc($spacing-unit / 2);
+  }
 
+  .news-list-item {
     .main-column {
       .title-link {
         font-weight: bold;
       }
     }
-
     .news-descr {
       p {
         display: inline;
