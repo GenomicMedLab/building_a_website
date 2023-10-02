@@ -27,11 +27,13 @@ permalink: /papers/
       <li>
         <div class="two-column paper-list-item-container">
           <div class="side-column paper-list-thumbnail-container">
-            <img
-              src="/assets/images/papers/{{ paper.thumbnail }}"
-              alt="figure preview from paper"
-              class="paper-list-thumbnail"
-            />
+            {% if paper.thumbnail %}
+              <img
+                src="/assets/images/papers/{{ paper.thumbnail }}"
+                alt="figure preview from paper"
+                class="paper-list-thumbnail"
+              />
+            {% endif %}
           </div>
           <div class="main-column paper-list-item">
             <p>{% render_bold_cite %}{{ paper.authors }}{% endrender_bold_cite %}.</p>
