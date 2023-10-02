@@ -23,8 +23,9 @@ layout: default
       {%- include person_links.html -%}
     </div>
   </div>
-  <div class="main-column person">
-    {{ content }} {% assign person_posts = site.posts | where_exp:"item",
+  <div class="main-column person text-content">
+    {{ content }}
+    {% assign person_posts = site.posts | where_exp:"item",
     "item.people contains page.name" %} {% if person_posts.size > 0 %}
     <p class="subsection-header">Recent news</p>
     <ul>
