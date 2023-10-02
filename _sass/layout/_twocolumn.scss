@@ -8,11 +8,6 @@
     width: calc($content-width * 0.23);
     padding-right: $column-padding;
 
-    .date {
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
     .side-img-container {
       display: flex;
       flex-direction: row;
