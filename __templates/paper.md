@@ -10,10 +10,11 @@ date:
 # should be a single string.
 # Any formatting is fine but be sure to update everyone's pub_names if needed
 authors:
-# journal citation matter (not full cite). Should be a single string, probably has to be quoted.
-# for arxiv, eg "bioRxiv 118992"
-# for journals, eg "Exp Eye Res. 2013 Jun;111:105-11."
-journal_cite:
+journal:
+# just provide whatever publication information is available
+volume:
+issue:
+number:
 doi:
 pmid:
 # link to article on publisher website
