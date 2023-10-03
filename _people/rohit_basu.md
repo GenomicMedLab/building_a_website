@@ -1,17 +1,14 @@
 ---
 layout: person
 
-name: Anika Paul
+name: Rohit Basu
 pub_names: []
-degree:
 role: Summer Intern
 headshot:
 
-email:
-github:
-google_scholar:
-orcid:
+nch_profile:
+github: rbasu101
 
+# either true or leave blank
 alumnae: true
 ---
-

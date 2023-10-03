@@ -4,7 +4,7 @@ layout: person
 name:
 # alternate name constructions that you publish under (full/formal names, previous names, etc.)
 pub_names: []
-# "Principal Investigator", "Postdoctoral Associate", "PhD Student", "Bioinformatics Software Developer", "Senior Bioinformatics Scientist"
+# "Principal Investigator", "Postdoctoral Associate", "PhD Student", "Bioinformatics Software Developer", "Senior Bioinformatics Scientist", "Summer Intern"
 role:
 # headshot filename in assets/images/, eg "alex_wagner.jpg"
 headshot:
