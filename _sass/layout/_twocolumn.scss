@@ -13,6 +13,10 @@
       flex-direction: row;
       justify-content: center;
     }
+
+        ul {
+            margin-left: calc($spacing-unit / 1.75);
+        }
   }
 
   .side-column > *:not(:last-child) {
@@ -20,9 +24,10 @@
   }
 
   .side-column-section > .header {
-    border-top: 3px black solid;
-    text-transform: uppercase;
+    border-bottom: 3px black solid;
+    // text-transform: uppercase;
     font-weight: bold;
+    font-size: calc($base-font-size * 1.1);
     margin-bottom: calc($spacing-unit / 5);
   }
 

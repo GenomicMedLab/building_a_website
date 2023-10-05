@@ -1,11 +1,13 @@
 .section-header {
-  border-top: 5px black solid;
-  text-transform: uppercase;
+  border-bottom: 4px black solid;
+  font-size: calc($base-font-size * 1.5);
+  // text-transform: uppercase;
   font-weight: bold;
 }
 
 .subsection-header {
-  border-top: 3px black solid;
-  text-transform: uppercase;
+  border-bottom: 3px black solid;
+  font-size: calc($base-font-size * 1.2);
+  // text-transform: uppercase;
   font-weight: bold;
 }
