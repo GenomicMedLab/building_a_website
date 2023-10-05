@@ -61,13 +61,16 @@
   .title-box {
     $title-spacing: calc($spacing-unit / 2);
     padding-top: $title-spacing;
-    padding-bottom: $title-spacing;
+    // padding-bottom: $title-spacing;
     h1 {
       font-weight: bold;
     }
     .condensed-title {
       font-size: 26px;
     }
+        .maximized-title {
+            font-size: 40px;
+        }
   }
 
   .title-text,
