@@ -11,7 +11,7 @@ doi: "https://doi.org/10.1186/s12864-021-08094-z"
 pmid: 34863095
 publisher_url: https://link.springer.com/article/10.1186/s12864-021-08094-z
 
-thumbnail: fusion_caller_paper_preview.png
+thumbnail: "fusion_caller_paper_preview.jpeg"
 
 projects: ["Gene Fusion Informatics"]
 ---
