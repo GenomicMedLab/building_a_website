@@ -17,15 +17,46 @@
     }
 
     .footer-column.left {
+      a,
       p {
         margin-bottom: 0px;
         font-size: calc($base-font-size * 0.8);
       }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+            .lab-matter {
+                margin-bottom: 10px;
+            }
+      .footer-icon-container {
+        display: flex;
+        flex-direction: row;
+        .icon {
+          margin-right: 15px;
+        }
+      }
     }
 
     .footer-column.right {
-      .nch-logo {
-        height: 50px;
+      .logo-container {
+        margin: 40px 0px 40px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .logo {
+          margin: 0px 20px 0px 20px;
+          max-width: 250px;
+        }
+        .nch-logo {
+          margin-bottom: 25px;
+        }
+        .osu-logo {
+          max-width: 226px;
+          padding-right: 7px;
+        }
       }
     }
   }

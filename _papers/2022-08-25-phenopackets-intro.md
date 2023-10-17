@@ -13,7 +13,7 @@ publisher_url: "https://onlinelibrary.wiley.com/doi/full/10.1002/ggn2.202200016"
 
 thumbnail: "phenopackets-intro.jpg"
 
-projects:
+projects: ["Variation Representation"]
 software:
 ---
 The Global Alliance for Genomics and Health (GA4GH) is developing a suite of coordinated standards for genomics for healthcare. The Phenopacket is a new GA4GH standard for sharing disease and phenotype information that characterizes an individual person, linking that individual to detailed phenotypic descriptions, genetic information, diagnoses, and treatments. A detailed example is presented that illustrates how to use the schema to represent the clinical course of a patient with retinoblastoma, including demographic information, the clinical diagnosis, phenotypic features and clinical measurements, an examination of the extirpated tumor, therapies, and the results of genomic analysis. The Phenopacket Schema, together with other GA4GH data and technical standards, will enable data exchange and provide a foundation for the computational analysis of disease and phenotype information to improve our ability to diagnose and conduct research on all types of disorders, including cancer and rare diseases.
