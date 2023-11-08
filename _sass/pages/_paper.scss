@@ -34,3 +34,15 @@
     }
   }
 }
+@media screen and (max-width: $content-width) {
+  .two-column {
+    flex-direction: column-reverse;
+    .side-column {
+      width: 100%;
+    }
+    .main-column {
+      padding-left: 0px;
+      width: 100%;
+    }
+  }
+}

@@ -14,9 +14,9 @@
       justify-content: center;
     }
 
-        ul {
-            margin-left: calc($spacing-unit / 1.75);
-        }
+    ul {
+      margin-left: calc($spacing-unit / 1.75);
+    }
   }
 
   .side-column > *:not(:last-child) {

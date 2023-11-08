@@ -16,7 +16,7 @@ title: Home
 <div class="home">
   <h2 class="section-header">Recent News</h2>
   <div class="news-list-container">
-    {% for post in site.posts limit: 5%}
+    {% for post in site.posts limit: 5 %}
     <div class="two-column news-list-item">
       <div class="side-column news-list-date">
         <p>{{ post.date | date: "%B %-d, %Y" }}</p>
