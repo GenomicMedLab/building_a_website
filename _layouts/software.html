@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="two-column">
   <div class="side-column">
     <div class="side-column-section">
@@ -45,10 +44,7 @@ layout: default
     {% endif %}
   </div>
   <div class="main-column">
-    {% assign content = page.content | strip %}
     <p>{{ content }}</p>
-    {% endif %}
-
     {% if page.latest_commits.size > 0 %}
     <p class="subsection-header">Recent commits</p>
     <ul class="commits-list">

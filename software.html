@@ -12,8 +12,11 @@ permalink: /software/
         <a class="software-name" href="{{ software.url  }}">{{ software.name }}</a>
       </div>
       <div class="software-details-row">
-        {% if software.latest_version %} {{ software.latest_version }} {% else
-        %} Prerelease {% endif %}
+        {% if software.latest_version %}
+            {{ software.latest_version }}
+        {% else %}
+            Prerelease
+        {% endif %}
         <div class="software-languages">
           {% for lang in software.languages %}
           <div class="software-language-box {{ lang | downcase }}">
