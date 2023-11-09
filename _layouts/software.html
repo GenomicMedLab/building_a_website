@@ -32,15 +32,48 @@ layout: default
         {% endif %}
       </ul>
     </div>
+    {% if page.contributors %}
+    <div class="side-column-section">
+      <p class="header">Contributors</p>
+      <ul class="side-list">
+        {% for contributor in page.contributors %} {% assign person =
+        site.people | where:"github",contributor | first %} {% if person %}
+        <li><a href="{{ person.url }}">{{ person.name }}</a></li>
+        {% endif %} {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
   </div>
   <div class="main-column">
     <p>{{ page.content }}</p>
-
     <p>Todo:</p>
     <ul>
-      <li>get contributor info from GitHub API</li>
       <li>fill in description etc from pypi?github?</li>
       <li>fill in language info from GitHub API</li>
+      <li>get latest version info?</li>
     </ul>
+
+    {% if page.latest_commits.size > 0 %}
+    <p class="subsection-header">Recent commits</p>
+    <ul class="commits-list">
+      {% for commit in page.latest_commits %} {% assign commit_person =
+      site.people | where:"github",commit.author | first %} {% if commit_person
+      %}
+      <li>
+        <a
+          class="commit-link"
+          href="{{ commit.url }}"
+          target="_blank"
+          rel="noopener"
+          >{{ commit.commit }}</a
+        >
+        by
+        <a class="commit-author-link" href="{{ commit_person.url }}"
+          >{{ commit_person.name }}</a
+        >
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+    {% endif %}
   </div>
 </div>

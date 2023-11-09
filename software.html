@@ -3,10 +3,25 @@ layout: default
 title: Software
 permalink: /software/
 ---
-
-<h1>software</h1>
-<ul>
-  {% for software in site.software %}
-  <li><a href="{{ software.url  }}">{{ software.name }}</a></li>
-  {% endfor %}
-</ul>
+<p>we make software</p>
+<p>open source good</p>
+<div class="software-index-container">
+    {% for software in site.software %}
+    <div class="software-list-item">
+      <div class="software-name-row">
+        <a class="software-name" href="{{ software.url  }}">{{ software.name }}</a>
+      </div>
+      <div class="software-details-row">
+        {% if software.latest_version %} {{ software.latest_version }} {% else
+        %} Prerelease {% endif %}
+        <div class="software-languages">
+          {% for lang in software.languages %}
+          <div class="software-language-box {{ lang | downcase }}">
+            {{ lang }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>

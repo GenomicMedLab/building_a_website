@@ -1,0 +1,41 @@
+.software-index-container {
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+
+  .software-list-item {
+    width: 200px;
+    margin-bottom: 50px;
+
+    .software-name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .software-languages {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .software-language-box {
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 3px;
+        margin-right: 5px;
+        font-size: 12px;
+      }
+            .typescript {
+                background-color: #008DD5;
+            }
+            .python {
+                background-color: #4C9F70;
+            }
+            .ruby {
+                background-color: #F64740;
+            }
+            .shell {
+                background-color: #F7D08A;
+            }
+    }
+  }
+}
