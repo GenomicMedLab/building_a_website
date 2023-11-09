@@ -46,7 +46,8 @@ def get_latest_commits(org: str, repo: str) -> List:
     for commit in commits[:5]:
         commit_data.append({
             "commit": commit["commit"]["message"].split("\n")[0],
-            "author": commit["author"]["login"]
+            "author": commit["author"]["login"],
+            "url": commit["html_url"]
         })
 
     return commit_data
@@ -67,11 +68,14 @@ def get_languages(org: str, repo: str) -> List:
     return languages
 
 
-def get_latest_version(org: str, repo: str) -> Optional[str]:
+def get_latest_release(org: str, repo: str) -> Optional[Dict]:
     url = f"https://api.github.com/repos/{org}/{repo}/releases"
     repo_data = requests.get(url, headers=request_headers).json()
     try:
-        return repo_data[0]["tag_name"]
+        return {
+            "version": repo_data[0]["tag_name"],
+            "url": repo_data[0]["html_url"],
+        }
     except IndexError:
         return None
 
@@ -99,7 +103,7 @@ def update_file(file: Path) -> None:
     repo = repo.strip("/")
     data["latest_commits"] = get_latest_commits(org, repo)
     data["languages"] = get_languages(org, repo)
-    data["latest_version"] = get_latest_version(org, repo)
+    data["latest_release"] = get_latest_release(org, repo)
     data["contributors"] = get_contributors(org, repo)
     write_updated_file(file, data, content)
 
@@ -113,5 +117,5 @@ def update_software_files() -> None:
             print(e)
 
 
-# if __name__ == "__main__":
-#     update_software_files()
+if __name__ == "__main__":
+    update_software_files()
