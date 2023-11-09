@@ -45,13 +45,9 @@ layout: default
     {% endif %}
   </div>
   <div class="main-column">
-    <p>{{ page.content }}</p>
-    <p>Todo:</p>
-    <ul>
-      <li>fill in description etc from pypi?github?</li>
-      <li>fill in language info from GitHub API</li>
-      <li>get latest version info?</li>
-    </ul>
+    {% assign content = page.content | strip %}
+    <p>{{ content }}</p>
+    {% endif %}
 
     {% if page.latest_commits.size > 0 %}
     <p class="subsection-header">Recent commits</p>

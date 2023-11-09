@@ -36,5 +36,4 @@ projects:
 - Gene Fusion Informatics
 source: github.com/cancervariants/fusor
 ---
-Do not change this part
 
