@@ -4,7 +4,7 @@ layout: person
 name: Anika Paul
 pub_names: []
 degree:
-role: Summer Intern
+role: Student Intern
 headshot:
 
 email:
