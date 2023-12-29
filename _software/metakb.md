@@ -31,7 +31,6 @@ latest_commits:
 latest_release:
   url: https://github.com/cancervariants/metakb/releases/tag/1.2.0-dev0
   version: 1.2.0-dev0
-latest_version: 1.2.0-dev0
 layout: software
 live: null
 name: MetaKB

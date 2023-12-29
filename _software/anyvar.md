@@ -8,11 +8,18 @@ contributors:
 - larrybabb
 - theferrit32
 - naomifox-invitae
+- ehclark
 distribution: null
 docs: null
 languages:
 - Python
 latest_commits:
+- author: ehclark
+  commit: Added 'dependencies' and 'optional-dependencies' to dynamic list (#69)
+  url: https://github.com/biocommons/anyvar/commit/5c1f37d3f7888ffb0a5d798a81574d7a12deffd4
+- author: reece
+  commit: updated stale.yml config
+  url: https://github.com/biocommons/anyvar/commit/ee61ba71f16f39a81280157b2541761c244eae7c
 - author: korikuzma
   commit: 'chore: remove unused code (#63)'
   url: https://github.com/biocommons/anyvar/commit/978656918ed0e6da280a4dd525154140d556d0ec
@@ -22,15 +29,7 @@ latest_commits:
 - author: korikuzma
   commit: 'chore: use python3.11 (#59)'
   url: https://github.com/biocommons/anyvar/commit/ffd5dda61b025041aaa631b27d752cc3368b0c8a
-- author: jsstevenson
-  commit: 'ci: incorporate more style check and package build elements from Biocommons
-    template  (#58)'
-  url: https://github.com/biocommons/anyvar/commit/f7cf78b53a331e54736bbe8ab6b029b733b57325
-- author: jsstevenson
-  commit: 'feat: (re-)add VRS-Python translator (#54)'
-  url: https://github.com/biocommons/anyvar/commit/6e4fd31e5d967b1fc0cfa5d3a97a84ff13d49cb2
 latest_release: null
-latest_version: null
 layout: software
 live: null
 name: AnyVar

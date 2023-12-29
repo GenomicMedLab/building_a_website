@@ -44,27 +44,32 @@ layout: default
     {% endif %}
   </div>
   <div class="main-column">
-    <p>{{ content }}</p>
+    {% if page.description %}
+    <p>{{ page.description }}</p>
+    {% endif %}
     {% if page.latest_commits.size > 0 %}
     <p class="subsection-header">Recent commits</p>
     <ul class="commits-list">
-      {% for commit in page.latest_commits %} {% assign commit_person =
-      site.people | where:"github",commit.author | first %} {% if commit_person
-      %}
-      <li>
-        <a
-          class="commit-link"
-          href="{{ commit.url }}"
-          target="_blank"
-          rel="noopener"
-          >{{ commit.commit }}</a
-        >
-        by
-        <a class="commit-author-link" href="{{ commit_person.url }}"
-          >{{ commit_person.name }}</a
-        >
-      </li>
-      {% endif %} {% endfor %}
+      {% for commit in page.latest_commits %}
+        <li>
+          <a
+            class="commit-link"
+            href="{{ commit.url }}"
+            target="_blank"
+            rel="noopener"
+            >{{ commit.commit }}</a
+          >
+          by
+          {% assign commit_person = site.people | where:"github",commit.author | first %}
+          {% if commit_person %}
+            <a class="commit-author-link" href="{{ commit_person.url }}">
+              {{ commit_person.name }}
+            </a>
+          {% else %}
+            {{ commit.author }}
+          {% endif %}
+        </li>
+      {% endfor %}
     </ul>
     {% endif %}
   </div>

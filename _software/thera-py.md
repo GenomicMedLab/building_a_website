@@ -15,24 +15,23 @@ languages:
 - Shell
 latest_commits:
 - author: jsstevenson
-  commit: 'build: use pyproject.toml for build configuration (#377)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/d5fbcacf873dcaaea65ae01c0b36b8bd865541d9
+  commit: 'feat!: remove search result formatting option (#394)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/8902b260bcd7c126496ed51190c0d44b896d079d
 - author: jsstevenson
-  commit: 'cicd: add Ruff linting and formatting (#376)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/a1d10d461a49c887ff6d13d11d8d49cdb753e331
-- author: korikuzma
-  commit: 'cicd: add python3.11 to python-version matrix (#373)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/2f27f3693a65862bc9ab95d52badcc2df33e686a
-- author: korikuzma
-  commit: 'feat!: use vrs 2.0-alpha models in /normalize (#364)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/b632b569b838b66222e1986f66d86dc60d96c836
+  commit: 'feat: sort everything (#393)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/8b2c509a0286ad2fba5f8b26097c7eb0f738c3d4
 - author: jsstevenson
-  commit: 'chore: remove unused makefile (#372)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/eec896b9fd1fa906a43e907be4c8b699211d3f02
+  commit: 'feat!: refine schemas (#392)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/564e8472bc42af61f3b1271f628be2923284b174
+- author: jsstevenson
+  commit: 'chore: fix up logging (#390)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/a78db85f6f747537fc57c4f02a4c7af103dc0ec7
+- author: jsstevenson
+  commit: 'perf: improve disease caching (#391)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/354a24342d6522873a25d639948312acffe1c59c
 latest_release:
-  url: https://github.com/cancervariants/therapy-normalization/releases/tag/0.3.10
-  version: 0.3.10
-latest_version: 0.3.10
+  url: https://github.com/cancervariants/therapy-normalization/releases/tag/0.5.0-dev1
+  version: 0.5.0-dev1
 layout: software
 live: https://normalize.cancervariants.org/therapy
 name: Thera-Py

@@ -1,8 +1,8 @@
 ---
 contributors:
 - cjosu
-- jsstevenson
 - katiestahl
+- jsstevenson
 - acoffman
 - mcannon068nw
 - nairod2000
@@ -15,24 +15,23 @@ languages:
 - TypeScript
 latest_commits:
 - author: katiestahl
+  commit: Merge branch 'staging' into main
+  url: https://github.com/dgidb/dgidb-v5/commit/012b75fc16d72a2d2e5e3607784d7307f8a05945
+- author: mcannon068nw
   commit: Automated frontend build
-  url: https://github.com/dgidb/dgidb-v5/commit/718b21ba244e5ad4ff1fb1652ca7f6353e6db3f9
-- author: katiestahl
-  commit: Staging (#448)
-  url: https://github.com/dgidb/dgidb-v5/commit/20d8e690bff52962b6789591c9ec0e709702e447
-- author: katiestahl
+  url: https://github.com/dgidb/dgidb-v5/commit/a8a4c8438f76e39518a922aaf4c75c05cf577933
+- author: mcannon068nw
+  commit: Staging (#465)
+  url: https://github.com/dgidb/dgidb-v5/commit/ba4384f7c54e7acb6c3a17cbae5f4dd14b5767ef
+- author: mcannon068nw
   commit: Automated frontend build
-  url: https://github.com/dgidb/dgidb-v5/commit/f2fa4fa034c2a8329b1cf062c25e5f8991ae2c1b
-- author: katiestahl
-  commit: October 2023 release (#445)
-  url: https://github.com/dgidb/dgidb-v5/commit/e6ce3efe65effb3e308e534bbba727fd077a8c06
-- author: acoffman
-  commit: Automated frontend build
-  url: https://github.com/dgidb/dgidb-v5/commit/f3ed0a22576dbaf31bdf93bcc44bf8c15bf42247
+  url: https://github.com/dgidb/dgidb-v5/commit/5e44f691e59f59d50415a99d4f4774c481d1449a
+- author: mcannon068nw
+  commit: Merge branch 'main' into staging
+  url: https://github.com/dgidb/dgidb-v5/commit/c75de3718e88479f0a2be503cdacbdd98a538c68
 latest_release:
-  url: https://github.com/dgidb/dgidb-v5/releases/tag/v.5.0.0
-  version: v.5.0.0
-latest_version: v.5.0.0
+  url: https://github.com/dgidb/dgidb-v5/releases/tag/v.5.0.3
+  version: v.5.0.3
 layout: software
 live: https://beta.dgidb.org
 name: DGIdb

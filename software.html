@@ -12,8 +12,8 @@ permalink: /software/
         <a class="software-name" href="{{ software.url  }}">{{ software.name }}</a>
       </div>
       <div class="software-details-row">
-        {% if software.latest_version %}
-            {{ software.latest_version }}
+        {% if software.latest_release and software.latest_release.version %}
+            {{ software.latest_release.version }}
         {% else %}
             Prerelease
         {% endif %}

@@ -5,6 +5,7 @@ from typing import Dict, List, Tuple, Optional
 from pathlib import Path
 import yaml
 
+import markdown
 import requests
 
 
@@ -87,6 +88,32 @@ def get_contributors(org: str, repo: str) -> List:
     return [c["login"] for c in contributor_data]
 
 
+def get_docs(org: str, repo: str) -> Optional[str]:
+    url = f"https://api.github.com/repos/{org}/{repo}"
+    repo_data = requests.get(url, headers=request_headers).json()
+    homepage = repo_data.get("homepage")
+    if not homepage or "readthedocs" not in homepage:
+        return None
+    return homepage
+
+
+def get_description(org: str, repo: str) -> Optional[str]:
+    url = f"https://raw.githubusercontent.com/{org}/{repo}/main/README.md"
+    response = requests.get(url)
+    try:
+        response.raise_for_status()
+    except requests.HTTPError:
+        return None
+    pattern = "<!-- description -->([\\S\\s]*)<!-- /description -->"
+    description_matches = re.findall(pattern, response.text)
+    if not description_matches:
+        return None
+    description = description_matches[0]
+    html = markdown.markdown(description, extensions=["sane_lists"])
+    processed = re.sub("\\n", "", html)
+    return processed
+
+
 def write_updated_file(file: Path, data: Dict, content: List) -> None:
     yaml_str = yaml.dump(data)
     content_str = "\n".join([line for line in content if line != "\n"])
@@ -105,6 +132,13 @@ def update_file(file: Path) -> None:
     data["languages"] = get_languages(org, repo)
     data["latest_release"] = get_latest_release(org, repo)
     data["contributors"] = get_contributors(org, repo)
+    # only overwrite if available
+    docs = get_docs(org, repo)
+    if docs:
+        data["docs"] = docs
+    description = get_description(org, repo)
+    if description:
+        data["description"] = description
     write_updated_file(file, data, content)
 
 

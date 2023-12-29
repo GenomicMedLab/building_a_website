@@ -29,7 +29,6 @@ latest_commits:
 latest_release:
   url: https://github.com/cancervariants/fusor/releases/tag/v.0.0.30-dev1
   version: v.0.0.30-dev1
-latest_version: v.0.0.30-dev1
 layout: software
 name: FUSOR
 projects:

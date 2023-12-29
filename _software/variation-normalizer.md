@@ -15,6 +15,9 @@ languages:
 - Python
 latest_commits:
 - author: korikuzma
+  commit: 'feat: expose cool-seq-tool feature overlap endpoint (#523)'
+  url: https://github.com/cancervariants/variation-normalization/commit/da230a5d3e0f44df1971589a42ff0a0dcb2e4937
+- author: korikuzma
   commit: 'cicd: change terminate_time to 12h (#318)'
   url: https://github.com/cancervariants/variation-normalization/commit/dda730e62fda4812410d56f5e2d4c2ab3af4aff4
 - author: korikuzma
@@ -26,13 +29,9 @@ latest_commits:
 - author: korikuzma
   commit: 'fix: catch pydantic ValidationError in parsed to cnv endpoints'
   url: https://github.com/cancervariants/variation-normalization/commit/9dc85b238b430de24688cd53736298f50bec1f27
-- author: korikuzma
-  commit: 'cicd: update elastic beanstalk eb extensions for python3.11 + p7zip'
-  url: https://github.com/cancervariants/variation-normalization/commit/2cca94d710ddff10281843736d8f7fcd81ef927c
 latest_release:
-  url: https://github.com/cancervariants/variation-normalization/releases/tag/0.6.0-dev0
-  version: 0.6.0-dev0
-latest_version: 0.6.0-dev0
+  url: https://github.com/cancervariants/variation-normalization/releases/tag/0.6.0-dev1
+  version: 0.6.0-dev1
 layout: software
 live: https://normalize.cancervariants.org/variation
 name: Variation Normalizer
