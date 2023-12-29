@@ -1,22 +1,11 @@
 ---
-authors: Peter Horak, Malachi Griffith, Arpad M. Danos, Beth A. Pitel, Subha Madhavan,
-  Xuelu Liu, Cynthia Chow, Heather Williams, Leigh Carmody, Lisa Barrow-Laing, Damian
-  Rieke, Simon Kreutzfeldt, Albrecht Stenzinger, David Tamborero, Manuela Benary,
-  Padma Sheila Rajagopal, Cristiane M. Ida, Harry Lesmana, Laveniya Satgunaseelan,
-  Jason D. Merker, Michael Y. Tolstorukov, Paulo Vidal Campregher, Jeremy L. Warner,
-  Shruti Rao, Maya Natesan, Haolin Shen, Jeffrey Venstrom, Somak Roy, Kayoko Tao,
-  Rashmi Kanagal-Shamanna, Xinjie Xu, Deborah I. Ritter, Kym Pagel, Kilannin Krysiak,
-  Adrian Dubuc, Yassmine M. Akkari, Xuan Shirley Li, Jennifer Lee, Ian King, Gordana
-  Raca, Alex H. Wagner, Marylin M. Li, Sharon E. Plon, Shashikant Kulkarni, Obi L.
-  Griffith, Debyani Chakravarty, Dmitriy Sonkin
+authors: Peter Horak, Malachi Griffith, Arpad M. Danos, Beth A. Pitel, Subha Madhavan, Xuelu Liu, Cynthia Chow, Heather Williams, Leigh Carmody, Lisa Barrow-Laing, Damian Rieke, Simon Kreutzfeldt, Albrecht Stenzinger, David Tamborero, Manuela Benary, Padma Sheila Rajagopal, Cristiane M. Ida, Harry Lesmana, Laveniya Satgunaseelan, Jason D. Merker, Michael Y. Tolstorukov, Paulo Vidal Campregher, Jeremy L. Warner, Shruti Rao, Maya Natesan, Haolin Shen, Jeffrey Venstrom, Somak Roy, Kayoko Tao, Rashmi Kanagal-Shamanna, Xinjie Xu, Deborah I. Ritter, Kym Pagel, Kilannin Krysiak, Adrian Dubuc, Yassmine M. Akkari, Xuan Shirley Li, Jennifer Lee, Ian King, Gordana Raca, Alex H. Wagner, Marylin M. Li, Sharon E. Plon, Shashikant Kulkarni, Obi L. Griffith, Debyani Chakravarty, Dmitriy Sonkin
 date: 2022-05-01
 doi: https://doi.org/10.1016/j.gim.2022.01.001
 issue: 5
 journal: Genetics in Medicine
 layout: paper
-name: 'Standards for the classification of pathogenicity of somatic variants in cancer
-  (oncogenicity): Joint recommendations of Clinical Genome Resource (ClinGen), Cancer
-  Genomics Consortium (CGC), and Variant Interpretation for Cancer Consortium (VICC)'
+name: 'Standards for the classification of pathogenicity of somatic variants in cancer (oncogenicity): Joint recommendations of Clinical Genome Resource (ClinGen), Cancer Genomics Consortium (CGC), and Variant Interpretation for Cancer Consortium (VICC)'
 pmid: 35101336
 projects:
 - Variation Assessment

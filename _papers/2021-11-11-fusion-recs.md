@@ -1,6 +1,5 @@
 ---
-authors: Alex H. Wagner, Yassmine Akkari, Marilyn Li, Angshumoy Roy, Karen Tsuchiya
-  & Gordana Raca
+authors: Alex H. Wagner, Yassmine Akkari, Marilyn Li, Angshumoy Roy, Karen Tsuchiya & Gordana Raca
 date: 2021-11-11
 doi: https://doi.org/10.1038/s41375-021-01458-0
 journal: Leukemia

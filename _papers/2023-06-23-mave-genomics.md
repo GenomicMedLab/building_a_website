@@ -1,8 +1,5 @@
 ---
-authors: Jeremy A. Arbesfeld, Estelle Y. Da, Kori Kuzma, Anika Paul, Tierra Farris,
-  Kevin Riehle, Nuno Daniel Saraiva Agostinho, Jordan F. Safer, Aleksandar Milosavljevic,
-  Julia Foreman, Helen V. Firth, Sarah E. Hunt, Sumaiya Iqbal, Melissa Cline, Alan
-  F. Rubin, Alex H. Wagner
+authors: Jeremy A. Arbesfeld, Estelle Y. Da, Kori Kuzma, Anika Paul, Tierra Farris, Kevin Riehle, Nuno Daniel Saraiva Agostinho, Jordan F. Safer, Aleksandar Milosavljevic, Julia Foreman, Helen V. Firth, Sarah E. Hunt, Sumaiya Iqbal, Melissa Cline, Alan F. Rubin, Alex H. Wagner
 date: 2023-06-23
 doi: https://doi.org/10.1101/2023.06.20.545702
 github: https://github.com/ave-dcd/dcd_mapping

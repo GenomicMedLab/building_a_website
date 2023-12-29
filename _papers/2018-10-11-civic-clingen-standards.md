@@ -1,17 +1,11 @@
 ---
-authors: Arpad M. Danos, Deborah I. Ritter, Alex H. Wagner, Kilannin Krysiak, Dmitriy
-  Sonkin, Christine Micheel, Matthew McCoy, Shruti Rao, Gordana Raca, Simina M. Boca,
-  Angshumoy Roy, Erica K. Barnell, Joshua F. McMichael, Susanna Kiwala, Adam C. Coffman,
-  Lynzey Kujan, Shashikant Kulkarni, Malachi Griffith, Subha Madhavan, Obi L. Griffith,
-  Clinical Genome Resource Somatic Working Group and Clinical Interpretation of Variants
-  in Cancer team members
+authors: Arpad M. Danos, Deborah I. Ritter, Alex H. Wagner, Kilannin Krysiak, Dmitriy Sonkin, Christine Micheel, Matthew McCoy, Shruti Rao, Gordana Raca, Simina M. Boca, Angshumoy Roy, Erica K. Barnell, Joshua F. McMichael, Susanna Kiwala, Adam C. Coffman, Lynzey Kujan, Shashikant Kulkarni, Malachi Griffith, Subha Madhavan, Obi L. Griffith, Clinical Genome Resource Somatic Working Group and Clinical Interpretation of Variants in Cancer team members
 date: 2018-10-11
 doi: https://doi.org/10.1002/humu.23651
 issue: 11
 journal: Human Mutation
 layout: paper
-name: Adapting crowdsourced clinical cancer curation in CIViC to the ClinGen minimum
-  variant level data community-driven standards
+name: Adapting crowdsourced clinical cancer curation in CIViC to the ClinGen minimum variant level data community‐driven standards
 pages: 1721-1732
 pmid: '30311370'
 projects: null

@@ -1,8 +1,5 @@
 ---
-authors: Daniel Danis, Julius O. B. Jacobsen, Alex H. Wagner, Tudor Groza, Martha
-  A. Beckwith, Lauren Rekerle, Leigh C. Carmody, Justin Reese, Harshad Hegde, Markus
-  S. Ladewig, Berthold Seitz, Monica Munoz-Torres, Nomi L. Harris, Jordi Rambla, Michael
-  Baudis, Christopher J. Mungall, Melissa A. Haendel, Peter N. Robinson
+authors: Daniel Danis, Julius O. B. Jacobsen, Alex H. Wagner, Tudor Groza, Martha A. Beckwith, Lauren Rekerle, Leigh C. Carmody, Justin Reese, Harshad Hegde, Markus S. Ladewig, Berthold Seitz, Monica Munoz-Torres, Nomi L. Harris, Jordi Rambla, Michael Baudis, Christopher J. Mungall, Melissa A. Haendel, Peter N. Robinson
 date: '2023-05-17'
 doi: https://doi.org/10.1371/journal.pone.0285433
 issue: 5

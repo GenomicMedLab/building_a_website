@@ -1,7 +1,5 @@
 ---
-authors: Alex H. Wagner, Susanna Kiwala, Adam C. Coffman, Joshua F. McMichael, Kelsy
-  C. Cotto, Thomas B. Mooney, Erica K. Barnell, Kilannin Krysiak, Arpad M. Danos,
-  Jason Walker, Obi L. Griffith, and Malachi Griffith
+authors: Alex H. Wagner, Susanna Kiwala, Adam C. Coffman, Joshua F. McMichael, Kelsy C. Cotto, Thomas B. Mooney, Erica K. Barnell, Kilannin Krysiak, Arpad M. Danos, Jason Walker, Obi L. Griffith, and Malachi Griffith
 date: 2020-03-19
 doi: https://doi.org/10.1200/cci.19.00127
 github: https://github.com/griffithlab/civicpy

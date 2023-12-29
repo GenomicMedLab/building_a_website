@@ -1,11 +1,10 @@
 ---
-authors: Alex H. Wagner, Kyle R. Taylor, Adam P. DeLuca, Thomas L. Casavant, Robert
-  F. Mullins, Edwin M. Stone, Todd E. Scheetz, Terry A. Braun
+authors: Alex H. Wagner, Kyle R. Taylor, Adam P. DeLuca, Thomas L. Casavant, Robert F. Mullins, Edwin M. Stone, Todd E. Scheetz, Terry A. Braun
 date: 2013-06-01
 doi: https://doi.org/10.1002/humu.22317
 journal: Human Mutation
 layout: paper
-name: 'Prioritization of retinal disease genes: an integrative approach'
+name: 'Prioritization of Retinal Disease Genes: An Integrative Approach'
 pages: 853-859
 pmid: 23508994
 publisher_url: https://onlinelibrary.wiley.com/doi/10.1002/humu.22317

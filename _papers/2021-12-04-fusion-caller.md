@@ -1,12 +1,5 @@
 ---
-authors: "Stephanie LaHaye, James R. Fitch, Kyle J. Voytovich, Adam C. Herman, Benjamin\
-  \ J. Kelly, Grant E. Lammi, Jeremy A. Arbesfeld, Saranga Wijeratne, Samuel J. Franklin,\
-  \ Kathleen M. Schieffer, Natalie Bir, Sean D. McGrath, Anthony R. Miller, Amy Wetzel,\
-  \ Katherine E. Miller, Tracy A. Bedrosian, Kristen Leraas, Elizabeth A. Varga, Kristy\
-  \ Lee, Ajay Gupta, Bhuvana Setty, Daniel R. Bou\xE9, Jeffrey R. Leonard, Jonathan\
-  \ L. Finlay, Mohamed S. Abdelbaki, Diana S. Osorio, Selene C. Koo, Daniel C. Koboldt,\
-  \ Alex H. Wagner, Ann-Kathrin Eisfeld, Krzysztof Mr\xF3zek, Vincent Magrini, Catherine\
-  \ E. Cottrell, Elaine R. Mardis, Richard K. Wilson & Peter White"
+authors: Stephanie LaHaye, James R. Fitch, Kyle J. Voytovich, Adam C. Herman, Benjamin J. Kelly, Grant E. Lammi, Jeremy A. Arbesfeld, Saranga Wijeratne, Samuel J. Franklin, Kathleen M. Schieffer, Natalie Bir, Sean D. McGrath, Anthony R. Miller, Amy Wetzel, Katherine E. Miller, Tracy A. Bedrosian, Kristen Leraas, Elizabeth A. Varga, Kristy Lee, Ajay Gupta, Bhuvana Setty, Daniel R. Boué, Jeffrey R. Leonard, Jonathan L. Finlay, Mohamed S. Abdelbaki, Diana S. Osorio, Selene C. Koo, Daniel C. Koboldt, Alex H. Wagner, Ann-Kathrin Eisfeld, Krzysztof Mrózek, Vincent Magrini, Catherine E. Cottrell, Elaine R. Mardis, Richard K. Wilson & Peter White
 date: 2021-12-04
 doi: https://doi.org/10.1186/s12864-021-08094-z
 journal: BMC Genomics

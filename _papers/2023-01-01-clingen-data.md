@@ -1,12 +1,10 @@
 ---
-authors: Karen P. Dalton, Heidi L. Rehm, Matt W. Wright, Mark E. Mandell, Kilannin
-  Krysiak, Lawrence Babb, Kevin Riehle, Tristan Nelson, and Alex H. Wagner
+authors: Karen P. Dalton, Heidi L. Rehm, Matt W. Wright, Mark E. Mandell, Kilannin Krysiak, Lawrence Babb, Kevin Riehle, Tristan Nelson, and Alex H. Wagner
 date: 2023-01-01
 doi: https://doi.org/10.1142/9789811270611_0048
 journal: Biocomputing
 layout: paper
-name: Accessing clinical-grade genomic classification data through the ClinGen Data
-  Platform
+name: Accessing clinical-grade genomic classification data through the ClinGen Data Platform
 pages: 531-535
 pmid: 36541006
 projects:

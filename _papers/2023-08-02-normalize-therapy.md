@@ -1,12 +1,11 @@
 ---
-authors: Matthew Cannon, James Stevenson, Kori Kuzma, Susanna Kiwala, Jeremy L Warner,
-  Obi L Griffith, Malachi Griffith, Alex H Wagner
+authors: Matthew Cannon, James Stevenson, Kori Kuzma, Susanna Kiwala, Jeremy L Warner, Obi L Griffith, Malachi Griffith, Alex H Wagner
 date: 2023-11-08
 doi: https://doi.org/10.1101/2023.07.27.23293245
 issue: 4
 journal: JAMIA Open
 layout: paper
-name: Normalization of Drug and Therapeutic Concepts with Thera-Py
+name: Normalization of Drug and Therapeutic Concepts with TheraPy
 preprint: https://www.medrxiv.org/content/10.1101/2023.07.27.23293245v1
 projects:
 - Knowledgebase Integration

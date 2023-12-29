@@ -1,14 +1,10 @@
 ---
-authors: "Wesley Goar, Lawrence Babb, Srikar Chamala, Melissa Cline, Robert R. Freimuth,\
-  \ Reece K. Hart, Kori Kuzma, Jennifer Lee, Tristan Nelson, Andreas Prli\u0107, Kevin\
-  \ Riehle, Anastasia Smith, Kathryn Stahl, Andrew D. Yates, Heidi L. Rehm, and Alex\
-  \ H. Wagner"
+authors: Wesley Goar, Lawrence Babb, Srikar Chamala, Melissa Cline, Robert R. Freimuth, Reece K. Hart, Kori Kuzma, Jennifer Lee, Tristan Nelson, Andreas Prlić, Kevin Riehle, Anastasia Smith, Kathryn Stahl, Andrew D. Yates, Heidi L. Rehm, and Alex H. Wagner
 date: 2023-01-01
 doi: https://doi.org/10.1142/9789811270611_0035
 journal: Biocomputing
 layout: paper
-name: Development and application of a computable genotype model in the GA4GH Variation
-  Representation Specification
+name: Development and application of a computable genotype model in the GA4GH Variation Representation Specification
 pages: 383-394
 pmid: 36540993
 preprint: https://www.biorxiv.org/content/10.1101/2022.09.06.506817v1.abstract
