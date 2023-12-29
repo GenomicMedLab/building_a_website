@@ -19,9 +19,22 @@ permalink: /software/
         {% endif %}
         <div class="software-languages">
           {% for lang in software.languages %}
-          <div class="software-language-box {{ lang | downcase }}">
-            {{ lang }}
-          </div>
+            {% if lang == 'Python' %}
+              {% assign lang_url = "Python-4C9F70" %}
+            {% elsif lang == 'Ruby' %}
+              {% assign lang_url = "Ruby-F64740" %}
+            {% elsif lang == 'TypeScript' %}
+              {% assign lang_url = "TypeScript-008DD5" %}
+            {% elsif lang == 'Shell' %}
+              {% assign lang_url = "Shell-F7D08A" %}
+            {% elsif lang == 'Rust' %}
+              {% assign lang_url = "Rust-50514F" %}
+            {% else %}
+              {% assign lang_url = nil %}
+            {% endif %}
+            {% if lang_url %}
+              <img alt="Static Badge" src="https://img.shields.io/badge/{{ lang_url }}" class = "language-badge" />
+            {% endif %}
           {% endfor %}
         </div>
       </div>

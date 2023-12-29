@@ -36,7 +36,7 @@ latest_release:
   url: https://github.com/GenomicMedLab/cool-seq-tool/releases/tag/0.1.14-dev3
   version: 0.1.14-dev3
 layout: software
-name: cool-seq-tool
+name: CoolSeqTool
 source: https://github.com/GenomicMedLab/cool-seq-tool/
 ---
 
