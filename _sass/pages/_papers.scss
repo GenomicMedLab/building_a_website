@@ -13,6 +13,7 @@
   .paper-list {
     list-style-type: none;
     margin-left: 0px;
+
   }
 
   .paper-list-item-container {
@@ -39,6 +40,21 @@
     width: 170px;
     border: 2px solid black;
     padding: 7px;
+  }
+
+  .paper-placeholder-container {
+    height: 80px;
+    padding: calc($spacing-unit / 3);
+    border: 3px solid black;
+    display: flex;
+    flex-align: row;
+    justify-content: center;
+    align-items: center;
+
+    .paper-placeholder {
+      font-size: 1.8em;
+      color: #686868;
+    }
   }
 
   .year-header {
