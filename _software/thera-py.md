@@ -14,6 +14,12 @@ languages:
 - Python
 - Shell
 latest_commits:
+- author: korikuzma
+  commit: 'docs: update hemonc instructions in readme (#397)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/7cbdf3af704e743b7855933d3b64f3cb802cdaba
+- author: korikuzma
+  commit: 'feat: set silent to False in CLI (#398)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/11b350fe4307f6b47da18e6fdfb065cbb690c546
 - author: jsstevenson
   commit: 'feat!: remove search result formatting option (#394)'
   url: https://github.com/cancervariants/therapy-normalization/commit/8902b260bcd7c126496ed51190c0d44b896d079d
@@ -23,15 +29,9 @@ latest_commits:
 - author: jsstevenson
   commit: 'feat!: refine schemas (#392)'
   url: https://github.com/cancervariants/therapy-normalization/commit/564e8472bc42af61f3b1271f628be2923284b174
-- author: jsstevenson
-  commit: 'chore: fix up logging (#390)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/a78db85f6f747537fc57c4f02a4c7af103dc0ec7
-- author: jsstevenson
-  commit: 'perf: improve disease caching (#391)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/354a24342d6522873a25d639948312acffe1c59c
 latest_release:
-  url: https://github.com/cancervariants/therapy-normalization/releases/tag/0.5.0-dev1
-  version: 0.5.0-dev1
+  url: https://github.com/cancervariants/therapy-normalization/releases/tag/0.5.0-dev2
+  version: 0.5.0-dev2
 layout: software
 live: https://normalize.cancervariants.org/therapy
 name: Thera-Py

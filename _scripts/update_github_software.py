@@ -1,4 +1,5 @@
 """Update software description files with metadata acquired from remote sources like GitHub."""
+import traceback
 import os
 import re
 from typing import Dict, List, Tuple, Optional
@@ -13,9 +14,7 @@ import requests
 token = os.environ.get("GITHUB_API_KEY")
 if not token:
     raise ValueError("Must supply GitHub API key under env var GITHUB_API_KEY")
-request_headers = {
-    "Authorization": f"Bearer {token}"
-}
+request_headers = {"Authorization": f"Bearer {token}"}
 
 
 def get_file_yaml(file: Path) -> Tuple[Dict, List]:
@@ -45,11 +44,13 @@ def get_latest_commits(org: str, repo: str) -> List:
     commits = requests.get(url, headers=request_headers).json()
     commit_data = []
     for commit in commits[:5]:
-        commit_data.append({
-            "commit": commit["commit"]["message"].split("\n")[0],
-            "author": commit["author"]["login"],
-            "url": commit["html_url"]
-        })
+        commit_data.append(
+            {
+                "commit": commit["commit"]["message"].split("\n")[0],
+                "author": commit["author"]["login"],
+                "url": commit["html_url"],
+            }
+        )
 
     return commit_data
 
@@ -58,7 +59,10 @@ def get_languages(org: str, repo: str) -> List:
     # filter out stuff like "makefile"
     # update as needed
     permitted_languages = [
-        "Python", "Shell", "Ruby", "TypeScript",
+        "Python",
+        "Shell",
+        "Ruby",
+        "TypeScript",
     ]
     url = f"https://api.github.com/repos/{org}/{repo}/languages"
     language_data = requests.get(url, headers=request_headers).json()
@@ -149,6 +153,7 @@ def update_software_files() -> None:
         except Exception as e:
             print(file)
             print(e)
+            traceback.print_exc()
 
 
 if __name__ == "__main__":
