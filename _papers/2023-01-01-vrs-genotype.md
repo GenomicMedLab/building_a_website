@@ -2,7 +2,7 @@
 authors: Wesley Goar, Lawrence Babb, Srikar Chamala, Melissa Cline, Robert R. Freimuth, Reece K. Hart, Kori Kuzma, Jennifer Lee, Tristan Nelson, Andreas Prlić, Kevin Riehle, Anastasia Smith, Kathryn Stahl, Andrew D. Yates, Heidi L. Rehm, Alex H. Wagner
 date: 2023-01-01
 doi: https://doi.org/10.1142/9789811270611_0035
-journal: Biocomputing
+journal: Biocomputing 2023
 layout: paper
 name: Development and application of a computable genotype model in the GA4GH Variation Representation Specification
 pages: 383-394

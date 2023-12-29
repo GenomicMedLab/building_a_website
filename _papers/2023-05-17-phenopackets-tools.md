@@ -3,7 +3,7 @@ authors: Daniel Danis, Julius O. B. Jacobsen, Alex H. Wagner, Tudor Groza, Marth
 date: '2023-05-17'
 doi: https://doi.org/10.1371/journal.pone.0285433
 issue: 5
-journal: PLOS One
+journal: PLOS ONE
 layout: paper
 name: 'Phenopacket-tools: Building and validating GA4GH Phenopackets'
 pmid: '37196000'
