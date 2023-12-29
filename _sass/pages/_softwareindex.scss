@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 
   .software-list-item {
-    width: 200px;
+    width: calc((#{$content-width} - (#{$spacing-unit})) / 4);
     margin-bottom: 50px;
 
     .software-name {
