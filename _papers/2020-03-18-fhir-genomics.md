@@ -1,5 +1,5 @@
 ---
-authors: Gil Alterovitz, Bret Heale, James Jones, David Kreda, Fan Lin, Lei Liu, Xin Liu, Kenneth D. Mandl, David W. Poloway, Rachel Ramoni, Alex Wagner & Jeremy L. Warner
+authors: Gil Alterovitz, Bret Heale, James Jones, David Kreda, Fan Lin, Lei Liu, Xin Liu, Kenneth D. Mandl, David W. Poloway, Rachel Ramoni, Alex Wagner, Jeremy L. Warner
 date: 2020-03-18
 doi: https://doi.org/10.1038/s41525-020-0115-6
 journal: npj Genomic Medicine
