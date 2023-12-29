@@ -1,22 +1,18 @@
 ---
-layout: paper
-
-name: Normalization of Drug and Therapeutic Concepts with Thera-Py
+authors: Matthew Cannon, James Stevenson, Kori Kuzma, Susanna Kiwala, Jeremy L Warner,
+  Obi L Griffith, Malachi Griffith, Alex H Wagner
 date: 2023-11-08
-authors: "Matthew Cannon, James Stevenson, Kori Kuzma, Susanna Kiwala, Jeremy L Warner, Obi L Griffith, Malachi Griffith, Alex H Wagner"
-
-journal: JAMIA Open
-volume: 6
-issue: 4
-doi: "https://doi.org/10.1093/jamiaopen/ooad093"
-
 doi: https://doi.org/10.1101/2023.07.27.23293245
-publisher_url: https://academic.oup.com/jamiaopen/article/6/4/ooad093/7388192
+issue: 4
+journal: JAMIA Open
+layout: paper
+name: Normalization of Drug and Therapeutic Concepts with Thera-Py
 preprint: https://www.medrxiv.org/content/10.1101/2023.07.27.23293245v1
-
+projects:
+- Knowledgebase Integration
+publisher_url: https://academic.oup.com/jamiaopen/article/6/4/ooad093/7388192
 thumbnail: therapy_paper_preview.png
-
-projects: ["Knowledgebase Integration"]
+volume: 6
 ---
 ### Objective
 
@@ -33,3 +29,4 @@ We highlight the creation of 16 069 unique merged therapeutic concepts from 9 di
 ### Conclusion
 
 We observe that Thera-Py tends to normalize therapeutic concepts to their underlying active ingredients (excluding nondrug therapeutics, eg, radiation therapy, biologics), and unifies all available descriptors regardless of ontological origin.
+

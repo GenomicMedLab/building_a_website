@@ -1,19 +1,24 @@
 ---
-layout: paper
-
-name: Discovery of clinically relevant fusions in pediatric cancer
-date:  2021-12-04
-authors: "Stephanie LaHaye, James R. Fitch, Kyle J. Voytovich, Adam C. Herman, Benjamin J. Kelly, Grant E. Lammi, Jeremy A. Arbesfeld, Saranga Wijeratne, Samuel J. Franklin, Kathleen M. Schieffer, Natalie Bir, Sean D. McGrath, Anthony R. Miller, Amy Wetzel, Katherine E. Miller, Tracy A. Bedrosian, Kristen Leraas, Elizabeth A. Varga, Kristy Lee, Ajay Gupta, Bhuvana Setty, Daniel R. Boué, Jeffrey R. Leonard, Jonathan L. Finlay, Mohamed S. Abdelbaki, Diana S. Osorio, Selene C. Koo, Daniel C. Koboldt, Alex H. Wagner, Ann-Kathrin Eisfeld, Krzysztof Mrózek, Vincent Magrini, Catherine E. Cottrell, Elaine R. Mardis, Richard K. Wilson & Peter White"
+authors: "Stephanie LaHaye, James R. Fitch, Kyle J. Voytovich, Adam C. Herman, Benjamin\
+  \ J. Kelly, Grant E. Lammi, Jeremy A. Arbesfeld, Saranga Wijeratne, Samuel J. Franklin,\
+  \ Kathleen M. Schieffer, Natalie Bir, Sean D. McGrath, Anthony R. Miller, Amy Wetzel,\
+  \ Katherine E. Miller, Tracy A. Bedrosian, Kristen Leraas, Elizabeth A. Varga, Kristy\
+  \ Lee, Ajay Gupta, Bhuvana Setty, Daniel R. Bou\xE9, Jeffrey R. Leonard, Jonathan\
+  \ L. Finlay, Mohamed S. Abdelbaki, Diana S. Osorio, Selene C. Koo, Daniel C. Koboldt,\
+  \ Alex H. Wagner, Ann-Kathrin Eisfeld, Krzysztof Mr\xF3zek, Vincent Magrini, Catherine\
+  \ E. Cottrell, Elaine R. Mardis, Richard K. Wilson & Peter White"
+date: 2021-12-04
+doi: https://doi.org/10.1186/s12864-021-08094-z
 journal: BMC Genomics
-volume: 22
+layout: paper
+name: Discovery of clinically relevant fusions in pediatric cancer
 number: 872
-doi: "https://doi.org/10.1186/s12864-021-08094-z"
 pmid: 34863095
+projects:
+- Gene Fusion Informatics
 publisher_url: https://link.springer.com/article/10.1186/s12864-021-08094-z
-
-thumbnail: "fusion_caller_paper_preview.jpeg"
-
-projects: ["Gene Fusion Informatics"]
+thumbnail: fusion_caller_paper_preview.jpeg
+volume: 22
 ---
 ### Background
 
@@ -26,3 +31,4 @@ Our Ensemble Fusion (EnFusion) approach utilizes seven fusion calling algorithms
 ### Conclusions
 
 The EnFusion pipeline offers a streamlined approach to discover fusions in cancer, at higher levels of sensitivity and accuracy than single algorithm methods. Furthermore, this method accurately identifies driver fusions in pediatric cancer, providing clinical impact by contributing evidence to diagnosis and, when appropriate, indicating targeted therapies.
+
