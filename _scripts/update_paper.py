@@ -75,7 +75,7 @@ def set_authors(data: Dict, msg_data: Dict) -> None:
 
 def set_journal(data: Dict, msg_data: Dict) -> None:
     journal = msg_data["container-title"]
-    if len(journal) >= 1:
+    if len(journal) > 1:
         raise ValueError(f"Unexpected # of journal titles: {journal}")
     elif len(journal) == 0:
         return None
@@ -108,10 +108,11 @@ def update_file(file: Path) -> None:
 
 def update_paper_files() -> None:
     for file in Path("_papers").glob("**/*"):
+        print(f"Processing {file}...", end=" ")
         try:
             update_file(file)
+            print("ok.")
         except Exception as e:
-            print(file)
             print(e)
             traceback.print_exc()
 
