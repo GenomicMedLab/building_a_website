@@ -148,10 +148,11 @@ def update_file(file: Path) -> None:
 
 def update_software_files() -> None:
     for file in Path("_software").glob("**/*"):
+        print(f"Processing {file}...", end=" ")
         try:
             update_file(file)
+            print("ok.")
         except Exception as e:
-            print(file)
             print(e)
             traceback.print_exc()
 

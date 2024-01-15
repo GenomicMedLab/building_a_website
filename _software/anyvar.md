@@ -5,15 +5,18 @@ contributors:
 - jsstevenson
 - jarbesfeld
 - andreasprlic
+- ehclark
 - larrybabb
 - theferrit32
 - naomifox-invitae
-- ehclark
 distribution: null
 docs: null
 languages:
 - Python
 latest_commits:
+- author: ehclark
+  commit: Snowflake database storage integration (#70)
+  url: https://github.com/biocommons/anyvar/commit/76f22f3c0cea7357b587ba42a8ddfaec05c6ea07
 - author: ehclark
   commit: Added 'dependencies' and 'optional-dependencies' to dynamic list (#69)
   url: https://github.com/biocommons/anyvar/commit/5c1f37d3f7888ffb0a5d798a81574d7a12deffd4
@@ -26,9 +29,6 @@ latest_commits:
 - author: korikuzma
   commit: 'feat!: use vrs 2-alpha1 (#61)'
   url: https://github.com/biocommons/anyvar/commit/472d87f05cfc98e53759de36954ee43da3e62ee5
-- author: korikuzma
-  commit: 'chore: use python3.11 (#59)'
-  url: https://github.com/biocommons/anyvar/commit/ffd5dda61b025041aaa631b27d752cc3368b0c8a
 latest_release: null
 layout: software
 live: null

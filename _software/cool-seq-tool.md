@@ -17,26 +17,26 @@ docs: https://coolseqtool.readthedocs.io/en/latest/index.html
 languages:
 - Python
 latest_commits:
-- author: jsstevenson
-  commit: 'feat!: use latest UTA schema as default (#223)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/aecb1958a9ce135bdc071a591b33338ff3e08325
 - author: korikuzma
-  commit: 'build: properly pin pydantic v2 major version (#215)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/2a3ad9927cba62791cd9e485b42cd2966626ddc7
+  commit: 'fix: include package data (#257)'
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/c2b0cb2946ade1d65307d364dd2a6ece175a8a40
 - author: korikuzma
-  commit: 'feat!: create method for GRCh38 to MANE protein representation (#211)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/af67d8e1c3a57bbf86522f5ddfe89a6ef861d449
+  commit: 'chore: remove todo''s in tests (#251)'
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/2f31a81ad9704d69b202fec5dbf25e1d076e1d26
 - author: korikuzma
-  commit: 'build: pin pydantic to v2 major version (#214)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/a74262ae4722a5251d986ce684a3a7bbaf6b96c1
+  commit: 'refactor!: initial work for cleaning up `ExonGenomicCoordsMapper` (#252)'
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/4b4b2a6b0686570b62b015b4acc8d374ded17262
 - author: korikuzma
-  commit: 'refactor!: `get_gene_mane_data` sorted by desc MANE_Status (#213)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/71514c68d32a286e4475d1f382c91fcbac160adf
+  commit: 'refactor!: fix class naming (#249)'
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/f5fe4fe685e639953f6db6b739e0d11558dff363
+- author: korikuzma
+  commit: 'tests: resolve warnings (#247)'
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/94e1e73b5df3cbc2d89cd00ae14c27381c1d6001
 latest_release:
-  url: https://github.com/GenomicMedLab/cool-seq-tool/releases/tag/0.1.14-dev3
-  version: 0.1.14-dev3
+  url: https://github.com/GenomicMedLab/cool-seq-tool/releases/tag/0.4.0-dev1
+  version: 0.4.0-dev1
 layout: software
-name: CoolSeqTool
+name: Cool-Seq-Tool
 source: https://github.com/GenomicMedLab/cool-seq-tool/
 ---
 

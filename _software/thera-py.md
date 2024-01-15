@@ -14,24 +14,24 @@ languages:
 - Python
 - Shell
 latest_commits:
+- author: jsstevenson
+  commit: 'build: get disease ETL dependencies (#405)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/cefa1acadfcc1c22722b82732a5fdfe73a1db17b
+- author: jsstevenson
+  commit: 'fix: handle brand name lookup KeyError (#404)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/54a1ef2189fb96e8d8cb27f6cf702219594af7a0
+- author: korikuzma
+  commit: 'docs: fix click option for sources to update (#402)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/52fdb61375deead4492c2e53ba22cfc67922e87e
+- author: korikuzma
+  commit: 'docs: fix env var name for harvard dataverse api key (#400)'
+  url: https://github.com/cancervariants/therapy-normalization/commit/01ca5627429ed4a9da5fe5063d261beff0c6f29b
 - author: korikuzma
   commit: 'docs: update hemonc instructions in readme (#397)'
   url: https://github.com/cancervariants/therapy-normalization/commit/7cbdf3af704e743b7855933d3b64f3cb802cdaba
-- author: korikuzma
-  commit: 'feat: set silent to False in CLI (#398)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/11b350fe4307f6b47da18e6fdfb065cbb690c546
-- author: jsstevenson
-  commit: 'feat!: remove search result formatting option (#394)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/8902b260bcd7c126496ed51190c0d44b896d079d
-- author: jsstevenson
-  commit: 'feat: sort everything (#393)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/8b2c509a0286ad2fba5f8b26097c7eb0f738c3d4
-- author: jsstevenson
-  commit: 'feat!: refine schemas (#392)'
-  url: https://github.com/cancervariants/therapy-normalization/commit/564e8472bc42af61f3b1271f628be2923284b174
 latest_release:
-  url: https://github.com/cancervariants/therapy-normalization/releases/tag/0.5.0-dev2
-  version: 0.5.0-dev2
+  url: https://github.com/cancervariants/therapy-normalization/releases/tag/0.5.0-dev3
+  version: 0.5.0-dev3
 layout: software
 live: https://normalize.cancervariants.org/therapy
 name: Thera-Py

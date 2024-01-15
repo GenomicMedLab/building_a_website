@@ -2,15 +2,15 @@
 contributors:
 - reece
 - korikuzma
+- theferrit32
 - ahwagner
 - wesleygoar
 - andreasprlic
 - jsstevenson
+- ehclark
+- toneillbroad
 - larrybabb
-- manish0kuniyal
 - matthdsm
-- SalemBajjali
-- sivangbagri
 - sawmonaco
 distribution: https://pypi.org/project/ga4gh.vrs/
 docs: null
@@ -18,24 +18,24 @@ languages:
 - Python
 - Shell
 latest_commits:
-- author: sivangbagri
-  commit: 'docs: change order in readme (#294)'
-  url: https://github.com/ga4gh/vrs-python/commit/d52764ce8d158982625b2219683bdf6e7e60210b
-- author: larrybabb
-  commit: 'Merge pull request #290 from ga4gh/issue-287'
-  url: https://github.com/ga4gh/vrs-python/commit/081a27c3d537bbd573e052300ce0264973549408
 - author: korikuzma
-  commit: 'cicd: delete stale action'
-  url: https://github.com/ga4gh/vrs-python/commit/9f7b29c92e78715a96f1e1c464ae09607cd22cc9
-- author: manish0kuniyal
-  commit: 'docs: Update README for running notebooks (#286)'
-  url: https://github.com/ga4gh/vrs-python/commit/e09e09c33e0fd310277d048083812bf5b47b3c74
+  commit: 'docs: update vrs-python and vrs version correspondences (#324)'
+  url: https://github.com/ga4gh/vrs-python/commit/8cb4a52cb15060744168c2946edc56ecebda063e
 - author: korikuzma
-  commit: 'cicd: use single quotes in if condition for branch name (#281)'
-  url: https://github.com/ga4gh/vrs-python/commit/439b4084762d327de3f9988aecfe9963131aa14d
+  commit: 'docs: include more information on postgresql in readme (#322)'
+  url: https://github.com/ga4gh/vrs-python/commit/89e1a0bbae58011acb3e019ab1fe20dfa63d10f5
+- author: korikuzma
+  commit: 'feat: add intro to terra notebook (#318)'
+  url: https://github.com/ga4gh/vrs-python/commit/758960aaa30c37346697b15c505e4b7039bce4ae
+- author: korikuzma
+  commit: 'docs: change order in readme (#294) (#321)'
+  url: https://github.com/ga4gh/vrs-python/commit/5386d5c26361e23f62fab63a3683f5dfa25932c9
+- author: korikuzma
+  commit: 'docs: update uta docker image in readme (#323)'
+  url: https://github.com/ga4gh/vrs-python/commit/328b8dca4b23cddb3656c9479fbaafa40f951c48
 latest_release:
-  url: https://github.com/ga4gh/vrs-python/releases/tag/0.8.5
-  version: 0.8.5
+  url: https://github.com/ga4gh/vrs-python/releases/tag/2.0.0-a2
+  version: 2.0.0-a2
 layout: software
 name: VRS-Python
 projects:
