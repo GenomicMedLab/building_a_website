@@ -4,6 +4,7 @@ contributors:
 - jsstevenson
 - ahwagner
 - OHSU-MachineUser
+- nickzoic
 description: <p>The Gene Normalizer provides tools for resolving ambiguous human gene
   references to consistently-structured, normalized terms. For gene concepts extracted
   from <a href="https://www.ncbi.nlm.nih.gov/gene/">NCBI Gene</a>, <a href="https://useast.ensembl.org/index.html">Ensembl</a>,
@@ -11,29 +12,29 @@ description: <p>The Gene Normalizer provides tools for resolving ambiguous human
   and provides additional metadata like current and previously-used symbols, aliases,
   database cross-references and associations, and coordinates.</p>
 distribution: https://pypi.org/project/gene-normalizer/
-docs: https://gene-normalizer.readthedocs.io/en/latest/
+docs: https://gene-normalizer.readthedocs.io/latest/
 languages:
 - Python
 - Shell
 latest_commits:
+- author: nickzoic
+  commit: 'fix: handle password param in postgres connection (#333)'
+  url: https://github.com/cancervariants/gene-normalization/commit/2034602df1f9e8e1abc94132def773be833c66a1
 - author: jsstevenson
-  commit: 'docs: add description metadata (#315)'
-  url: https://github.com/cancervariants/gene-normalization/commit/547f4a1fbb44691637cf8fd2025d15185bf68582
+  commit: 'chore: bump version'
+  url: https://github.com/cancervariants/gene-normalization/commit/a32cd5361c4ea5e2134220b4ae1a8c929da31756
+- author: korikuzma
+  commit: 'docs: fix api reference link in readme (#327)'
+  url: https://github.com/cancervariants/gene-normalization/commit/72b760e16fb4e94f863b5a23c7c3c18ff22831ed
 - author: jsstevenson
-  commit: 'style: update ruff version (#316)'
-  url: https://github.com/cancervariants/gene-normalization/commit/6762a9b994258ce5ab89e1be7775835a250a918d
+  commit: 'cicd: require priority label on PR (#325)'
+  url: https://github.com/cancervariants/gene-normalization/commit/4dd41f7c0e3f42dc7fc3d175fd27085b1735526e
 - author: jsstevenson
-  commit: 'feat!: use wags-tails for data acquisition (#303)'
-  url: https://github.com/cancervariants/gene-normalization/commit/c747340a4f41e1464a63a88195611bcbee288fdd
-- author: jsstevenson
-  commit: 'test: suppress noisy boto logs by default (#300)'
-  url: https://github.com/cancervariants/gene-normalization/commit/5f678bc9a467b000655d1cfada74cb95d17b4130
-- author: jsstevenson
-  commit: 'cicd: use ruff for autoformatting (#292)'
-  url: https://github.com/cancervariants/gene-normalization/commit/98294edceb433ad3d4060fa771105bdd2e1c6605
+  commit: 'chore: update license'
+  url: https://github.com/cancervariants/gene-normalization/commit/709cfb683bf7d90163ea442ec6ad365f98ed61b3
 latest_release:
-  url: https://github.com/cancervariants/gene-normalization/releases/tag/0.3.0-dev1
-  version: 0.3.0-dev1
+  url: https://github.com/cancervariants/gene-normalization/releases/tag/0.3.0-dev2
+  version: 0.3.0-dev2
 layout: software
 live: https://normalize.cancervariants.org/gene
 name: Gene Normalizer

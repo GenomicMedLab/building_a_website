@@ -2,12 +2,15 @@
 layout: paper
 
 name: Minimum information and guidelines for reporting a Multiplexed Assay of Variant Effect
-date:  2023-06-26
+date:  2024-04-19
 authors: "Melina Claussnitzer, Victoria N. Parikh, Alex H. Wagner, Jeremy A. Arbesfeld, Carol J. Bult, Helen V. Firth, Lara A. Muffley, Alex N. Nguyen Ba, Kevin Riehle, Frederick P. Roth, Daniel Tabet, Benedetta Bolognesi, Andrew M. Glazer, Alan F. Rubin"
-doi: https://doi.org/10.48550/arXiv.2306.15113
-pmid:
-publisher_url:
+doi: https://doi.org/10.1186/s13059-024-03223-9
+number: 100
+volume: 25
+pmid: 38641812
+publisher_url: https://link.springer.com/article/10.1186/s13059-024-03223-9
 preprint: https://arxiv.org/abs/2306.15113
+thumbnail: mave-min-info-preview.jpeg
 
 projects: ["Variation Representation"]
 ---

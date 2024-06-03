@@ -3,11 +3,11 @@ contributors:
 - reece
 - korikuzma
 - jsstevenson
+- ehclark
 - jarbesfeld
 - andreasprlic
-- ehclark
-- larrybabb
 - theferrit32
+- larrybabb
 - naomifox-invitae
 distribution: null
 docs: null
@@ -15,20 +15,23 @@ languages:
 - Python
 latest_commits:
 - author: ehclark
-  commit: Snowflake database storage integration (#70)
-  url: https://github.com/biocommons/anyvar/commit/76f22f3c0cea7357b587ba42a8ddfaec05c6ea07
+  commit: Integrate SQLAlchemy for db conn management and introduce new SqlStorage
+    abstraction (#93)
+  url: https://github.com/biocommons/anyvar/commit/454504fbc73ad1860776bbd01ab3f3d856c7699c
 - author: ehclark
-  commit: Added 'dependencies' and 'optional-dependencies' to dynamic list (#69)
-  url: https://github.com/biocommons/anyvar/commit/5c1f37d3f7888ffb0a5d798a81574d7a12deffd4
-- author: reece
-  commit: updated stale.yml config
-  url: https://github.com/biocommons/anyvar/commit/ee61ba71f16f39a81280157b2541761c244eae7c
-- author: korikuzma
-  commit: 'chore: remove unused code (#63)'
-  url: https://github.com/biocommons/anyvar/commit/978656918ed0e6da280a4dd525154140d556d0ec
-- author: korikuzma
-  commit: 'feat!: use vrs 2-alpha1 (#61)'
-  url: https://github.com/biocommons/anyvar/commit/472d87f05cfc98e53759de36954ee43da3e62ee5
+  commit: Update unit tests to match the new VRS 2.0 digests (#92)
+  url: https://github.com/biocommons/anyvar/commit/e1981fea622f857cdc38f91b56891e8a83d75c64
+- author: ehclark
+  commit: Snowflake storage integration updates for collation and private key auth
+    (#90)
+  url: https://github.com/biocommons/anyvar/commit/04ea7cf0070bacdaa70ac5c192f29ac27589d114
+- author: ehclark
+  commit: Update VCF annotator code to be compatible with superclass in vrs-python
+    (#86)
+  url: https://github.com/biocommons/anyvar/commit/e7e7996c55c353c6766b33920a44a1e388a0e8b3
+- author: theferrit32
+  commit: 'Merge pull request #83 from biocommons/fmt-and-docs-fixes'
+  url: https://github.com/biocommons/anyvar/commit/3d0c8cf99208eb9239c075931c60d661a67d3d79
 latest_release: null
 layout: software
 live: null

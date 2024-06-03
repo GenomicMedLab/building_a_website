@@ -5,10 +5,10 @@ contributors:
 - theferrit32
 - ahwagner
 - wesleygoar
-- andreasprlic
 - jsstevenson
-- ehclark
 - toneillbroad
+- andreasprlic
+- ehclark
 - larrybabb
 - matthdsm
 - sawmonaco
@@ -19,23 +19,24 @@ languages:
 - Shell
 latest_commits:
 - author: korikuzma
-  commit: 'docs: update vrs-python and vrs version correspondences (#324)'
-  url: https://github.com/ga4gh/vrs-python/commit/8cb4a52cb15060744168c2946edc56ecebda063e
+  commit: 'docs: update readme (install seqrepo, uta/seqrepo test cmd, + submodules)
+    (#406)'
+  url: https://github.com/ga4gh/vrs-python/commit/33da6be4710e77ce69f4b594f14c1674cf7c6ff0
 - author: korikuzma
-  commit: 'docs: include more information on postgresql in readme (#322)'
-  url: https://github.com/ga4gh/vrs-python/commit/89e1a0bbae58011acb3e019ab1fe20dfa63d10f5
-- author: korikuzma
-  commit: 'feat: add intro to terra notebook (#318)'
-  url: https://github.com/ga4gh/vrs-python/commit/758960aaa30c37346697b15c505e4b7039bce4ae
-- author: korikuzma
-  commit: 'docs: change order in readme (#294) (#321)'
-  url: https://github.com/ga4gh/vrs-python/commit/5386d5c26361e23f62fab63a3683f5dfa25932c9
-- author: korikuzma
-  commit: 'docs: update uta docker image in readme (#323)'
-  url: https://github.com/ga4gh/vrs-python/commit/328b8dca4b23cddb3656c9479fbaafa40f951c48
+  commit: 'fix: add password to docker-compose.yml for uta service (#405)'
+  url: https://github.com/ga4gh/vrs-python/commit/9815622e521bc1036aa80d4011853bbcb10a3708
+- author: toneillbroad
+  commit: 'Merge pull request #402 from ga4gh/notebook-cleanup-and-getting-started-series'
+  url: https://github.com/ga4gh/vrs-python/commit/096b124f5875f70b70481be85e5b22691a2c1820
+- author: toneillbroad
+  commit: Fix typo
+  url: https://github.com/ga4gh/vrs-python/commit/2f9cc84b7d967bdabc89798c3ff887bd1083b650
+- author: toneillbroad
+  commit: Removal of commented line
+  url: https://github.com/ga4gh/vrs-python/commit/4711b1d89edd859fc9f65cb5302002ead3a47f62
 latest_release:
-  url: https://github.com/ga4gh/vrs-python/releases/tag/2.0.0-a2
-  version: 2.0.0-a2
+  url: https://github.com/ga4gh/vrs-python/releases/tag/2.0.0-a6
+  version: 2.0.0-a6
 layout: software
 name: VRS-Python
 projects:

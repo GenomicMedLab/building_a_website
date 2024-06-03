@@ -3,8 +3,8 @@ contributors:
 - korikuzma
 - acoffman
 - ahwagner
-- dependabot[bot]
 - jsstevenson
+- dependabot[bot]
 - MayLiu27
 - bwalsh
 - OHSU-MachineUser
@@ -14,24 +14,24 @@ docs: null
 languages:
 - Python
 latest_commits:
+- author: jsstevenson
+  commit: 'build: reorganize build metadata (#549)'
+  url: https://github.com/cancervariants/variation-normalization/commit/3c386fa11d4399d9126f2f979f4e02eea5cc4902
 - author: korikuzma
-  commit: 'feat: expose cool-seq-tool feature overlap endpoint (#523)'
-  url: https://github.com/cancervariants/variation-normalization/commit/da230a5d3e0f44df1971589a42ff0a0dcb2e4937
+  commit: 'build!: udpate ga4gh.vrs version (#542)'
+  url: https://github.com/cancervariants/variation-normalization/commit/b34fd8e492b84ac9805f81fd0f37abd618544583
 - author: korikuzma
-  commit: 'cicd: change terminate_time to 12h (#318)'
-  url: https://github.com/cancervariants/variation-normalization/commit/dda730e62fda4812410d56f5e2d4c2ab3af4aff4
+  commit: 'test: only check vrs ids on certain tests (#540)'
+  url: https://github.com/cancervariants/variation-normalization/commit/bc3681636e955d66814b0316d6fba100023999a4
 - author: korikuzma
-  commit: 'fix: pin versions + fix /translate_identifier (#516)'
-  url: https://github.com/cancervariants/variation-normalization/commit/3b9dd0b7929b0e767cfde30ac3fcbef7ec3af0c0
+  commit: 'build: pin ga4gh.vrs dependency (#539)'
+  url: https://github.com/cancervariants/variation-normalization/commit/32e1dc3b9f8a3e56a9afb71446ecf18ffdde7492
 - author: korikuzma
-  commit: 'cicd: update release.yml (publish python distribution to pypi) (#513)'
-  url: https://github.com/cancervariants/variation-normalization/commit/a640fd434c7e6595f22d0d72b7c9d498f59992d1
-- author: korikuzma
-  commit: 'fix: catch pydantic ValidationError in parsed to cnv endpoints'
-  url: https://github.com/cancervariants/variation-normalization/commit/9dc85b238b430de24688cd53736298f50bec1f27
+  commit: 'cicd: fix elastic beanstalk deployment (#537)'
+  url: https://github.com/cancervariants/variation-normalization/commit/d6bfb7c627a45c0ac37dc2b3e42b5a30ba2bab65
 latest_release:
-  url: https://github.com/cancervariants/variation-normalization/releases/tag/0.6.0-dev1
-  version: 0.6.0-dev1
+  url: https://github.com/cancervariants/variation-normalization/releases/tag/0.8.2
+  version: 0.8.2
 layout: software
 live: https://normalize.cancervariants.org/variation
 name: Variation Normalizer
