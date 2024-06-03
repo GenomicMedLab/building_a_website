@@ -18,7 +18,7 @@ permalink: /people/
 
   <h3 class="section-header">Trainees</h3>
 
-  {% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher' or person.role == 'Student Intern'" %}
+  {% assign trainees = current_people | where_exp:'person', "person.role == 'PhD Student' or person.role == 'Postdoctoral Researcher' or person.role == 'Student Intern' or person.role == 'Undergraduate Intern'" %}
   <ul class="people-list">
     {% for person in trainees %}
       {% include people_index_item.html %}
@@ -27,7 +27,7 @@ permalink: /people/
 
   <h3 class="section-header">Staff</h3>
 
-  {% assign staff = current_people | where_exp:'person', "person.role == 'Bioinformatics Software Developer' or person.role == 'Senior Bioinformatics Scientist'" %}
+  {% assign staff = current_people | where_exp:'person', "person.role == 'Bioinformatics Software Developer' or person.role == 'Senior Bioinformatics Scientist' or person.role == 'Senior Bioinformatics Software Developer' or person.role == 'Lead Bioinformatics Software Developer'" %}
   <ul class="people-list">
     {% for person in staff %}
       {% include people_index_item.html %}

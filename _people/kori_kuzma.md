@@ -3,7 +3,7 @@ layout: person
 
 name: Kori Kuzma
 pub_names: ["Kuzma K"]
-role: "Bioinformatics Software Developer"
+role: "Lead Bioinformatics Software Developer"
 headshot: "kori_kuzma.jpg"
 
 github: korikuzma
