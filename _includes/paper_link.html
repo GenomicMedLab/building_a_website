@@ -1,0 +1,12 @@
+{% assign authors_array = paper.authors | split: ',' %}
+{% if authors_array.size > 1 %}
+  {% assign first_author = authors_array[0] %}
+  {% assign additional_authors = " et al." %}
+{% else %}
+  {% assign first_author = paper.authors %}
+  {% assign additional_authors = "" %}
+{% endif %}
+{% assign paper_last_name = first_author | split: ' ' | last %}
+{% assign year = paper.date | slice: 0, 4 %}
+
+<a href="{{ paper.url }}">{{ paper.name }} ({{ paper_last_name }}{{ additional_authors }} {{ year }})</a>

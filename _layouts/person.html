@@ -35,19 +35,32 @@ layout: default
     </ul>
     {% endif %}
 
-    <p class="subsection-header">Papers</p>
-    <ul>
-      {% for paper in site.papers reversed %} {% if paper.authors contains
-      page.name %}
-      <li>
-        <a href="{{ paper.url }}">{{ paper.name }}</a>
-      </li>
-      {% else %} {% for name in page.pub_names %} {% if paper.authors contains
-      name %}
-      <li>
-        <a href="{{ paper.url }}">{{ paper.name }}</a>
-      </li>
-      {% endif %} {% endfor %} {% endif %} {% endfor %}
-    </ul>
+    {% assign papers_to_include = "" | split: "" %}
+
+    {% for paper in site.papers reversed %}
+      {% assign include = false %}
+      {% if paper.authors contains page.name %}
+        {% assign include = true %}
+      {% else %}
+        {% for name in page.pub_names %}
+          {% if paper.authors contains name %}
+            {% assign include = true %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if include %}
+        {% assign papers_to_include = papers_to_include | push: paper %}
+      {% endif %}
+    {% endfor %}
+
+    {% if papers_to_include.size > 0 %}
+      <p class="subsection-header">Papers</p>
+      <ul>
+        {% for paper in papers_to_include %}
+          <li>{% include paper_link.html paper=paper %}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
   </div>
 </div>
