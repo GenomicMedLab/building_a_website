@@ -3,7 +3,7 @@ layout: person
 title: Jeremy Arbesfeld
 
 name: Jeremy Arbesfeld
-pub_names: [Jeremy A. Arbesfeld, Arbesfeld JA]
+pub_names: [Jeremy A. Arbesfeld, Arbesfeld JA, Jeremy A Arbesfeld]
 role: PhD Student
 headshot: "jeremy_arbesfeld.jpg"
 

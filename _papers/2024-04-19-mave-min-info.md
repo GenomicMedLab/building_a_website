@@ -5,6 +5,7 @@ name: Minimum information and guidelines for reporting a Multiplexed Assay of Va
 date:  2024-04-19
 authors: "Melina Claussnitzer, Victoria N. Parikh, Alex H. Wagner, Jeremy A. Arbesfeld, Carol J. Bult, Helen V. Firth, Lara A. Muffley, Alex N. Nguyen Ba, Kevin Riehle, Frederick P. Roth, Daniel Tabet, Benedetta Bolognesi, Andrew M. Glazer, Alan F. Rubin"
 doi: https://doi.org/10.1186/s13059-024-03223-9
+journal: Genome Biology
 number: 100
 volume: 25
 pmid: 38641812
