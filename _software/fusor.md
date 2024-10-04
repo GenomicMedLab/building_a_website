@@ -5,32 +5,35 @@ contributors:
 - katiestahl
 - jarbesfeld
 description: <p>FUSOR (<strong>FUS</strong>ion <strong>O</strong>bject <strong>R</strong>epresentation)
-  provides modeling and validation tools for representing gene fusions in a flexible,
-  computable structure.</p>
+  provides modeling and validation tools for representing gene fusions in a precise,
+  computable structure that adheres to the <a href="https://fusions.cancervariants.org">VICC
+  Gene Fusion Specification</a>. It also provides easy access to transcript selection
+  and coordinate conversion tools, and enables generation of human-readable fusion
+  <a href="https://fusions.cancervariants.org/en/latest/nomenclature.html">nomenclature</a>.</p>
 distribution: https://pypi.org/project/fusor/
-docs: null
+docs: https://fusor.readthedocs.io/
 languages:
 - Python
 - Shell
 latest_commits:
-- author: jsstevenson
-  commit: 'cicd: remove close issue action (#147)'
-  url: https://github.com/cancervariants/fusor/commit/49cf778069fc43e8c087a10be148c171dbc11363
-- author: jsstevenson
-  commit: 'docs: README glow up (#146)'
-  url: https://github.com/cancervariants/fusor/commit/aa1946772012cf6001c8ec1bc4d0122dc592d828
-- author: jsstevenson
-  commit: 'cicd: require priority label for PR (#145)'
-  url: https://github.com/cancervariants/fusor/commit/e2356131b040283fcbd7b8d7bc760b2107ef4a1b
-- author: jsstevenson
-  commit: 'build: reorganize metadata (#144)'
-  url: https://github.com/cancervariants/fusor/commit/a83d2b3c72958c568dbb83eecf48334ce79f0af4
-- author: jsstevenson
-  commit: 'style: pin ruff version to match template (#143)'
-  url: https://github.com/cancervariants/fusor/commit/f0c45b452dfa05dd52b536d9fae49f53ffeb45e7
+- author: katiestahl
+  commit: 'build: update cool-seq-tool version (#189)'
+  url: https://github.com/cancervariants/fusor/commit/6077fbcf1c5f837461a449730c5f4e9dff1ae25c
+- author: katiestahl
+  commit: 'fix: return correct message when validation error occurs (#188)'
+  url: https://github.com/cancervariants/fusor/commit/b9471256c47e5df411b54492c97ee4c26c9e129f
+- author: katiestahl
+  commit: 'fix: attempting to subscript an object (#184)'
+  url: https://github.com/cancervariants/fusor/commit/38e99b42d41c9b82d3002682eb3dacf0508891b8
+- author: korikuzma
+  commit: 'feat: add script to generate examples (#182)'
+  url: https://github.com/cancervariants/fusor/commit/af78477e5769dda23af57d1a2a505d27709a7aa4
+- author: korikuzma
+  commit: 'fix: `SequenceLocation` `start`/`end` for `TranscriptSegmentElement` (#172)'
+  url: https://github.com/cancervariants/fusor/commit/0341b3be77604fe04ba34f264d8efd4c958c6b05
 latest_release:
-  url: https://github.com/cancervariants/fusor/releases/tag/v.0.0.30-dev1
-  version: v.0.0.30-dev1
+  url: https://github.com/cancervariants/fusor/releases/tag/0.4.4
+  version: 0.4.4
 layout: software
 name: FUSOR
 projects:

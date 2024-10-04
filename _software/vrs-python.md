@@ -11,6 +11,7 @@ contributors:
 - ehclark
 - larrybabb
 - matthdsm
+- quinnwai
 - sawmonaco
 distribution: https://pypi.org/project/ga4gh.vrs/
 docs: null
@@ -18,25 +19,25 @@ languages:
 - Python
 - Shell
 latest_commits:
+- author: quinnwai
+  commit: 'docs: fix param typo in vcf annotator (#451)'
+  url: https://github.com/ga4gh/vrs-python/commit/db54d549f380bce11daf949f14ffa2e61b63a30c
 - author: korikuzma
-  commit: 'docs: update readme (install seqrepo, uta/seqrepo test cmd, + submodules)
-    (#406)'
-  url: https://github.com/ga4gh/vrs-python/commit/33da6be4710e77ce69f4b594f14c1674cf7c6ff0
-- author: korikuzma
-  commit: 'fix: add password to docker-compose.yml for uta service (#405)'
-  url: https://github.com/ga4gh/vrs-python/commit/9815622e521bc1036aa80d4011853bbcb10a3708
-- author: toneillbroad
-  commit: 'Merge pull request #402 from ga4gh/notebook-cleanup-and-getting-started-series'
-  url: https://github.com/ga4gh/vrs-python/commit/096b124f5875f70b70481be85e5b22691a2c1820
-- author: toneillbroad
-  commit: Fix typo
-  url: https://github.com/ga4gh/vrs-python/commit/2f9cc84b7d967bdabc89798c3ff887bd1083b650
-- author: toneillbroad
-  commit: Removal of commented line
-  url: https://github.com/ga4gh/vrs-python/commit/4711b1d89edd859fc9f65cb5302002ead3a47f62
+  commit: "fix: do not allow `SequenceLocation` to have negative `start`/`end` v\u2026\
+    \ (#443)"
+  url: https://github.com/ga4gh/vrs-python/commit/918d7a2e5f5d831601d4970e7cd93bf8919215ed
+- author: jsstevenson
+  commit: 'feat: enable logging in annotator CLI (#450)'
+  url: https://github.com/ga4gh/vrs-python/commit/10157c3fbd242c0217317cb749587a52f1588332
+- author: jsstevenson
+  commit: 'feat!: declare annotator CLI as console entrypoint (#447)'
+  url: https://github.com/ga4gh/vrs-python/commit/36e8976d3df4c1f3fe1e37e17daf26119c520729
+- author: jsstevenson
+  commit: 'feat!: enhance annotator CLI options (#449)'
+  url: https://github.com/ga4gh/vrs-python/commit/456cd38acebcc40f5549421388685fab8403ab88
 latest_release:
-  url: https://github.com/ga4gh/vrs-python/releases/tag/2.0.0-a6
-  version: 2.0.0-a6
+  url: https://github.com/ga4gh/vrs-python/releases/tag/2.0.0-a11
+  version: 2.0.0-a11
 layout: software
 name: VRS-Python
 projects:

@@ -9,22 +9,26 @@ languages:
 - TypeScript
 - Python
 latest_commits:
-- author: jsstevenson
-  commit: Autocomplete updates (#245)
-  url: https://github.com/cancervariants/fusion-curation/commit/85ba7ff4fa93032a8e8762e8765b9fdd0b84ebc9
 - author: katiestahl
-  commit: 'fix: adding validation to disallow same-gene fusions (#251)'
-  url: https://github.com/cancervariants/fusion-curation/commit/4a364a65844f54ff18c2b1734b9593f05af8b27a
-- author: jsstevenson
-  commit: 'Merge pull request #249 from cancervariants/staging'
-  url: https://github.com/cancervariants/fusion-curation/commit/0b941fee146a98ac8811c5c111c27e58c565f511
-- author: jsstevenson
-  commit: 'build: bump version'
-  url: https://github.com/cancervariants/fusion-curation/commit/481ba25c154d9ef84750016e64fc3aecdc704240
-- author: jsstevenson
-  commit: 'fix: include reg element nomenclature in preview (#247)'
-  url: https://github.com/cancervariants/fusion-curation/commit/35c58159aa6c7868093d07bf521591bdc68dc39c
-latest_release: null
+  commit: 'fix: october 2024 release merge conflicts'
+  url: https://github.com/cancervariants/fusion-curation/commit/1eef358e99b519d8a366c61b5c30d6b90608c7e0
+- author: katiestahl
+  commit: 'fix: unable to construct tx segment when genomic coordinate between exons
+    (#336)'
+  url: https://github.com/cancervariants/fusion-curation/commit/bda641b3c5815b58ddca747047ca18cc99c3db0f
+- author: katiestahl
+  commit: 'feat: add better error messaging (#335)'
+  url: https://github.com/cancervariants/fusion-curation/commit/100bb396e84801a844042a50c668f85c5742cf1c
+- author: katiestahl
+  commit: 'fix: get coordinates not working for transcript (#334)'
+  url: https://github.com/cancervariants/fusion-curation/commit/d15a82c7d067669ca8e0378e9266b4e95cc89aeb
+- author: katiestahl
+  commit: 'feat: update tooltip for coordinate type, since we expect inter-residue
+    now (#332)'
+  url: https://github.com/cancervariants/fusion-curation/commit/3869c1f5a98e6a1726ccc333c7edc2fc27fa682f
+latest_release:
+  url: https://github.com/cancervariants/fusion-curation/releases/tag/0.4.1
+  version: 0.4.1
 latest_version: null
 layout: software
 live: http://fusion-builder.cancervariants.org

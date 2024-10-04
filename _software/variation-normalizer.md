@@ -14,6 +14,9 @@ docs: null
 languages:
 - Python
 latest_commits:
+- author: korikuzma
+  commit: 'docs: update vrs versioning (#573)'
+  url: https://github.com/cancervariants/variation-normalization/commit/65428ebe545ecaba7dd4784ad80396a4a6d04bbb
 - author: jsstevenson
   commit: 'build: reorganize build metadata (#549)'
   url: https://github.com/cancervariants/variation-normalization/commit/3c386fa11d4399d9126f2f979f4e02eea5cc4902
@@ -26,12 +29,9 @@ latest_commits:
 - author: korikuzma
   commit: 'build: pin ga4gh.vrs dependency (#539)'
   url: https://github.com/cancervariants/variation-normalization/commit/32e1dc3b9f8a3e56a9afb71446ecf18ffdde7492
-- author: korikuzma
-  commit: 'cicd: fix elastic beanstalk deployment (#537)'
-  url: https://github.com/cancervariants/variation-normalization/commit/d6bfb7c627a45c0ac37dc2b3e42b5a30ba2bab65
 latest_release:
-  url: https://github.com/cancervariants/variation-normalization/releases/tag/0.8.2
-  version: 0.8.2
+  url: https://github.com/cancervariants/variation-normalization/releases/tag/0.10.0
+  version: 0.10.0
 layout: software
 live: https://normalize.cancervariants.org/variation
 name: Variation Normalizer

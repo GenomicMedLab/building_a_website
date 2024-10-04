@@ -1,8 +1,8 @@
 ---
 contributors:
 - reece
-- korikuzma
 - jsstevenson
+- korikuzma
 - ehclark
 - jarbesfeld
 - andreasprlic
@@ -14,24 +14,21 @@ docs: null
 languages:
 - Python
 latest_commits:
-- author: ehclark
-  commit: Integrate SQLAlchemy for db conn management and introduce new SqlStorage
-    abstraction (#93)
-  url: https://github.com/biocommons/anyvar/commit/454504fbc73ad1860776bbd01ab3f3d856c7699c
-- author: ehclark
-  commit: Update unit tests to match the new VRS 2.0 digests (#92)
-  url: https://github.com/biocommons/anyvar/commit/e1981fea622f857cdc38f91b56891e8a83d75c64
-- author: ehclark
-  commit: Snowflake storage integration updates for collation and private key auth
-    (#90)
-  url: https://github.com/biocommons/anyvar/commit/04ea7cf0070bacdaa70ac5c192f29ac27589d114
-- author: ehclark
-  commit: Update VCF annotator code to be compatible with superclass in vrs-python
-    (#86)
-  url: https://github.com/biocommons/anyvar/commit/e7e7996c55c353c6766b33920a44a1e388a0e8b3
-- author: theferrit32
-  commit: 'Merge pull request #83 from biocommons/fmt-and-docs-fixes'
-  url: https://github.com/biocommons/anyvar/commit/3d0c8cf99208eb9239c075931c60d661a67d3d79
+- author: jsstevenson
+  commit: update reqs
+  url: https://github.com/biocommons/anyvar/commit/274a026f173a79e2cf5bcad5246466a808de4cd3
+- author: jsstevenson
+  commit: update gh actions
+  url: https://github.com/biocommons/anyvar/commit/c0fa832748dc7bd7bf5eaeaa34591681704768dd
+- author: jsstevenson
+  commit: 'build: update configs and core template stuff'
+  url: https://github.com/biocommons/anyvar/commit/3e0ae8b25cda1e02eb60d987fc50cbab2c1699f2
+- author: korikuzma
+  commit: 'fix: update ga4gh.vrs version + add back VRS type anno in models (#95)'
+  url: https://github.com/biocommons/anyvar/commit/e4c112f23f060d66597006607d1f25146f698ed3
+- author: korikuzma
+  commit: 'docs: update readme + postgres_init.sql commands (#96)'
+  url: https://github.com/biocommons/anyvar/commit/4cb87ae32c0e69cfa2fa91d87107ed5108fedfbc
 latest_release: null
 layout: software
 live: null

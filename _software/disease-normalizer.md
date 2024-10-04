@@ -17,23 +17,23 @@ languages:
 - Shell
 latest_commits:
 - author: jsstevenson
-  commit: 'feat: add tqdm to track update progress (#188)'
-  url: https://github.com/cancervariants/disease-normalization/commit/37518d2f79592d94366981fb2f8dc92f37874cf1
+  commit: 'fix: update preferred OMIM prefix (#198)'
+  url: https://github.com/cancervariants/disease-normalization/commit/b43a2894474c57937779cde18e4c2217ff11d7c5
 - author: korikuzma
-  commit: 'docs: update readthedocs links (#187)'
-  url: https://github.com/cancervariants/disease-normalization/commit/8d2116e7bd2ee0ff17de46146131bcfdcd3fe3ae
-- author: jsstevenson
-  commit: 'docs: fix checks badge'
-  url: https://github.com/cancervariants/disease-normalization/commit/b2a9cb6e6fd823051981883c69190b7b81ee9e0a
-- author: jsstevenson
-  commit: 'docs: ensure availability of optional dependencies'
-  url: https://github.com/cancervariants/disease-normalization/commit/e207a84a99e2ca5da0e633d62df982434cffa56a
-- author: jsstevenson
-  commit: 'cicd: add priority label requirement (#182)'
-  url: https://github.com/cancervariants/disease-normalization/commit/9f5b774e95c0ef740f5a0c7cde9fb952f8546bbe
+  commit: 'cicd: update workflows/templates from template repo (#196)'
+  url: https://github.com/cancervariants/disease-normalization/commit/bf11f7a28be26b804c002cc15ae08551be45dd86
+- author: korikuzma
+  commit: 'feat: update pre-commit version + add more hooks (#195)'
+  url: https://github.com/cancervariants/disease-normalization/commit/81815861f25bfeb8c508329b5e44789c9198c45e
+- author: korikuzma
+  commit: 'feat!: use setuptools-scm, capture version at package root (#194)'
+  url: https://github.com/cancervariants/disease-normalization/commit/b45d2b4f7cb0fffdbbf32450b9b9f9b51e72ab23
+- author: korikuzma
+  commit: 'build!: update ga4gh.vrs version (#193)'
+  url: https://github.com/cancervariants/disease-normalization/commit/e294926df1ffd5074ea0a7ea82a3edc3d64e877a
 latest_release:
-  url: https://github.com/cancervariants/disease-normalization/releases/tag/0.4.0.dev3
-  version: 0.4.0.dev3
+  url: https://github.com/cancervariants/disease-normalization/releases/tag/0.5.0
+  version: 0.5.0
 layout: software
 live: https://normalize.cancervariants.org/disease
 name: Disease Normalizer

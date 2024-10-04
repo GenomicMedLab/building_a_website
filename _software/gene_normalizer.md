@@ -17,24 +17,24 @@ languages:
 - Python
 - Shell
 latest_commits:
-- author: nickzoic
-  commit: 'fix: handle password param in postgres connection (#333)'
-  url: https://github.com/cancervariants/gene-normalization/commit/2034602df1f9e8e1abc94132def773be833c66a1
 - author: jsstevenson
-  commit: 'chore: bump version'
-  url: https://github.com/cancervariants/gene-normalization/commit/a32cd5361c4ea5e2134220b4ae1a8c929da31756
+  commit: 'docs: update VRS 2 branch link (#369)'
+  url: https://github.com/cancervariants/gene-normalization/commit/ee9d5751e7bd4c0bd6df809b69a89b3f89a867cc
 - author: korikuzma
-  commit: 'docs: fix api reference link in readme (#327)'
-  url: https://github.com/cancervariants/gene-normalization/commit/72b760e16fb4e94f863b5a23c7c3c18ff22831ed
+  commit: 'build: pin ga4gh.vrs~=2.0.0a10 (#367)'
+  url: https://github.com/cancervariants/gene-normalization/commit/798ce406a43e6c6b23cbe5a19976e7f77c679bcc
+- author: korikuzma
+  commit: 'refactor: resolve Pylance warnings (#366)'
+  url: https://github.com/cancervariants/gene-normalization/commit/ba9cc04f3c819030ea67e3bb9a928bf8c444f745
 - author: jsstevenson
-  commit: 'cicd: require priority label on PR (#325)'
-  url: https://github.com/cancervariants/gene-normalization/commit/4dd41f7c0e3f42dc7fc3d175fd27085b1735526e
-- author: jsstevenson
-  commit: 'chore: update license'
-  url: https://github.com/cancervariants/gene-normalization/commit/709cfb683bf7d90163ea442ec6ad365f98ed61b3
+  commit: 'cicd: target stale workflow rev (#365)'
+  url: https://github.com/cancervariants/gene-normalization/commit/14b75272e9a47f148a072278b3b8d152d93375e3
+- author: korikuzma
+  commit: 'feat: update pre-commit version + add more hooks (#363)'
+  url: https://github.com/cancervariants/gene-normalization/commit/7da362eac8f84479152b2b0933a3dc4abfafaddf
 latest_release:
-  url: https://github.com/cancervariants/gene-normalization/releases/tag/0.3.0-dev2
-  version: 0.3.0-dev2
+  url: https://github.com/cancervariants/gene-normalization/releases/tag/0.4.1
+  version: 0.4.1
 layout: software
 live: https://normalize.cancervariants.org/gene
 name: Gene Normalizer

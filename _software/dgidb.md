@@ -16,22 +16,22 @@ languages:
 latest_commits:
 - author: katiestahl
   commit: Automated frontend build
-  url: https://github.com/dgidb/dgidb-v5/commit/518bea1d50344d5a671369f1c041d06bbff075b4
+  url: https://github.com/dgidb/dgidb-v5/commit/a35759a5cd1f3e3d8a4ada9d875a8ef6bc84e778
 - author: katiestahl
-  commit: Staging (#488)
-  url: https://github.com/dgidb/dgidb-v5/commit/4d9303b9af3224a71a3a54eed1b29a994cd87eb8
-- author: katiestahl
-  commit: Automated frontend build
-  url: https://github.com/dgidb/dgidb-v5/commit/6715371634181ce488ec15c0effcd10fc724f5f3
-- author: katiestahl
-  commit: Dev (#483) (#484)
-  url: https://github.com/dgidb/dgidb-v5/commit/fa2180e9b7314a454c33a7a6f42d7bcf76e818d7
+  commit: 'Merge pull request #512 from dgidb/staging'
+  url: https://github.com/dgidb/dgidb-v5/commit/35436d7d68d16b05456527811c0dc8eb597e3dea
 - author: katiestahl
   commit: Automated frontend build
-  url: https://github.com/dgidb/dgidb-v5/commit/3592cb85c82548302666b962e7d34284f3cef31c
+  url: https://github.com/dgidb/dgidb-v5/commit/58f488fa68116c2d1f677add6416685b1f4dcae3
+- author: katiestahl
+  commit: 'fix: eslint warnings'
+  url: https://github.com/dgidb/dgidb-v5/commit/d8e77d70afe5b9192155559dda64c0db45dbdd06
+- author: katiestahl
+  commit: Merge branch 'main' into staging
+  url: https://github.com/dgidb/dgidb-v5/commit/015d1123952024ce7d8863c108acfc605f0e0639
 latest_release:
-  url: https://github.com/dgidb/dgidb-v5/releases/tag/v.5.0.6
-  version: v.5.0.6
+  url: https://github.com/dgidb/dgidb-v5/releases/tag/v.5.0.7
+  version: v.5.0.7
 layout: software
 live: https://beta.dgidb.org
 name: DGIdb
