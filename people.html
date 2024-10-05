@@ -27,7 +27,7 @@ permalink: /people/
 
   <h3 class="section-header">Staff</h3>
 
-  {% assign staff = current_people | where_exp:'person', "person.role == 'Bioinformatics Software Developer' or person.role == 'Senior Bioinformatics Scientist' or person.role == 'Senior Bioinformatics Software Developer' or person.role == 'Lead Bioinformatics Software Developer'" %}
+  {% assign staff = current_people | where_exp:'person', "person.role == 'Lead Bioinformatics Software Developer' or person.role == 'Senior Bioinformatics Scientist' or person.role == 'Bioinformatics Scientist' or person.role == 'Senior Bioinformatics Software Developer' or person.role == 'Bioinformatics Software Developer'" %}
   <ul class="people-list">
     {% for person in staff %}
       {% include people_index_item.html %}

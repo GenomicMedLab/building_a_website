@@ -9,6 +9,7 @@ pmid: null
 preprint: https://www.biorxiv.org/content/10.1101/2023.06.20.545702
 projects:
 - Variation Representation
+- Knowledgebase Integration
 publisher_url: null
 thumbnail: mave_genomics_paper_preview.png
 ---
