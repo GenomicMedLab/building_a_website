@@ -7,7 +7,5 @@ role: "Undergraduate Intern"
 headshot:
 
 github: Krt-11
-
-alumnae: true
 ---
 
