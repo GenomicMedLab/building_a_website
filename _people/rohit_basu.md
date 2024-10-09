@@ -3,7 +3,7 @@ layout: person
 
 name: Rohit Basu
 pub_names: []
-role: Student Intern
+role: Undergraduate Intern
 headshot:
 
 nch_profile:
