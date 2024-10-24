@@ -1,10 +1,15 @@
 """Update paper descriptions with metadata acquired from crossref.org."""
 from pathlib import Path
+import re
 import traceback
 from typing import Tuple, Dict, List
 
 import requests
 import yaml
+
+
+def normalize_string(input: str) -> str:
+    return re.sub(r"\s+", " ", input).strip()
 
 
 def get_file_yaml(file: Path) -> Tuple[Dict, List]:
@@ -42,7 +47,7 @@ def set_title(data: Dict, msg_data: Dict) -> None:
     titles = msg_data["title"]
     if len(titles) != 1:
         raise ValueError(f"Unexpected # of title options: {titles}")
-    data["name"] = titles[0]
+    data["name"] = normalize_string(titles[0])
 
 
 def set_date(data: Dict, msg_data: Dict) -> None:
@@ -70,7 +75,7 @@ def set_authors(data: Dict, msg_data: Dict) -> None:
     author_string = ", ".join([_fmt_author(a) for a in authors])
     author_string.replace("\xa0", " ")
     if author_string:
-        data["authors"] = author_string
+        data["authors"] = normalize_string(author_string)
 
 
 def set_journal(data: Dict, msg_data: Dict) -> None:
@@ -79,7 +84,7 @@ def set_journal(data: Dict, msg_data: Dict) -> None:
         raise ValueError(f"Unexpected # of journal titles: {journal}")
     elif len(journal) == 0:
         return None
-    data["journal"] = journal[0]
+    data["journal"] = normalize_string(journal[0])
 
 
 def update_file(file: Path) -> None:
