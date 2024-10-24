@@ -63,6 +63,7 @@ def get_languages(org: str, repo: str) -> List:
         "Shell",
         "Ruby",
         "TypeScript",
+        "Rust",
     ]
     url = f"https://api.github.com/repos/{org}/{repo}/languages"
     language_data = requests.get(url, headers=request_headers).json()

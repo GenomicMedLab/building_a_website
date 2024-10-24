@@ -6,6 +6,7 @@ description: null
 distribution: https://pypi.org/project/agct/
 languages:
 - Python
+- Rust
 latest_commits:
 - author: jsstevenson
   commit: 'style: update ruff (#39)'
