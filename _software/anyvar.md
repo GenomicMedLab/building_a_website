@@ -14,21 +14,22 @@ docs: null
 languages:
 - Python
 latest_commits:
+- author: ehclark
+  commit: Add feature to allow logging configuration to be specified at runtime (#106)
+  url: https://github.com/biocommons/anyvar/commit/8c0bf96f4c07df1f97d654de808e522f58303743
+- author: ehclark
+  commit: Convert env value to boolean explicitly (#105)
+  url: https://github.com/biocommons/anyvar/commit/6251f7837a2502d71f7ee8cb2da60e8ac802f8dd
+- author: ehclark
+  commit: Fix problems introduced by project configuration changes and dependency
+    upgrades (#101)
+  url: https://github.com/biocommons/anyvar/commit/0806b641c9ceb2d2e20f9bff9aa19dd0d98434f8
 - author: jsstevenson
   commit: update reqs
   url: https://github.com/biocommons/anyvar/commit/274a026f173a79e2cf5bcad5246466a808de4cd3
 - author: jsstevenson
   commit: update gh actions
   url: https://github.com/biocommons/anyvar/commit/c0fa832748dc7bd7bf5eaeaa34591681704768dd
-- author: jsstevenson
-  commit: 'build: update configs and core template stuff'
-  url: https://github.com/biocommons/anyvar/commit/3e0ae8b25cda1e02eb60d987fc50cbab2c1699f2
-- author: korikuzma
-  commit: 'fix: update ga4gh.vrs version + add back VRS type anno in models (#95)'
-  url: https://github.com/biocommons/anyvar/commit/e4c112f23f060d66597006607d1f25146f698ed3
-- author: korikuzma
-  commit: 'docs: update readme + postgres_init.sql commands (#96)'
-  url: https://github.com/biocommons/anyvar/commit/4cb87ae32c0e69cfa2fa91d87107ed5108fedfbc
 latest_release: null
 layout: software
 live: null

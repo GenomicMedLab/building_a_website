@@ -11,6 +11,9 @@ languages:
 - Python
 latest_commits:
 - author: jsstevenson
+  commit: 'docs: add moa reference (#48)'
+  url: https://github.com/GenomicMedLab/wags-tails/commit/1210101de421955b6c80b92bf8204619b778637a
+- author: jsstevenson
   commit: 'fix(hemonc): ensure most accurate version is captured (#47)'
   url: https://github.com/GenomicMedLab/wags-tails/commit/e5e26eba69086efe7aabe9215bb08e76e843252f
 - author: jsstevenson
@@ -22,9 +25,6 @@ latest_commits:
 - author: jsstevenson
   commit: 'cicd: update precommit (#42)'
   url: https://github.com/GenomicMedLab/wags-tails/commit/6dee5d709a196e2ed1dee9e9a7a025ba97ab296c
-- author: jsstevenson
-  commit: 'chore: update download_cb type annotation (#38)'
-  url: https://github.com/GenomicMedLab/wags-tails/commit/047275b8d0cf0c98e7888555fb7373b16f92c12b
 latest_release:
   url: https://github.com/GenomicMedLab/wags-tails/releases/tag/0.1.4
   version: 0.1.4

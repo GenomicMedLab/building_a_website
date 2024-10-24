@@ -2,8 +2,8 @@
 contributors:
 - korikuzma
 - jsstevenson
-- ahwagner
 - jarbesfeld
+- ahwagner
 - katiestahl
 description: <p>The <strong>CoolSeqTool</strong> provides:</p><ul><li>A Pythonic API
   on top of sequence data of interest to tertiary analysis tools, including mappings
@@ -18,6 +18,9 @@ docs: https://coolseqtool.readthedocs.io
 languages:
 - Python
 latest_commits:
+- author: jarbesfeld
+  commit: Ensure proper gene symbol comparison (#373)
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/e9a917e32b07a705231fa17f69d9844c4bb01a6c
 - author: katiestahl
   commit: 'fix: make gene optional param for converting genomic coords'
   url: https://github.com/GenomicMedLab/cool-seq-tool/commit/6fa7efbdc2fa5547d9b9ca42dbab845e24476115
@@ -31,10 +34,6 @@ latest_commits:
 - author: korikuzma
   commit: 'refactor: rename `_get_alt_ac_start_and_end` + flatten output (#360)'
   url: https://github.com/GenomicMedLab/cool-seq-tool/commit/aa0ab3755a4588513566499a878be907b3fecbd8
-- author: korikuzma
-  commit: 'refactor: rename `is_start` kwarg in private methods to `is_seg_start`
-    (#359)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/a17f25de68dc8b11ee8c9dbf4d3617686aeb663e
 latest_release:
   url: https://github.com/GenomicMedLab/cool-seq-tool/releases/tag/0.7.1
   version: 0.7.1

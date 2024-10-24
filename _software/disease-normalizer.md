@@ -17,6 +17,12 @@ languages:
 - Shell
 latest_commits:
 - author: jsstevenson
+  commit: 'build: fix test group name (#202)'
+  url: https://github.com/cancervariants/disease-normalization/commit/e9b43ef345be588259c1cd7b2afd761bdeaeffaf
+- author: jsstevenson
+  commit: 'feat: add oncologic disease parameter from mondo terms (#200)'
+  url: https://github.com/cancervariants/disease-normalization/commit/8c4022af299f4dd4ad3f7a19232a37fd12437bb0
+- author: jsstevenson
   commit: 'fix: update preferred OMIM prefix (#198)'
   url: https://github.com/cancervariants/disease-normalization/commit/b43a2894474c57937779cde18e4c2217ff11d7c5
 - author: korikuzma
@@ -25,12 +31,6 @@ latest_commits:
 - author: korikuzma
   commit: 'feat: update pre-commit version + add more hooks (#195)'
   url: https://github.com/cancervariants/disease-normalization/commit/81815861f25bfeb8c508329b5e44789c9198c45e
-- author: korikuzma
-  commit: 'feat!: use setuptools-scm, capture version at package root (#194)'
-  url: https://github.com/cancervariants/disease-normalization/commit/b45d2b4f7cb0fffdbbf32450b9b9f9b51e72ab23
-- author: korikuzma
-  commit: 'build!: update ga4gh.vrs version (#193)'
-  url: https://github.com/cancervariants/disease-normalization/commit/e294926df1ffd5074ea0a7ea82a3edc3d64e877a
 latest_release:
   url: https://github.com/cancervariants/disease-normalization/releases/tag/0.5.0
   version: 0.5.0
