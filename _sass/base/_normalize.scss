@@ -40,8 +40,8 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
   overflow-wrap: break-word;
 }
 
@@ -75,6 +75,7 @@ hr {
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  flex-grow: 1;
 }
 
 /**
