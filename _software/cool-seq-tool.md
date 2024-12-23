@@ -18,6 +18,12 @@ docs: https://coolseqtool.readthedocs.io
 languages:
 - Python
 latest_commits:
+- author: jsstevenson
+  commit: 'chore: remove unused action (#376)'
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/6cf95779ef4e98d332ba0a4abaf2b7475d7d550a
+- author: jarbesfeld
+  commit: 'fix!: Expect user to supply valid, case-sensitive HGNC symbol (#375)'
+  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/f1448f4ab5dc5acc0e90c9b4880f0f282937d9e5
 - author: jarbesfeld
   commit: Ensure proper gene symbol comparison (#373)
   url: https://github.com/GenomicMedLab/cool-seq-tool/commit/e9a917e32b07a705231fa17f69d9844c4bb01a6c
@@ -28,15 +34,9 @@ latest_commits:
   commit: Do not require gene when genomic accession and transcript are provided to
     genomic_to_tx_segment (#369)
   url: https://github.com/GenomicMedLab/cool-seq-tool/commit/14443469efd510a9fe7cfe34252b53ba32b7c401
-- author: korikuzma
-  commit: 'refactor: remove duplicate `genomic_ac` check (#365)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/0f7fc9a23d9f440a5d9a3966a4ac40157d7c617b
-- author: korikuzma
-  commit: 'refactor: rename `_get_alt_ac_start_and_end` + flatten output (#360)'
-  url: https://github.com/GenomicMedLab/cool-seq-tool/commit/aa0ab3755a4588513566499a878be907b3fecbd8
 latest_release:
-  url: https://github.com/GenomicMedLab/cool-seq-tool/releases/tag/0.7.1
-  version: 0.7.1
+  url: https://github.com/GenomicMedLab/cool-seq-tool/releases/tag/0.8.0
+  version: 0.8.0
 layout: software
 name: Cool-Seq-Tool
 source: https://github.com/GenomicMedLab/cool-seq-tool/

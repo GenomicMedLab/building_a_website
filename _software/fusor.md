@@ -16,6 +16,9 @@ languages:
 - Python
 - Shell
 latest_commits:
+- author: jarbesfeld
+  commit: Update cool-seq-tool version (#192)
+  url: https://github.com/cancervariants/fusor/commit/8d92d3ff4b3b276e39f5b8206a57a0bdf1ace768
 - author: katiestahl
   commit: 'build: update cool-seq-tool version (#189)'
   url: https://github.com/cancervariants/fusor/commit/6077fbcf1c5f837461a449730c5f4e9dff1ae25c
@@ -28,9 +31,6 @@ latest_commits:
 - author: korikuzma
   commit: 'feat: add script to generate examples (#182)'
   url: https://github.com/cancervariants/fusor/commit/af78477e5769dda23af57d1a2a505d27709a7aa4
-- author: korikuzma
-  commit: 'fix: `SequenceLocation` `start`/`end` for `TranscriptSegmentElement` (#172)'
-  url: https://github.com/cancervariants/fusor/commit/0341b3be77604fe04ba34f264d8efd4c958c6b05
 latest_release:
   url: https://github.com/cancervariants/fusor/releases/tag/0.4.4
   version: 0.4.4
